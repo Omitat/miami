@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="apple-touch-icon" sizes="144x144" href="/files/ocfavicon/Public/apple-touch-icon.png?V=636602047551872329">
+  <link rel="icon" type="image/png" sizes="32x32" href="/files/ocfavicon/Public/favicon-32x32.png?V=636602047551872329">
+  <link rel="icon" type="image/png" sizes="16x16" href="/files/ocfavicon/Public/favicon-16x16.png?V=636602047551872329">
+  <link rel="manifest" href="/files/ocfavicon/Public/site.webmanifest?V=636602047551872329">
+  <link rel="shortcut icon" href="/files/ocfavicon/Public/favicon.ico?V=636602047551872329">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="/files/ocfavicon/Public/browserconfig.xml?V=636602047551872329">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Work+Sans:600,700' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript">
+  var __metaQueryBreakpoints = {
+    'sc-size-4': '(max-width: 480px)',
+    'sc-size-3': '(min-width: 480px) and (max-width: 768px)',
+    'sc-size-2': '(min-width: 768px) and (max-width: 992px)',
+    'sc-size-1': '(min-width: 992px)'
+  }
+  </script>
+
+
+  <!-- Framework Section -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCngN_28bDpL2ppxxS9m8D3DWooLzQhzBA&libraries=geometry"></script>
+
+
+
   <title>Suarez</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -16,52 +42,117 @@
   <% end %>
   <%= yield %>
 
-  <div class="footer-outer-container footer-first-row">
-    <div class="footer-container clearfix">
-      <div class="grid grid-pad">
-        <div class="col-xs-12 col-s-6 col-m-4  contact-us-footer-widget" >
-          <h3 class="footer-title">Contact Us</h3>
-          <ul class="footer-links">
-            <li class="footer-link-tele">Dial 311 or 305-468-5900</li>
-            <li class="footer-link-email"><a href="mailto:?subject=Inquiry%20from%20Alpha">webmaster@miamigov.com</a></li>
-          </ul></div>
-
-
-          <div class="col-xs-12 col-s-6 col-m-4 " >
-            <h3 class="footer-title">Share &amp; Connect</h3>
-
-            <ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
-              <a href="https://www.facebook.com/CityOfMiamiGov/" target="_blank"  >
-                <i></i>Like us on Facebook
-              </a>
-            </li>
-            <li class="footer-link-twitter">
-              <a href="https://twitter.com/cityofmiami" target="_blank"  >
-                <i></i>Follow us on Twitter
-              </a>
-            </li>
-            <li class="footer-link-instagram">
-              <a href="https://www.instagram.com/cityofmiami/" target="_blank"  >
-                <i></i>Follow us on Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-xs-12 col-s-12 col-m-4 " >
-          <h3 class="footer-title">Visit Other Miami Sites</h3>
-
-          <ul class="footer-links without-icons ">  <li>
-            <a href="http://www.miamiandbeaches.com/" target="_blank"  >Greater Miami Convention & Visitors Bureau</a>
-          </li>
-          <li>
-            <a href="http://miamidade.gov/" target="_blank"  >Miami Dade County</a>
-          </li>
+  <div class="toolbar-outer-container">
+    <div class="toolbar-inner-container clearfix">
+      <div class="toolbar-item toolbar-language notranslate clearfix"><div class="no-js-element">
+        <span class="lang-item lang-en-us current-language" lang="en-us"><span class="visuallyhidden">Your current preferred language is </span>English</span><a href="https://beta.miamigov.com/Home?oc_lang=es-419" class="lang-item lang-es-419" lang="es-419">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a><a href="https://beta.miamigov.com/Home?oc_lang=ht" class="lang-item lang-ht" lang="ht">Haitian Creole<span class="visuallyhidden"> Select this as your preferred language</span></a>
+      </div>
+      <button type="button" aria-controls="toolbar-language-drop-down" aria-expanded="false" class="toolbar-button toolbar-button-language js-element">
+        <span class="visuallyhidden">Your current preferred language is </span>
+        <span class="current-language">
+          English
+        </span>
+        <i></i>
+      </button>
+      <div class="toolbar-drop-down toolbar-language-drop-down js-element clearfix">
+        <ul>
+          <li class="current-language-li"><span class="lang-item lang-en-us current-language" lang="en-us"><span class="visuallyhidden">Your current preferred language is </span>English</span></li><li><a href="https://beta.miamigov.com/Home?oc_lang=es-419" class="lang-item lang-es-419" lang="es-419">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li><a href="https://beta.miamigov.com/Home?oc_lang=ht" class="lang-item lang-ht" lang="ht">Haitian Creole<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
         </ul>
+      </div></div>
+    </div>
+  </div>
+  <div class="header-outer-container clearfix">
+    <div class="side-menu-btn js-element">
+      <button><i></i><span class="side-menu-btn-text"><span class='visuallyhidden'>Open side </span>Menu</span></button>
+    </div>
+    <div class="header-container header-layout-2  clearfix">
+      <div class="header-site-logo">
+        <a href="https://beta.miamigov.com/Home"  lang="en-US">
+          <span class="visuallyhidden">
+            City of Miami - Home
+          </span>
+        </a>
       </div>
     </div>
   </div>
 </div>
+</div>
+<div class="navigation-outer-container">
+  <div id="nav" role="navigation" class="navigation-container" data-menu-type="offscreen" data-offscreen-position="left">
+    <div class="grid">
+      <div class="col-xs-12">
+        <ul class="sf-menu" id="sc-main-menu"><li class="nav-section-quarters-1 nav-active-path nav-active-page first-item nav-item-seq-1">
+          <a href="https://beta.miamigov.com/Home" class="nav-level-1" >
+            <i class="item-icon"></i><span class="item-text">Home</span>
+          </a>
+          <button class="mobnav-subarrow"><i></i><span class="visuallyhidden text">Sub-menu</span></button>
+          <ul>
+            <li class=" "><a href="https://beta.miamigov.com/Home/About-the-new-Website" class="" >About the New Website</a></li></ul></li>
+            <li class="nav-section-quarters-2   nav-item-seq-2">
+              <a href="https://beta.miamigov.com/Services-Directory" class="nav-level-1 " >Services Directory</a>
+            </li>
+            <li class="nav-section-quarters-3   nav-item-seq-3">
+              <a href="https://beta.miamigov.com/Tell-Us-What-You-Think" class="nav-level-1 " >Tell Us What You Think</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-outer-container">
+    <div id="main" role="main" class="main-outer-container no-background clearfix">
+      <div class="content-main-container">
 
-</body>
-</html>
+
+      </div></div></div></div></div></section>
+
+
+      <div class="footer-outer-container footer-first-row">
+        <div class="footer-container clearfix">
+          <div class="grid grid-pad">
+            <div class="col-xs-12 col-s-6 col-m-4  contact-us-footer-widget" >
+              <h3 class="footer-title">Contact Us</h3>
+              <ul class="footer-links">
+                <li class="footer-link-tele">Dial 311 or 305-468-5900</li>
+                <li class="footer-link-email"><a href="mailto:?subject=Inquiry%20from%20Alpha">webmaster@miamigov.com</a></li>
+              </ul></div>
+
+
+              <div class="col-xs-12 col-s-6 col-m-4 " >
+                <h3 class="footer-title">Share &amp; Connect</h3>
+
+                <ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
+                  <a href="https://www.facebook.com/CityOfMiamiGov/" target="_blank"  >
+                    <i></i>Like us on Facebook
+                  </a>
+                </li>
+                <li class="footer-link-twitter">
+                  <a href="https://twitter.com/cityofmiami" target="_blank"  >
+                    <i></i>Follow us on Twitter
+                  </a>
+                </li>
+                <li class="footer-link-instagram">
+                  <a href="https://www.instagram.com/cityofmiami/" target="_blank"  >
+                    <i></i>Follow us on Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-s-12 col-m-4 " >
+              <h3 class="footer-title">Visit Other Miami Sites</h3>
+
+              <ul class="footer-links without-icons ">  <li>
+                <a href="http://www.miamiandbeaches.com/" target="_blank"  >Greater Miami Convention & Visitors Bureau</a>
+              </li>
+              <li>
+                <a href="http://miamidade.gov/" target="_blank"  >Miami Dade County</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
