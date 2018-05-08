@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suarez</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+  <% if current_admin %>
+  <p>You are logged in as <%= current_admin.username %></p>
+  <% end %>
+  <%= yield %>
+
+  <div class="footer-outer-container footer-first-row">
+    <div class="footer-container clearfix">
+      <div class="grid grid-pad">
+        <div class="col-xs-12 col-s-6 col-m-4  contact-us-footer-widget" >
+          <h3 class="footer-title">Contact Us</h3>
+          <ul class="footer-links">
+            <li class="footer-link-tele">Dial 311 or 305-468-5900</li>
+            <li class="footer-link-email"><a href="mailto:?subject=Inquiry%20from%20Alpha">webmaster@miamigov.com</a></li>
+          </ul></div>
+
+
+          <div class="col-xs-12 col-s-6 col-m-4 " >
+            <h3 class="footer-title">Share &amp; Connect</h3>
+
+            <ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
+              <a href="https://www.facebook.com/CityOfMiamiGov/" target="_blank"  >
+                <i></i>Like us on Facebook
+              </a>
+            </li>
+            <li class="footer-link-twitter">
+              <a href="https://twitter.com/cityofmiami" target="_blank"  >
+                <i></i>Follow us on Twitter
+              </a>
+            </li>
+            <li class="footer-link-instagram">
+              <a href="https://www.instagram.com/cityofmiami/" target="_blank"  >
+                <i></i>Follow us on Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-s-12 col-m-4 " >
+          <h3 class="footer-title">Visit Other Miami Sites</h3>
+
+          <ul class="footer-links without-icons ">  <li>
+            <a href="http://www.miamiandbeaches.com/" target="_blank"  >Greater Miami Convention & Visitors Bureau</a>
+          </li>
+          <li>
+            <a href="http://miamidade.gov/" target="_blank"  >Miami Dade County</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
