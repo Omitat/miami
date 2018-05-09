@@ -1,0 +1,62 @@
+
+
+<h1>Programs</h1>
+
+
+
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%= link_to 'Create New Program', new_program_path,  class: 'program-new', remote: true  %>
+
+<br>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="image">Image</th>
+      <th class="title">Title</th>
+      <th class="url">Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @programs.each do |program| %>
+      <tr>
+        <td><%= image_tag program.image.url %></td>
+        <td><%= program.title %></td>
+        <td><%= program.url %></td>
+        <td><%= program.description %></td>
+        <td class="show"><%= link_to 'Show', program, class: 'program-show', remote: true %></td>
+        <td class="edit"><%= link_to 'Edit', edit_program_path(program), class: 'program-edit', remote: true %></td>
+        <td class="destroy"><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

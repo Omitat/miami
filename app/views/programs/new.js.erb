@@ -1,0 +1,4 @@
+$(".modal-footer .btn-primary").show();
+$('.modal-title').html("New Program");
+$('.modal-body').html("<%= j render 'programs/form', program: @programs %>");
+$('.modal').modal();

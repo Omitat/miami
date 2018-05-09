@@ -1,6 +1,5 @@
 class ProgramsController < ApplicationController
   before_action :set_program, only: [:show, :edit, :update, :destroy]
-  # mount_uploader :image, ImageUploader
   # GET /programs
   # GET /programs.json
   def index
@@ -51,6 +50,8 @@ class ProgramsController < ApplicationController
         format.html { redirect_to @program, notice: 'Program was successfully updated.' }
         format.json { render :show, status: :ok, location: @program }
       else
+        p "<>"*30
+        p @program.errors
         format.html { render :edit }
         format.json { render json: @program.errors, status: :unprocessable_entity }
       end
@@ -75,6 +76,6 @@ class ProgramsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def program_params
-      params.require(:program).permit(:img, :title, :url, :description)
+      params.require(:program).permit(:image, :title, :url, :description)
     end
 end
