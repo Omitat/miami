@@ -10,11 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_08_130818) do
+ActiveRecord::Schema.define(version: 2018_05_09_162122) do
+
+  create_table "abouts", force: :cascade do |t|
+    t.string "imgMain"
+    t.string "text"
+    t.string "gallery"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "admins", force: :cascade do |t|
     t.string "email"
     t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "news", force: :cascade do |t|
+    t.string "image"
+    t.string "title"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "programs", force: :cascade do |t|
+    t.string "image"
+    t.string "title"
+    t.string "url"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

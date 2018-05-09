@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def new
-
     end
 
     def create
@@ -8,7 +7,7 @@ class SessionsController < ApplicationController
 
       if @admin
         session[:admin_id] = @admin.id
-        redirect_to admin_path
+        redirect_to home_show_path
       else
         render :new
       end
