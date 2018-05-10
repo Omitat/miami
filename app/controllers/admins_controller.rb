@@ -25,17 +25,17 @@ class AdminsController < ApplicationController
     params.require(:admin).permit(:email, :password, :password_confirmation)
   end
 
+# make this method accessible in any controller
+def current_user
+  # memoization (caching) technique
+  # multiple calls to this method will result in only one database query
+  @current_user ||= User.find(session[:user_id]) if session[:user_id]
+end
+
   protected
   def authenticate_admin
     redirect_to root_path unless current_admin
   end
 
 
-  POST https://scott4044.auth0.com/passwordless/start
-    {
-     "client_id": "Ip8aDyIEjr8d1ssjjrP4r4shQLbgNAYt",
-     "connection": "sms",
-     "phone_number": "+12153609696",
-     "send": "code"
-    }
 end

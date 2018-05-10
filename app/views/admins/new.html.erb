@@ -1,31 +1,17 @@
-<h1> Sign Up </h1>
-
-<%= form_for @admin, url: admin_path do |f| %>
-<p>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-</p>
 
 
 
-#omniauth-auth0 sign up 
+#omniauth-auth0 sign up
+<br>
+<button type="button" id="login">Login</button>
 
 
 
-
-
-
-
-
-<p>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-</p>
-<p>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-</p>
-<p>
-<%= f.button %>
-</p>
+<em><%= notice %></em><br>
+<% if @current_user %>
+  Welcome <%= @current_user.name %> you have successfully signed in!<br>
+  <%= link_to "Sign out", logout_path %>
+<% else %>
+  You are so not signed in.<br>
+  <%= link_to "Sign in with Auth0", auth0_login_path, id: 'login' %><br>
 <% end %>
