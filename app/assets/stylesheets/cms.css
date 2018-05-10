@@ -30,11 +30,13 @@
 
 .logged {
   margin: auto;
+  margin-left: 1%;
 }
 
 .home-link-cms {
   float: right;
   text-decoration: none;
+  margin-right: 1%;
 }
 
 #nav-tab{

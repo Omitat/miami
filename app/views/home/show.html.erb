@@ -1,4 +1,11 @@
 <div class="cms">
+  <span class="logged">
+    <% if current_admin %>
+    <span>You are logged in!</span> | <%= link_to 'Sign Out', logout_path %>
+    <% end %>
+    <%= link_to 'Go Home', new_home_path, class: "home-link-cms" %>
+  </span>
+
   <div class="top-cms">
     <%= image_tag 'logo-copy.png', class: "blue-miami-logo rounded mx-auto d-block", alt: "city of miami logo" %>
   </div>

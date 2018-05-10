@@ -10,6 +10,7 @@ class AboutsController < ApplicationController
   # GET /abouts/1
   # GET /abouts/1.json
   def show
+    
   end
 
   # GET /abouts/new

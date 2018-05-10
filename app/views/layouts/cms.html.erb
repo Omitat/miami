@@ -40,12 +40,7 @@
       </div>
     </div>
   </div>
-<span class="logged">
-  <% if current_admin %>
-  <span>You are logged in!</span>
-  <% end %>
-  <%= link_to 'Go Home', new_home_path, class: "home-link-cms" %>
-</span>
+
   <%= yield %>
 </body>
 </html>

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resource :admin
   resource :session
   get 'home/show' => 'home#show'
+  get 'logout' => 'sessions#destroy'
 
   get 'auth/:provider/callback' => 'admins#create', as: 'auth0_callback'
   get 'auth/auth0', as: 'auth0_login'

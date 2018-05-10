@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
+
 <div class="news-show-box">
 <p>
   <strong>Image:</strong>
-  <%= @news.image %>
+  <%= image_tag '@news.image.url' %>
 </p>
 
 <p>
@@ -15,6 +16,3 @@
   <%= @news.url %>
 </p>
 </div>
-
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>

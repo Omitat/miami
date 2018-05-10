@@ -1,3 +1,11 @@
+<span class="logged">
+  <% if current_admin %>
+  <span>You are logged in!</span>
+  <% end %>
+  <%= link_to 'Content Management System', home_show_path, class: "home-link-cms" %>
+</span>
+
+
 <div class="header">
   <%= image_tag "MiamiSkyline.jpeg", class: "header_image",  alt: "miami skyline" %>
   <%= image_tag "logo-copy.png", class: "com_logo rounded float-left", alt: "city of Miami logo" %>
@@ -9,6 +17,7 @@
 
 <nav class="fill">
   <ul>
+    
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact Us</a></li>
