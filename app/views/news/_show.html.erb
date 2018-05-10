@@ -8,11 +8,6 @@
 
 <p>
   <strong>Title:</strong>
-  <a href=<%= "@news.url" %>> <%= @news.title %></a>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @news.url %>
+  <%= link_to @news.title, @news.url%>
 </p>
 </div>
