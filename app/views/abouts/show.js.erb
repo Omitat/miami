@@ -1,5 +1,5 @@
 
 $(".modal-footer .btn-primary").hide();
 $('.modal-title').html("Preview About");
-$('.modal-body').html("<%= j render 'abouts/show', about: @abouts%>");
+$('.modal-body').html("<%= j render @about %>");
 $('.modal').modal();
