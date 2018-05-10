@@ -1,3 +1,68 @@
+
+
 .cms-img {
   width: 200px;
+}
+.column-cms {
+    float: left;
+    width: 33.33%;
+}
+.tab-content {
+  margin: 1%;
+}
+/* Clear floats after the columns */
+.row-cms:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column-row {
+        width: 100%;
+    }
+}
+.top-cms {
+  background-image: url('MiamiSkyline.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.logged {
+  margin: auto;
+}
+
+nav {
+  margin: 1%;
+  padding-top: 2%;
+}
+
+.blue-miami-logo {
+  width: 15%;
+  height: auto;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  
+
+.tab-content {
+  padding-top: 15px;
+}
+
+#nav-programs-tab {
+  font-size: 18px;
+  text-decoration: none;
+}
+#nav-home-tab {
+  font-size: 18px;
+  text-decoration: none;
+
+}
+#nav-news-tab {
+  font-size: 18px;
+  text-decoration: none;
+
+}
+#nav-about-tab {
+  font-size: 18px;
+  text-decoration: none;
 }
