@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function() {
       {
         allowedConnections: ['sms'],             // Should match the SMS connection name
         auth: {
-          redirectUrl: 'http://localhost:3000/auth/auth0/callback',
+          redirectUrl: 'http://localhost:3000/home/show',
           responseType: 'code'
       }
     });
