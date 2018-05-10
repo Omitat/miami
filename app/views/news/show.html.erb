@@ -1,19 +1,20 @@
 <p id="notice"><%= notice %></p>
-
+<div class="news-show-box">
 <p>
-  <strong>Img:</strong>
-  <%= @news.img %>
+  <strong>Image:</strong>
+  <%= @news.image %>
 </p>
 
 <p>
   <strong>Title:</strong>
-  <%= @news.title %>
+  <a href=<%= "@news.url" %>> <%= @news.title %></a>
 </p>
 
 <p>
   <strong>Url:</strong>
   <%= @news.url %>
 </p>
+</div>
 
 <%= link_to 'Edit', edit_news_path(@news) %> |
 <%= link_to 'Back', news_index_path %>

@@ -1289,9 +1289,6 @@ table.sc-responsive-table tbody tr:last-child { border-bottom: none; }
 
 .emphasis-box-2 { background-color: #F4F6F8; padding: 20px 20px 20px 20px; }
 
-/*# sourceMappingURL=oc_wizard_style.css.map *//* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
 
 .browsehappy {
     margin: 0.2em 0;
@@ -9543,7 +9540,7 @@ section.row-index-4 .row-container .row-container-title h1 { color: #313337; }
   .search-filter-body input[type="submit"] { width: 100%; }
   .layout-modern.content-type-oc-profile .content-outer-container { padding: 0px 0px 0px 0px; padding-left: 0; padding-right: 0; } }
 
-/*# sourceMappingURL=oc_wizard.css.map *//* Default Mixins */
+
 .sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
 
 .sf-menu { width: 100%; display: none; }
@@ -9662,7 +9659,7 @@ section.row-index-4 .row-container .row-container-title h1 { color: #313337; }
   .header-website-settings { margin: 39px 40px 0px 20px; padding: 0px 0px 0px 0px; }
   .js .side-menu .navigation-outer-container { width: 50%; } }
 
-/*# sourceMappingURL=oc_wizard_menu.css.map */@media (min-width:992px) {
+@media (min-width:992px) {
   .header-outer-container,
   .navigation-outer-container,
   .content-outer-container,
@@ -10063,7 +10060,7 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
 @media (min-width: 1140px) { .slideshow-widget.slideshow-layout-1 .controls { position: relative; top: 50px; }
   .slideshow-widget.slideshow-layout-1 { margin-top: -50px; } }
 
-/*# sourceMappingURL=oc_wizard_s1.css.map *//* Default Mixins */
+
 @media (min-width: 992px) { .sf-menu { display: block; float: left; width: 100%; }
   .sf-menu ul { position: absolute; display: none; top: 100%; left: 0; z-index: 99; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); width: 300px; }
   .sf-menu ul ul { top: 0; left: 100%; }
@@ -10094,5 +10091,3 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   .side-menu-right .header-layout-2 #header-search { margin-right: 97px; } }
 
 @media (min-width: 1287px) { .side-menu-right .header-layout-2 #header-search { margin-right: 0; } }
-
-/*# sourceMappingURL=oc_wizard_menu_s1.css.map */

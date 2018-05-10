@@ -4,7 +4,7 @@ class NewsController < ApplicationController
   # GET /news
   # GET /news.json
   def index
-    @news = News.all
+    @news_all = News.all
   end
 
   # GET /news/1
@@ -47,7 +47,7 @@ class NewsController < ApplicationController
   # PATCH/PUT /news/1.json
   def update
     respond_to do |format|
-      if @news.update(news_params)
+      if @news_all.update(news_params)
         format.html { redirect_to @news, notice: 'News was successfully updated.' }
         format.json { render :show, status: :ok, location: @news }
       else

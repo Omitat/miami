@@ -26,7 +26,6 @@ table.sc-responsive-table tbody tr:nth-child(2n) td p { color: #313337; }
 
 .no-svg .main-container a.styled-button-calltoaction:after { background-image: url("general-sprite.svg"); }
 
-/*# sourceMappingURL=client_style.css.map *//* Default Mixins */
 /*Default Styles (Size 3/Mobile) Start*/
 .header-site-logo > a { background-size: 145px 71px; }
 
@@ -482,7 +481,6 @@ section.comment-forum .message-box a:hover, section.comment-forum .message-box a
   .image-fade:before { width: 50%; }
   /*Size 2/Tablet End*/ }
 
-/*# sourceMappingURL=client.css.map *//* Default Mixins */
 .sf-menu a { text-transform: uppercase; }
 
 .side-menu-btn { border-radius: 4px; }
@@ -511,7 +509,6 @@ section.comment-forum .message-box a:hover, section.comment-forum .message-box a
 
 .no-svg .js .side-menu .navigation-outer-container .nav-offscreen-menu ul li > a.prev-link:before { background-image: url("general-sprite.svg"); }
 
-/*# sourceMappingURL=client_menu.css.map *//* Default Mixins */
 @media (min-width: 992px) { /*Size 1/Desktop Start*/
   .header-site-logo > a { background-size: 290px 142px; }
   .row-index-1 .row-container .row-content-container { padding: 20px 0 0; }
@@ -533,13 +530,11 @@ section.comment-forum .message-box a:hover, section.comment-forum .message-box a
   .image-fade:before { width: 45%; }
   /*Size 1/Desktop End*/ }
 
-/*# sourceMappingURL=client_s1.css.map *//* Default Mixins */
 @media (min-width: 992px) { /*Size 1/Desktop Start*/
   #nav[data-menu-type='horizontal'] .mobnav-subarrow-child i { margin-top: 10px; }
   .side-menu-btn i { top: 29px; }
   .side-menu-btn button { padding: 48px 20px 17px; } }
 
-/*# sourceMappingURL=client_menu_s1.css.map *//* Default Mixins */
 .sc-feedback-form { margin-top: 30px; }
 
 .sc-label { font-family: 'Merriweather', serif; margin-bottom: 0px; }
@@ -561,5 +556,3 @@ ul.errors, ul.errors li a { color: #D23749; }
 .main-container input.styled-button.logout-button[type="submit"], .main-container .deactivate-account-widget .styled-button.deactivate-account-button, .main-container .confirm-action-widget .styled-button.button-yes, .main-container .styled-button.styled-button-archive, .main-container .mycouncil-buttons .styled-button.deactivate-account-button, .main-container a.styled-button.styled-button-archive, .main-container a.styled-button.deactivate-account-button { background-color: #FFFFFF; color: #A7144F; border: 2px solid #A7144F; }
 
 .main-container input.styled-button.logout-button[type="submit"]:hover, .main-container input.styled-button.logout-button[type="submit"]:focus, .main-container .deactivate-account-widget .styled-button.deactivate-account-button:hover, .main-container .deactivate-account-widget .styled-button.deactivate-account-button:focus, .main-container .confirm-action-widget .styled-button.button-yes:hover, .main-container .confirm-action-widget .styled-button.button-yes:focus, .main-container .styled-button.styled-button-archive:hover, .main-container .styled-button.styled-button-archive:focus, .main-container .mycouncil-buttons .styled-button.deactivate-account-button:hover, .main-container .mycouncil-buttons .styled-button.deactivate-account-button:focus, .main-container a.styled-button.styled-button-archive:hover, .main-container a.styled-button.styled-button-archive:focus, .main-container a.styled-button.deactivate-account-button:hover, .main-container a.styled-button.deactivate-account-button:focus { background-color: #A7144F; color: #FFFFFF; }
-
-/*# sourceMappingURL=client_forms.css.map */

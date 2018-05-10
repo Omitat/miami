@@ -2,7 +2,10 @@
 
 <h1>News</h1>
 
-<table>
+
+<%= link_to 'New News', new_news_path, class: 'news-new', remote: true %>
+
+<table class="table">
   <thead>
     <tr>
       <th>Image</th>
@@ -15,11 +18,11 @@
   <tbody>
     <% @news_all.each do |news| %>
       <tr>
-        <td><%= news.image %></td>
+        <td class="cms-img"><%= image_tag news.image.url %></td>
         <td><%= news.title %></td>
         <td><%= news.url %></td>
-        <td><%= link_to 'Show', news %></td>
-        <td><%= link_to 'Edit', edit_news_path(news) %></td>
+        <td><%= link_to 'Show', news, class: 'news-show', remote: true %></td>
+        <td><%= link_to 'Edit', edit_news_path(news), class: 'news-edit', remote: true %></td>
         <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -27,5 +30,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New News', new_news_path %>
