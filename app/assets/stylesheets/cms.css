@@ -32,9 +32,15 @@
   margin: auto;
 }
 
-nav {
-  margin: 1%;
+.home-link-cms {
+  float: right;
+  text-decoration: none;
+}
+
+#nav-tab{
   padding-top: 2%;
+  background: white!important;
+  width: 100% !important;
 }
 
 .blue-miami-logo {
