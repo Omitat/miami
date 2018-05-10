@@ -2,7 +2,7 @@
 
 <p>
   <strong>Imgmain:</strong>
-  <%= @about.imgMain %>
+  <%= @about.image %>
 </p>
 
 <p>
@@ -10,10 +10,6 @@
   <%= @about.text %>
 </p>
 
-<p>
-  <strong>Gallery:</strong>
-  <%= @about.gallery %>
-</p>
 
 <%= link_to 'Edit', edit_about_path(@about) %> |
 <%= link_to 'Back', abouts_path %>
