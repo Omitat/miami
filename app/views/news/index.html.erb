@@ -1,0 +1,11 @@
+
+<div class="mayor-news-newspage">
+<% @news_all.each do |news| %>
+<div class="card border-info" style="width: 18rem;">
+  <%= image_tag news.image.url, class:"card-img-top img-fluid", id: "news-image-newspage", alt:"Card image cap"%>
+  <div class="card-body">
+    <p class="card-text text-center"><%= link_to news.title, news.url %></p>
+  </div>
+  <%end%>
+</div>
+</div>

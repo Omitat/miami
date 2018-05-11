@@ -30,7 +30,7 @@
   padding: 10px;
 }
 .cms-img {
-  width: 200px;
+  width: 200px !important;
 }
 .title-news{
   /* background-color: #d3d3d3; */
@@ -137,4 +137,7 @@
 .col {
   width: 200px;
   word-wrap: break-word;
+}
+.mayor-news-newspage {
+  margin: 1%;
 }

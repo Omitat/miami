@@ -24,19 +24,19 @@
 
       <div class="row-cms">
         <div class="column-cms">
-
           <table style="width:80%" class="table">
             <p id="dash">Programs</p>
             <tr>
               <th>Title</th>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
-              <% @programs.each do |program| %>
+              <% @programs.last(3).each do |program| %>
               <td><%= program.title %></td>
-              <td><%= program.updated_at %></td>
+              <td><%= program.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+              </tr>
               <% end %>
-            </tr>
+
           </table>
         </div>
 
@@ -46,14 +46,14 @@
             <p id="dash">News</p>
             <tr>
               <th>Title</th>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
               <% @news_all.last(3).each do |item| %>
               <td><%= item.title %></td>
-              <td><%= item.updated_at %></td>
+              <td><%= item.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+              </tr>
               <%end%>
-            </tr>
           </table>
         </div>
 
@@ -64,8 +64,7 @@
               <th>Last Updated</th>
             </tr>
             <tr>
-              <td><%= @contacts.last.updated_at %></td>
-
+              <td><%= @contacts.last.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
             </tr>
           </table>
         </div>
@@ -75,13 +74,13 @@
           <table style="width: 80%" class="table">
             <p id="dash-about">About</p>
             <tr>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
               <% @abouts.each do |about| %>
-              <td><%= about.updated_at.localtime %></td>
+              <td><%= about.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+                </tr>
               <% end %>
-            </tr>
           </table>
 
         </div>
