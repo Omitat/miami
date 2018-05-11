@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'home/show' => 'home#show'
   get 'logout' => 'sessions#destroy'
 
+  get 'sessions/create'
+
   get 'auth/:provider/callback' => 'admins#create', as: 'auth0_callback'
   get 'auth/auth0', as: 'auth0_login'
   get 'logout' => 'admins#destroy'

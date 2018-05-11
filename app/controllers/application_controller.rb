@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
   private
   def current_admin
-    @current_admin ||= Admin.find_by(id: session[:admin_id])
-
+    @current_admin = session[:admin_id] ? session[:admin_id] : nil
   end
 
   helper_method :current_admin
