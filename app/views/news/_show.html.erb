@@ -1,13 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <div class="news-show-box">
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @news.image.url %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= link_to @news.title, @news.url%>
-</p>
+  <h2><%= image_tag @news.image.url %></h2>
+  <span class="title-news" id="news-show-link"><%= link_to @news.title, @news.url%></span>
 </div>

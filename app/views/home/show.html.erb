@@ -14,9 +14,8 @@
       <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Dashboard</a>
       <a class="nav-item nav-link" id="nav-programs-tab" data-toggle="tab" href="#nav-programs" role="tab" aria-controls="nav-programs" aria-selected="false">Programs</a>
       <a class="nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false">News</a>
-      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
       <a class="nav-item nav-link" id="nav-contacts-tab" data-toggle="tab" href="#nav-contacts" role="tab" aria-controls="nav-contacts" aria-selected="false">Contacts</a>
-
+        <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
 
     </div>
   </nav>
@@ -57,10 +56,24 @@
             </tr>
           </table>
         </div>
+
+        <div class="column-cms">
+          <table style="width: 80%" class= "table">
+            <p id="dash">Contacts</p>
+            <tr>
+              <th>Last Updated</th>
+            </tr>
+            <tr>
+              <td><%= @contacts.last.updated_at %></td>
+
+            </tr>
+          </table>
+        </div>
+
         <div class="column-cms">
 
-          <table style="width:80%" class="table">
-            <p id="dash">About</p>
+          <table style="width: 80%" class="table">
+            <p id="dash-about">About</p>
             <tr>
               <th>Last Update</th>
             </tr>
@@ -72,6 +85,7 @@
           </table>
 
         </div>
+
       </div>
 
 
