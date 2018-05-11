@@ -6,7 +6,6 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
   end
-
   # GET /contacts/1
   # GET /contacts/1.json
   def show
@@ -28,7 +27,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html #{ redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to home_show_path, notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }

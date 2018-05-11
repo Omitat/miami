@@ -1,11 +1,6 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @about.image %>
-</p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @about.text %>
-</p>
+<div class ="mayor-about-container"
+  <%= image_tag @about.image.url, class: "sworn-in" %>
+  <p class="mayor-about" id="mayor-about-body"><%= simple_format(@about.text) %></p>
+</div>

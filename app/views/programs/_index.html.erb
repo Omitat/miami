@@ -22,7 +22,7 @@
         <td class="cms-img"><%= image_tag program.image.url %></td>
         <td><%= program.title %></td>
         <td><%= program.url %></td>
-        <td><%= program.description %></td>
+        <td><%= simple_format(program.description) %></td>
         <td class="show"><%= link_to 'Show', program, class: 'program-show', remote: true %></td>
         <td class="edit"><%= link_to 'Edit', edit_program_path(program), class: 'program-edit', remote: true %></td>
         <td class="destroy"><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>

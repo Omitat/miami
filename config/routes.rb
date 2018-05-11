@@ -3,10 +3,20 @@ Rails.application.routes.draw do
   resources :abouts
   resources :programs
   resources :news
+
+
   root 'home#new'
+
+
+
   resources :home
   resource :admin
   resource :session
+
+
+
+
+
   get 'home/show' => 'home#show'
   get 'logout' => 'sessions#destroy'
 

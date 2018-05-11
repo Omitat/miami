@@ -39,8 +39,9 @@
 
 }
 
-/* #news-show-link {
+/* #news-show-link{
   text-decoration: none;
+  color: black !important;
 } */
 .logged {
   margin: auto;
@@ -102,4 +103,38 @@
   font-weight: bold;
   justify-content: center;
   padding-top: 70px;
+}
+
+/* ***************ABOUT**************** */
+.sworn-in {
+  width:30%;
+  height: auto;
+  margin: 1%;
+  display: flex;
+  float: left;
+}
+
+.mayor-about {
+  word-wrap: break-word;
+}
+/* ******************CONTACTS*************** */
+#contacts-li {
+
+}
+
+#contacts-ul {
+  list-style: none;
+}
+
+.grid-container {
+  display: inline-grid;
+}
+
+.contacts-index {
+  margin: 20%;
+}
+
+.col {
+  width: 200px;
+  word-wrap: break-word;
 }
