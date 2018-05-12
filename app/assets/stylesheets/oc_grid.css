@@ -1084,7 +1084,7 @@ textarea {
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-a,a:visited
+/* a,a:visited
 {
 	text-decoration:underline;
 	color:#006BB7;
@@ -1096,7 +1096,7 @@ a,a:visited
 a:hover,a:focus
 {
 	text-decoration:none;
-}
+} */
 h1 {
     font-size: 2em;
     font-weight: normal;
@@ -1261,7 +1261,7 @@ h6 a { color: #313337; }
 
 a { text-decoration: underline; color: #0672BA; }
 
-a:visited { text-decoration: underline; color: #6540B0; }
+/* a:visited { text-decoration: underline; color: #6540B0; } */
 
 a:hover, a:focus { text-decoration: none; color: #0672BA; }
 
@@ -3618,7 +3618,7 @@ a.az-letter {
         overflow: hidden;
     }
 
-        .tooltipster-default .tooltipster-content a, .tooltipster-default .tooltipster-content a:visited {
+        /* .tooltipster-default .tooltipster-content a, .tooltipster-default .tooltipster-content a:visited { */
             color: #fff;
         }
 
@@ -5125,10 +5125,10 @@ input[type="submit"].login-button.back-button {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
+/* @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important; /* Black prints faster: h5bp.com/s 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -5146,9 +5146,7 @@ input[type="submit"].login-button.back-button {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+
 
     .ir a:after,
     a[href^="javascript:"]:after,
@@ -5190,7 +5188,7 @@ input[type="submit"].login-button.back-button {
     h3 {
         page-break-after: avoid;
     }
-}
+} */
 
 
 

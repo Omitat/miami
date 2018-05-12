@@ -1,6 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<div class="news-show-box">
-  <h2><%= image_tag @news.image.url %></h2>
-  <span class="title-news" id="news-show-link"><%= link_to @news.title, @news.url%></span>
+<% @news_all.each do |news|  %>
+<div class="card-group">
+<div class="card" style="width: 18rem;">
+  <%= image_tag news.img, class: "card-img-top", alt: "Card image cap" %>
+  <div class="card-body">
+    <h4 class="card-title"><%= news.title %></h4>
+    <p class="card-text"><%= news.description %></p>
+    <%= link_to 'See Article', news.url, class: "btn btn-primary", id: "mayor-news-text" %>
+  </div>
+  </div>
+    <% end %>
 </div>

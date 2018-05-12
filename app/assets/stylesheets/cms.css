@@ -141,3 +141,13 @@
 .mayor-news-newspage {
   margin: 1%;
 }
+
+
+/* ***********NEWS************* */
+
+#mayor-news-text {
+  text-decoration: none;
+}
+.card-title {
+  line-height: 2em;
+}
