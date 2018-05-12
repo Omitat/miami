@@ -2,7 +2,9 @@
   <% if current_admin %>
   <span>You are logged in!</span>
   <% end %>
+  <% if current_admin %>
   <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms" %>
+  <% end %>
 </span>
 
 
@@ -119,3 +121,7 @@
 <!--/.Footer-->
 </div>
 </body>
+
+
+<!-- starting rails- password login  -->
+<!-- bcrypt or device gem  -->

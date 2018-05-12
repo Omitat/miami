@@ -1,17 +1,6 @@
 
 
 
-#omniauth-auth0 sign up
+<p style=" position:absolute;top:300px; left:460px;">Admin Access Only</p>
 <br>
-<button type="button" id="login">Login</button>
-
-
-
-<em><%= notice %></em><br>
-<% if @current_user %>
-  Welcome <%= @current_user.name %> you have successfully signed in!<br>
-  <%= link_to "Sign out", logout_path %>
-<% else %>
-  You are so not signed in.<br>
-  <%= link_to "Sign in with Auth0", auth0_login_path, id: 'login' %><br>
-<% end %>
+<button style=" position:absolute;top:350px; left:490px;" class="btn btn-info" type="button" id="login">Login</button>
