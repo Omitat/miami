@@ -1,4 +1,4 @@
-/* .grid
+/* / .grid
 {
     margin: 0 -1%;
     -webkit-box-sizing: border-box;
@@ -15,7 +15,7 @@
 {
     padding: 15px;
 }
-[class*=" col-"],
+[class=" col-"],
 [class^="col-"]
 {
     float: left;
@@ -185,8 +185,8 @@
 	}
 }
 
-/** IE8 fixes **/
-/*html.lt-ie9 .col-xs-1
+/ IE8 fixes /
+/html.lt-ie9 .col-xs-1
 {
     width: 8.33333%;
 }
@@ -377,11 +377,11 @@ html.lt-ie9 .col-lg-11
 html.lt-ie9 .col-lg-12
 {
     width: 100%;
-}*/
-/** IE8 fixes **/
+}/
+/ IE8 fixes /
 
-/** Debug Grid Styles **/
-.grid-overlay-container {
+/ Debug Grid Styles /
+/ .grid-overlay-container {
     margin: 0 auto;
     max-width: 1140px;
     position: relative;
@@ -459,23 +459,23 @@ html.lt-ie9 .col-lg-12
 	{
 	    padding: 15px;
 	}
-}/*@Editor-classes
-Responsive Table|table.sc-responsive-table
+}/@Editor-classes /
+/ Responsive Table|table.sc-responsive-table
 Emphasis box 1|.emphasis-box-1
 Emphasis box 2|.emphasis-box-2
 Styled Button|a.styled-button
-@Editor-classes*/
+@Editor-classes/
 
-/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/! normalize.css v1.1.3 | MIT License | git.io/normalize /
 
-/* ==========================================================================
+/ ==========================================================================
    HTML5 display definitions
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-
+/
+  Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ /
+/
 article,
 aside,
 details,
@@ -489,109 +489,109 @@ nav,
 section,
 summary {
     display: block;
-}
+} /
 
-/**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
+/
+  Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ /
 
-audio,
+/ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
+    display: inline;
+    zoom: 1;
+} /
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
+/
+  Prevent modern browsers from displaying `audio` without controls.
+  Remove excess height in iOS 5 devices.
+ /
 
-audio:not([controls]) {
+/ audio:not([controls]) {
     display: none;
     height: 0;
-}
+} /
 
-/**
- * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
- * Known issue: no IE 6 support.
- */
+/
+  Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+  Known issue: no IE 6 support.
+ /
 
-[hidden] {
+/ [hidden] {
     display: none;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Base
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
+/
+  1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+     `em` units.
+  2. Prevent iOS text size adjust after orientation change, without disabling
+     user zoom.
+ /
 
-html {
-    font-size: 100%; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-}
+/ html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+} /
 
-/**
- * Address `font-family` inconsistency between `textarea` and other form
- * elements.
- */
+/
+  Address `font-family` inconsistency between `textarea` and other form
+  elements.
+ /
 
-html,
+/ html,
 button,
 input,
 select,
 textarea {
     font-family: sans-serif;
-}
+} /
 
-/**
- * Address margins handled incorrectly in IE 6/7.
- */
+/
+  Address margins handled incorrectly in IE 6/7.
+ /
 
-body {
+/ body {
     margin: 0;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Links
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
+/
+  Address `outline` inconsistency between Chrome and other browsers.
+ /
 
-a:focus {
+/ a:focus {
     outline: thin dotted;
-}
+} /
 
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
+/
+  Improve readability when focused and also mouse hovered in all browsers.
+ /
 
-a:active,
+/ a:active,
 a:hover {
     outline: 0;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Typography
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
+/
+  Address font sizes and margins set differently in IE 6/7.
+  Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+  and Chrome.
+ /
 
-h1 {
+/ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -619,20 +619,20 @@ h5 {
 h6 {
     font-size: 0.67em;
     margin: 2.33em 0;
-}
+} /
 
-/**
- * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
- */
+/
+  Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ /
 
-abbr[title] {
+/ abbr[title] {
     border-bottom: 1px dotted;
-}
+} /
 
-/**
- * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
- */
-
+/
+  Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ /
+/
 b,
 strong {
     font-weight: bold;
@@ -640,98 +640,98 @@ strong {
 
 blockquote {
     margin: 1em 40px;
-}
+} /
 
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-
+/
+  Address styling not present in Safari 5 and Chrome.
+ /
+/
 dfn {
     font-style: italic;
-}
+} /
 
-/**
- * Address differences between Firefox and other browsers.
- * Known issue: no IE 6/7 normalization.
- */
+/
+  Address differences between Firefox and other browsers.
+  Known issue: no IE 6/7 normalization.
+ /
 
-hr {
+/ hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
-}
+} /
 
-/**
- * Address styling not present in IE 6/7/8/9.
- */
+/
+  Address styling not present in IE 6/7/8/9.
+ /
 
-mark {
+/ mark {
     background: #ff0;
     color: #000;
-}
+} /
 
-/**
- * Address margins set differently in IE 6/7.
- */
+/
+  Address margins set differently in IE 6/7.
+ /
 
-p,
+/ p,
 pre {
     margin: 1em 0;
-}
+} /
 
-/**
- * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
- */
+/
+  Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ /
 
-code,
+/ code,
 kbd,
 pre,
 samp {
     font-family: monospace, serif;
     _font-family: 'courier new', monospace;
     font-size: 1em;
-}
+} /
 
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-
+/
+  Improve readability of pre-formatted text in all browsers.
+ /
+/
 pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
-}
+} /
 
-/**
- * Address CSS quotes not supported in IE 6/7.
- */
+/
+  Address CSS quotes not supported in IE 6/7.
+ /
 
-q {
+/ q {
     quotes: none;
-}
+} /
 
-/**
- * Address `quotes` property not supported in Safari 4.
- */
-
+/
+  Address `quotes` property not supported in Safari 4.
+ /
+/
 q:before,
 q:after {
     content: '';
     content: none;
-}
+} /
 
-/**
- * Address inconsistent and variable font size in all browsers.
- */
+/
+  Address inconsistent and variable font size in all browsers.
+ /
 
-small {
+/ small {
     font-size: 80%;
-}
+} /
 
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
+/
+  Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ /
+/
 sub,
 sup {
     font-size: 75%;
@@ -746,16 +746,16 @@ sup {
 
 sub {
     bottom: -0.25em;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Lists
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Address margins set differently in IE 6/7.
- */
-
+/
+  Address margins set differently in IE 6/7.
+ /
+/
 dl,
 menu,
 ol,
@@ -765,248 +765,245 @@ ul {
 
 dd {
     margin: 0 0 0 40px;
-}
+} /
 
-/**
- * Address paddings set differently in IE 6/7.
- */
+/
+  Address paddings set differently in IE 6/7.
+ /
 
-menu,
+/ menu,
 ol,
 ul {
     padding: 0 0 0 40px;
 }
 
-/**
- * Correct list images handled incorrectly in IE 7.
- */
+
 
 nav ul,
 nav ol {
     list-style: none;
     list-style-image: none;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Embedded content
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
- * 2. Improve image quality when scaled in IE 7.
- */
+/
+  1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+  2. Improve image quality when scaled in IE 7.
+ /
 
-img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
-}
+/ img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+} /
 
-/**
- * Correct overflow displayed oddly in IE 9.
- */
+/
+  Correct overflow displayed oddly in IE 9.
+ /
 
-svg:not(:root) {
+/ svg:not(:root) {
     overflow: hidden;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Figures
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
- */
+/
+  Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ /
 
-figure {
+/ figure {
     margin: 0;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Forms
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Correct margin displayed oddly in IE 6/7.
- */
+/
+  Correct margin displayed oddly in IE 6/7.
+ /
 
-form {
+/ form {
     margin: 0;
-}
+} /
 
-/**
- * Define consistent border, margin, and padding.
- */
+/
+  Define consistent border, margin, and padding.
+ /
 
-fieldset {
+/ fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
-}
+} /
 
-/**
- * 1. Correct color not being inherited in IE 6/7/8/9.
- * 2. Correct text not wrapping in Firefox 3.
- * 3. Correct alignment displayed oddly in IE 6/7.
- */
-
+/
+  1. Correct color not being inherited in IE 6/7/8/9.
+  2. Correct text not wrapping in Firefox 3.
+  3. Correct alignment displayed oddly in IE 6/7.
+ /
+/
 legend {
-    border: 0; /* 1 */
+    border: 0;
     padding: 0;
-    white-space: normal; /* 2 */
-    *margin-left: -7px; /* 3 */
-}
+    white-space: normal;
+    margin-left: -7px;
+} /
 
-/**
- * 1. Correct font size not being inherited in all browsers.
- * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
- *    and Chrome.
- * 3. Improve appearance and consistency in all browsers.
- */
+/
+  1. Correct font size not being inherited in all browsers.
+  2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+     and Chrome.
+  3. Improve appearance and consistency in all browsers.
+ /
 
-button,
+/ button,
 input,
 select,
 textarea {
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
-    vertical-align: baseline; /* 3 */
-    *vertical-align: middle; /* 3 */
-}
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    vertical-align: middle;
+} /
 
-/**
- * Address Firefox 3+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
+/
+  Address Firefox 3+ setting `line-height` on `input` using `!important` in
+  the UA stylesheet.
+ /
 
-button,
+/ button,
 input {
     line-height: normal;
-}
+} /
 
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
+/
+  Address inconsistent `text-transform` inheritance for `button` and `select`.
+  All other form control elements do not inherit `text-transform` values.
+  Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+  Correct `select` style inheritance in Firefox 4+ and Opera.
+ /
 
-button,
+/ button,
 select {
     text-transform: none;
-}
+} /
 
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
- */
+/
+  1. Avoid the WebKit bug in Android 4.0. where (2) destroys native `audio`
+     and `video` controls.
+  2. Correct inability to style clickable `input` types in iOS.
+  3. Improve usability and consistency of cursor style between image-type
+     `input` and others.
+  4. Remove inner spacing in IE 7 without affecting normal text inputs.
+     Known issue: inner spacing remains in IE 6.
+ /
 
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
+/ button,
+html input[type="button"],
 input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
-    *overflow: visible;  /* 4 */
-}
+    -webkit-appearance: button;
+    cursor: pointer;
+    overflow: visible;
+} /
 
-/**
- * Re-set default cursor for disabled elements.
- */
+/
+  Re-set default cursor for disabled elements.
+ /
 
-button[disabled],
+/ button[disabled],
 html input[disabled] {
     cursor: default;
-}
+} /
 
-/**
- * 1. Address box sizing set to content-box in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- * 3. Remove excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
- */
+/
+  1. Address box sizing set to content-box in IE 8/9.
+  2. Remove excess padding in IE 8/9.
+  3. Remove excess padding in IE 7.
+     Known issue: excess padding remains in IE 6.
+ /
 
-input[type="checkbox"],
+/ input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
-}
+    box-sizing: border-box;
+    padding: 0;
+    height: 13px;
+    width: 13px;
+} /
 
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
+/
+  1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+  2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+     (include `-moz` to future-proof).
+ /
 
-input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
+/ input[type="search"] {
+    -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
-}
+} /
 
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
+/
+  Remove inner padding and search cancel button in Safari 5 and Chrome
+  on OS X.
+ /
 
-input[type="search"]::-webkit-search-cancel-button,
+/ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
-}
+} /
 
-/**
- * Remove inner padding and border in Firefox 3+.
- */
+/
+  Remove inner padding and border in Firefox 3+.
+ /
 
-button::-moz-focus-inner,
+/ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
-}
+} /
 
-/**
- * 1. Remove default vertical scrollbar in IE 6/7/8/9.
- * 2. Improve readability and alignment in all browsers.
- */
+/
+  1. Remove default vertical scrollbar in IE 6/7/8/9.
+  2. Improve readability and alignment in all browsers.
+ /
 
-textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
-}
+/ textarea {
+    overflow: auto;
+    vertical-align: top;
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Tables
-   ========================================================================== */
+   ========================================================================== /
 
-/**
- * Remove most spacing between table cells.
- */
+/
+  Remove most spacing between table cells.
+ /
 
-table {
+/ table {
     border-collapse: collapse;
     border-spacing: 0;
-}
+} /
 
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ /
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/
+  What follows is the result of much research on cross-browser styling.
+  Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+  Kroc Camen, and the H5BP dev community and team.
+ /
 
-/* ==========================================================================
+/ ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
+   ========================================================================== /
 
-html,
+/ html,
 button,
 input,
 select,
@@ -1017,15 +1014,15 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
-}
+} /
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+/
+  Remove text-shadow in selection highlight: h5bp.com/i
+  These selection rule sets have to be separate.
+  Customize the background color to match your design.
+ /
 
-::-moz-selection {
+/ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -1033,58 +1030,58 @@ html {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
-}
+} /
 
-/*
- * A better looking default horizontal rule
- */
+/
+  A better looking default horizontal rule
+ /
 
-hr {
+/ hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+} /
 
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
+/
+  Remove the gap between images, videos, audio and canvas and the bottom of
+  their containers: h5bp.com/i/440
+ /
 
-audio,
+/ audio,
 canvas,
 img,
 video {
     vertical-align: middle;
-}
+} /
 
-/*
- * Remove default fieldset styles.
- */
-
+/
+  Remove default fieldset styles.
+ /
+/
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
+} /
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
+/
+  Allow only vertical resizing of textareas.
+ /
+/
 textarea {
     resize: vertical;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Content Styles
-   ========================================================================== */
-*, *:before, *:after {
+   ========================================================================== /
+/ , :before, :after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-/* a,a:visited
+} /
+/ a,a:visited
 {
 	text-decoration:underline;
 	color:#006BB7;
@@ -1096,8 +1093,8 @@ textarea {
 a:hover,a:focus
 {
 	text-decoration:none;
-} */
-h1 {
+} /
+/ h1 {
     font-size: 2em;
     font-weight: normal;
     color: #000000;
@@ -1159,7 +1156,7 @@ table.sc-responsive-table thead, table.sc-responsive-table tfoot, table.sc-respo
 }
 table.sc-responsive-table thead tr th, table.sc-responsive-table tfoot tr th, table.sc-responsive-table tbody tr td, table.sc-responsive-table tr td, table.sc-responsive-table tfoot tr td, table.sc-responsive-table-heading thead tr th, table.sc-responsive-table-heading tfoot tr th, table.sc-responsive-table-heading tbody tr td, table.sc-responsive-table-heading tr td, table.sc-responsive-table-heading tfoot tr td
 {
-    /* font-size: 12px; */
+font-size: 12px;
     line-height: 18px;
     text-align: left;
 }
@@ -1224,8 +1221,8 @@ a.styled-button {
     border-bottom: 1px dotted;
     cursor: help;
     text-decoration: none;
-}/* Default Mixins */
-html, button, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
+}/ Default Mixins /
+/ html, button, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
 
 body { font-family: "Source Sans Pro", sans-serif; font-size: 1.25em; color: #1D1E1F; line-height: 1.5; overflow-x: hidden; overflow-y: scroll; }
 
@@ -1261,9 +1258,9 @@ h6 a { color: #313337; }
 
 a { text-decoration: underline; color: #0672BA; }
 
-/* a:visited { text-decoration: underline; color: #6540B0; } */
+/ a:visited { text-decoration: underline; color: #6540B0; } /
 
-a:hover, a:focus { text-decoration: none; color: #0672BA; }
+/ a:hover, a:focus { text-decoration: none; color: #0672BA; }
 
 ul { list-style-position: outside; list-style-type: disc; margin: 10px 0px 10px 0px; padding: 0px 0px 0px 20px; }
 
@@ -1295,22 +1292,20 @@ table.sc-responsive-table tbody tr:last-child { border-bottom: none; }
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
+} /
 
-/* ==========================================================================
+/ ==========================================================================
    Helper classes
-   ========================================================================== */
+   ========================================================================== /
 
-/*
- * Image replacement
- */
 
-.ir {
+
+/ .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+
+    text-indent: -9999px;
 }
 
     .ir:before {
@@ -1318,23 +1313,21 @@ table.sc-responsive-table tbody tr:last-child { border-bottom: none; }
         display: block;
         width: 0;
         height: 150%;
-    }
+    } /
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
 
-.hidden {
+
+/ .hidden {
     display: none !important;
     visibility: hidden;
-}
+} /
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
+/
+  Hide only visually, but have it available for screenreaders: h5bp.com/v
+ /
 
-html.js .js-visuallyhidden, /* Visually hides an element if js is enabled */
-.visuallyhidden /* Visually hides any element */ {
+/ html.js .js-visuallyhidden,
+.visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1344,14 +1337,14 @@ html.js .js-visuallyhidden, /* Visually hides an element if js is enabled */
     position: absolute;
     width: 1px;
     font-size: 0;
-}
+} /
 
-    /*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
+    /
+  Extends the .visuallyhidden class to allow the element to be focusable
+  when navigated to via the keyboard: h5bp.com/p
+ /
 
-    .visuallyhidden.focusable:active,
+    / .visuallyhidden.focusable:active,
     .visuallyhidden.focusable:focus {
         clip: auto;
         height: auto;
@@ -1360,19 +1353,19 @@ html.js .js-visuallyhidden, /* Visually hides an element if js is enabled */
         position: static;
         width: auto;
         font-size: inherit;
-    }
+    } /
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
+/
+  Hide visually and from screenreaders, but maintain layout
+ /
 
-.invisible {
+/ .invisible {
     visibility: hidden;
-}
+} /
 
 
-/* Elements we chose to style specially when they are keyboard focussed */
-.oc-keyboard-focus, .oc-keyboard-focus-important {
+/ Elements we chose to style specially when they are keyboard focussed /
+/ .oc-keyboard-focus, .oc-keyboard-focus-important {
     outline: 2px solid blue !important;
 }
 
@@ -1385,68 +1378,55 @@ html.js .js-visuallyhidden, /* Visually hides an element if js is enabled */
 .map-container.oc-keyboard-focus,
 .multipoint-map.oc-keyboard-focus,
 .gmap-target.oc-keyboard-focus {
-    background-color: #E5E3DF !important; /*Reset focussed google map background colour - it looks weird if it's bright yellow*/
+    background-color: #E5E3DF !important; /Reset focussed google map background colour - it looks weird if it's bright yellow/ /
 }
 
-.oc-keyboard-focus :focus,
-.no-outline,
-.no-outline a {
-    outline: none;
-}
 
-.oc-outline {
-    outline: thin dotted;
-}
 
-.oc-outline-negative-indent {
-    outline: thin dotted;
-    outline-offset: -5px;
-}
+/
+  Clearfix: contain floats
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+  For modern browsers
+  1. The space content is one way to avoid an Opera bug when the
+     `contenteditable` attribute is included anywhere else in the document.
+     Otherwise it causes space to appear at the top and bottom of elements
+     that receive the `clearfix` class.
+  2. The use of `table` rather than `block` is only necessary if using
+     `:before` to contain the top-margins of child elements.
+ /
 
-.clearfix:before,
+/ .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
     clear: both;
+} /
+
+/
+  For IE 6/7 only
+  Include this rule to trigger hasLayout and contain floats.
+ /
+
+/ .clearfix {
+    zoom: 1;
+} /
+
+/ @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /
+    / Style adjustments for high resolution devices /
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
+/ ==========================================================================
    Seamless City custom styles
-   ========================================================================== */
+   ========================================================================== /
 
-/*
- * Generic styles
- */
+/
+  Generic styles
+ /
 
-body {
+/ body {
 }
 
 address {
@@ -1671,7 +1651,7 @@ html.js #back-to-top {
     border-radius: 3px;
 }
 
-/* arrow icon (span tag) */
+
 #back-to-top i {
     width: 45px;
     height: 45px;
@@ -1686,9 +1666,7 @@ html.js #back-to-top {
 html.js #back-to-top i {
     margin-left: 0px;
 }
-/*
- * Global Elements Styles
- */
+
 
 .header-search-control-container {
     display: none;
@@ -1736,9 +1714,7 @@ ul.footer-links {
 #sub-navigation-container {
     display: none;
 }
-/*
- * Predictive search
- */
+
 
 #predictiveResults {
     display: none;
@@ -1766,15 +1742,12 @@ ul.footer-links {
             text-decoration: underline;
         }
 
-    /* No results found */
+
     #predictiveResults > p {
         padding: 20px 25px;
         margin-bottom: 0;
     }
 
-/*
- * Accordion Styles
- */
 
 .accordion-trigger {
     cursor: pointer;
@@ -1818,11 +1791,9 @@ ul.footer-links {
     margin-bottom: 0;
 }
 
-/*
- * List Filter Styles
- */
 
-/* Display hidden accessible text for high contrast users (in lieu of icon) */
+
+
 .os-high-contrast .oc-accordion-head {
     padding-right: 25px;
 }
@@ -1878,9 +1849,6 @@ ul.footer-links {
     padding-right: 40%;
 }
 
-/*
- * Minutes & Agenda Styles
- */
 
 .meeting-document-info a {
     display: block;
@@ -2078,9 +2046,6 @@ ul.footer-links {
     background-color: #F4F6F8;
 }
 
-/*
- * List Styles
- */
 
 .list-item-container,
 .list-item-container-2 {
@@ -2298,9 +2263,7 @@ ul.footer-links {
 .list-item-container.small-panel p {
     margin: 0 20px 20px;
 }
-/*
- * Pagination Styles
- */
+
 
 .seamless-pagination-pages {
     display: none;
@@ -2334,9 +2297,7 @@ ul.footer-links {
     display: none;
 }
 
-/*
- * Content Element Styles
- */
+
 
 .item-navigation {
     display: block;
@@ -2413,9 +2374,7 @@ label.short-label {
 .tagged-as-list .text span:first-child {
     display: none;
 }
-/*
- * List Filter Styles
- */
+
 
 .search-filter-body {
     padding: 0 15px 15px;
@@ -2431,9 +2390,7 @@ label.short-label {
     color: #FF0000;
 }
 
-/*
- * Side-box Styles
- */
+
 
 .side-box {
     padding: 15px;
@@ -2448,9 +2405,7 @@ label.short-label {
     margin-top: 0;
 }
 
-/*
- * Profile template Styles
- */
+
 
 .profile-featured-text, a.profile-featured-text:visited {
     margin: 20px 0 40px;
@@ -2486,7 +2441,7 @@ a.profile-featured-text:hover, a.profile-featured-text:focus {
 
 .profile-featured-panels h2 {
     margin: 0;
-    /*padding: 10px;*/
+
     background-color: #5b8599;
     color: #ffffff;
     font-size: 1.1em;
@@ -2509,7 +2464,7 @@ a.profile-featured-text:hover, a.profile-featured-text:focus {
 
 .profile-featured-panel .panel-text {
     margin: 0;
-    /*padding: 20px;*/
+
     padding: 20px 25px;
     color: #000;
     font-size: 1em;
@@ -2610,17 +2565,11 @@ a.tab-header-title:hover, a.tab-header-title:focus {
     overflow: hidden;
 }
 
-/*
- * Responsive Table Styles
- */
 
 table.sc-responsive-table {
     margin-bottom: 0;
 }
 
-/*
- * Tablesaw
- */
 
 .tablesaw {
   width: 100%;
@@ -2631,7 +2580,7 @@ table.sc-responsive-table {
   padding: 0;
 }
 
-.tablesaw * {
+.tablesaw  {
   box-sizing: border-box;
 }
 
@@ -2662,7 +2611,6 @@ a.tablesaw-btn {
   text-decoration: none;
 }
 
-/* Default radio/checkbox styling horizonal controlgroups. */
 .tablesaw-btn:active {
   background-color: #ddd;
 }
@@ -2759,7 +2707,7 @@ a.tablesaw-btn {
   border-left-width: 0;
 }
 
-/* Column navigation buttons for swipe and columntoggle tables */
+
 .tablesaw-advance .tablesaw-btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2843,12 +2791,12 @@ a.tablesaw-btn {
   pointer-events: none;
 }
 
-/* Table Toolbar */
+/ Table Toolbar /
 .tablesaw-bar {
   clear: both;
 }
 
-.tablesaw-bar * {
+.tablesaw-bar  {
   box-sizing: border-box;
 }
 
@@ -2877,7 +2825,7 @@ a.tablesaw-btn {
   margin-bottom: 0;
 }
 
-/* TODO */
+
 .tablesaw-bar .tablesaw-bar-section .tablesaw-btn {
   margin-left: .4em;
   margin-top: 0;
@@ -2935,7 +2883,7 @@ a.tablesaw-btn {
 
 .tablesaw-sortable-btn {
 
-  /* same as cell padding above */
+  / same as cell padding above /
   padding: .5em .7em;
 }
 
@@ -2943,12 +2891,12 @@ a.tablesaw-btn {
   text-align: left;
 }
 
-/* Table rows have a gray bottom stroke by default */
+/ Table rows have a gray bottom stroke by default /
 .tablesaw-row-border tr {
   border-bottom: 1px solid #dfdfdf;
 }
 
-/* Zebra striping */
+/ Zebra striping /
 .tablesaw-row-zebra tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
@@ -2958,7 +2906,7 @@ a.tablesaw-btn {
   margin: .59375em 0;
 }
 
-/*.tablesaw-swipe .tablesaw-swipe-cellpersist {
+/.tablesaw-swipe .tablesaw-swipe-cellpersist {
   border-right: 2px solid #e4e1de;
 }
 
@@ -2968,19 +2916,19 @@ a.tablesaw-btn {
 
 .tablesaw-swipe-shadow .tablesaw-swipe-cellpersist {
   box-shadow: 3px 0 4px -1px #e4e1de;
-}*/
+}/
 
 .tablesaw-stack td .tablesaw-cell-label,
 .tablesaw-stack th .tablesaw-cell-label {
   display: none;
 }
 
-/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/ Mobile first styles: Begin with the stacked presentation at narrow widths /
 
-/* Support note IE9+: @media only all */
+/ Support note IE9+: @media only all /
 @media only all {
 
-  /* Show the table cells as a block level element */
+  / Show the table cells as a block level element /
   .tablesaw-stack {
     clear: both;
   }
@@ -2996,7 +2944,7 @@ a.tablesaw-btn {
     display: table-row;
   }
 
-  /* Make the label elements a percentage width */
+  / Make the label elements a percentage width /
   .tablesaw-stack td .tablesaw-cell-label,
   .tablesaw-stack th .tablesaw-cell-label {
     display: inline-block;
@@ -3004,7 +2952,7 @@ a.tablesaw-btn {
     width: 30%;
   }
 
-  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  / For grouped headers, have a different style to visually separate the levels by classing the first label in each col group /
   .tablesaw-stack th .tablesaw-cell-label-top,
   .tablesaw-stack td .tablesaw-cell-label-top {
     display: block;
@@ -3016,12 +2964,12 @@ a.tablesaw-btn {
     display: block;
   }
 
-  /* Avoid double strokes when stacked */
+  / Avoid double strokes when stacked /
   .tablesaw-stack tbody th.group {
     margin-top: -1px;
   }
 
-  /* Avoid double strokes when stacked */
+  / Avoid double strokes when stacked /
   .tablesaw-stack th.group b.tablesaw-cell-label {
     display: none !important;
   }
@@ -3030,7 +2978,7 @@ a.tablesaw-btn {
 
 @media (max-width:39.9375em) {
 
-  /* Table rows have a gray bottom stroke by default */
+  / Table rows have a gray bottom stroke by default /
   .tablesaw-stack tbody tr {
     display: block;
     width: 100%;
@@ -3074,13 +3022,13 @@ a.tablesaw-btn {
 
 }
 
-/* Media query to show as a standard table at 560px (35em x 16px) or wider */
+/ Media query to show as a standard table at 560px (35em x 16px) or wider /
 @media (min-width:40em) {
   .tablesaw-stack tr {
     display: table-row;
   }
 
-  /* Show the table header rows */
+  / Show the table header rows /
   .tablesaw-stack td,
   .tablesaw-stack th,
   .tablesaw-stack thead td,
@@ -3089,7 +3037,7 @@ a.tablesaw-btn {
     margin: 0;
   }
 
-  /* Hide the labels in each cell */
+  / Hide the labels in each cell /
   .tablesaw-stack td .tablesaw-cell-label,
   .tablesaw-stack th .tablesaw-cell-label {
     display: none !important;
@@ -3103,7 +3051,7 @@ a.tablesaw-btn {
 
 @media only all {
 
-  /* Unchecked manually: Always hide */
+  / Unchecked manually: Always hide /
   .tablesaw-swipe th.tablesaw-swipe-cellhidden,
   .tablesaw-swipe td.tablesaw-swipe-cellhidden {
     display: none;
@@ -3115,21 +3063,21 @@ a.tablesaw-btn {
   position: relative;
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;  /* More in skin.css */
+  -webkit-overflow-scrolling: touch;  / More in skin.css /
 }
 
 .tablesaw-overflow > .tablesaw {
-  margin-top: 2px;  /* sortable focus rings are clipped */
+  margin-top: 2px;  / sortable focus rings are clipped /
 }
 
-/* Used for a11y text on button: "Columns" */
+/ Used for a11y text on button: "Columns" /
 .tablesaw-columntoggle-btn span {
   text-indent: -9999px;
   display: inline-block;
 }
 
 .tablesaw-columntoggle-btnwrap {
-  position: relative;  /* for dialog positioning */
+  position: relative;  / for dialog positioning /
 }
 
 .tablesaw-columntoggle-btnwrap .dialog-content {
@@ -3140,7 +3088,7 @@ a.tablesaw-btn {
   line-height: 1.5;
 }
 
-/* Remove top/bottom margins around the fieldcontain on check list */
+/ Remove top/bottom margins around the fieldcontain on check list /
 .tablesaw-columntoggle-popup {
   display: none;
 }
@@ -3162,7 +3110,7 @@ a.tablesaw-btn {
   margin: 0;
 }
 
-/* Hide all prioritized columns by default */
+/ Hide all prioritized columns by default /
 @media only all {
   .tablesaw-columntoggle th.tablesaw-priority-6,
   .tablesaw-columntoggle td.tablesaw-priority-6,
@@ -3196,9 +3144,9 @@ a.tablesaw-btn {
   outline-style: none;
 }
 
-/* Preset breakpoints if "" class added to table */
+/ Preset breakpoints if "" class added to table /
 
-/* Show priority 1 at 320px (20em x 16px) */
+/ Show priority 1 at 320px (20em x 16px) /
 @media (min-width:20em) {
   .tablesaw-columntoggle th.tablesaw-priority-1,
   .tablesaw-columntoggle td.tablesaw-priority-1 {
@@ -3207,7 +3155,7 @@ a.tablesaw-btn {
 
 }
 
-/* Show priority 2 at 480px (30em x 16px) */
+/ Show priority 2 at 480px (30em x 16px) /
 @media (min-width:30em) {
   .tablesaw-columntoggle th.tablesaw-priority-2,
   .tablesaw-columntoggle td.tablesaw-priority-2 {
@@ -3216,7 +3164,7 @@ a.tablesaw-btn {
 
 }
 
-/* Show priority 3 at 640px (40em x 16px) */
+/ Show priority 3 at 640px (40em x 16px) /
 @media (min-width:40em) {
   .tablesaw-columntoggle th.tablesaw-priority-3,
   .tablesaw-columntoggle td.tablesaw-priority-3 {
@@ -3229,7 +3177,7 @@ a.tablesaw-btn {
 
 }
 
-/* Show priority 4 at 800px (50em x 16px) */
+/ Show priority 4 at 800px (50em x 16px) /
 @media (min-width:50em) {
   .tablesaw-columntoggle th.tablesaw-priority-4,
   .tablesaw-columntoggle td.tablesaw-priority-4 {
@@ -3238,7 +3186,7 @@ a.tablesaw-btn {
 
 }
 
-/* Show priority 5 at 960px (60em x 16px) */
+/ Show priority 5 at 960px (60em x 16px) /
 @media (min-width:60em) {
   .tablesaw-columntoggle th.tablesaw-priority-5,
   .tablesaw-columntoggle td.tablesaw-priority-5 {
@@ -3247,7 +3195,7 @@ a.tablesaw-btn {
 
 }
 
-/* Show priority 6 at 1,120px (70em x 16px) */
+/ Show priority 6 at 1,120px (70em x 16px) /
 @media (min-width:70em) {
   .tablesaw-columntoggle th.tablesaw-priority-6,
   .tablesaw-columntoggle td.tablesaw-priority-6 {
@@ -3258,13 +3206,13 @@ a.tablesaw-btn {
 
 @media only all {
 
-  /* Unchecked manually: Always hide */
+  / Unchecked manually: Always hide /
   .tablesaw-columntoggle th.tablesaw-toggle-cellhidden,
   .tablesaw-columntoggle td.tablesaw-toggle-cellhidden {
     display: none;
   }
 
-  /* Checked manually: Always show */
+  / Checked manually: Always show /
   .tablesaw-columntoggle th.tablesaw-toggle-cellvisible,
   .tablesaw-columntoggle td.tablesaw-toggle-cellvisible {
     display: table-cell;
@@ -3288,7 +3236,7 @@ a.tablesaw-btn {
   vertical-align: top;
 }
 
-/* Override */
+/ Override /
 .tablesaw .tablesaw-sortable-head {
   padding: 0;
 }
@@ -3362,9 +3310,9 @@ a.tablesaw-btn {
 
 
 
-/*
- * A-Z Index Styles
- */
+/
+  A-Z Index Styles
+ /
 
 .az-item {
     width: 42px;
@@ -3408,9 +3356,9 @@ a.az-letter {
         margin-bottom: 0.5em;
     }
 
-/*
- * Image Gallery Styles
- */
+/
+  Image Gallery Styles
+ /
 
 .image-gallery-container .image-gallery-item {
     margin-bottom: 10px;
@@ -3578,7 +3526,7 @@ a.az-letter {
         display: block;
     }
 
-/* Login Control */
+/ Login Control /
 
 .login-panel, .pass-reset-panel {
     position: relative;
@@ -3601,7 +3549,7 @@ a.az-letter {
     width: 100%;
 }
 
-/** Tooltip **/
+/ Tooltip /
 .tooltipster-default {
     border-radius: 5px;
     border: none;
@@ -3610,7 +3558,7 @@ a.az-letter {
     max-width: 300px;
 }
 
-    /* Use this next selector to style things like font-size and line-height: */
+    / Use this next selector to style things like font-size and line-height: /
     .tooltipster-default .tooltipster-content {
         font-size: 14px;
         line-height: 16px;
@@ -3618,7 +3566,7 @@ a.az-letter {
         overflow: hidden;
     }
 
-        /* .tooltipster-default .tooltipster-content a, .tooltipster-default .tooltipster-content a:visited { */
+        / .tooltipster-default .tooltipster-content a, .tooltipster-default .tooltipster-content a:visited { /
             color: #fff;
         }
 
@@ -3787,9 +3735,9 @@ a.az-letter {
     padding: 15px;
 }
 
-/** Tooltip **/
+/ Tooltip /
 
-/** MyCouncil & Local Directory**/
+/ MyCouncil & Local Directory/
 .side-box-section.directory-type > ul {
     list-style: outside none none;
     padding: 0;
@@ -3908,7 +3856,7 @@ a.az-letter {
 
 
 
-/* Rad Controls Reset */
+/ Rad Controls Reset /
 .RadWindow table tr td.rwExternalContent,
 .RadWindow table tr.rwTitleRow,
 .RadWindow table tr.rwContentRow,
@@ -4033,9 +3981,9 @@ a.az-letter {
 .page-section-pagination-item a.item-navigation.prev-item {
     margin-bottom: 20px;
 }
-/** MyCouncil & Local Directory**/
+/ MyCouncil & Local Directory/
 
-/** Feedback Form Styles - Start **/
+/ Feedback Form Styles - Start /
 .sc-feedback-form {
     background-color: #f8f8f8;
     clear: both;
@@ -4111,9 +4059,9 @@ html.no-js .sc-feedback-form {
     margin-top: 10px;
 }
 
-/** Feedback Form Styles - End **/
+/ Feedback Form Styles - End /
 
-/** Consultation Styling - Start **/
+/ Consultation Styling - Start /
 
 .consultation-timeline-listing {
     border-left: 1px solid;
@@ -4200,13 +4148,13 @@ html.no-js .sc-feedback-form {
     overflow: hidden;
 }
 
-.list-container span[class*="contact-"] a,
+.list-container span[class="contact-"] a,
 .list-container header > a {
     text-decoration: none;
 }
 
-    .list-container span[class*="contact-"] a:hover,
-    .list-container span[class*="contact-"] a:focus,
+    .list-container span[class="contact-"] a:hover,
+    .list-container span[class="contact-"] a:focus,
     .list-container header > a:hover,
     .list-container header > a:focus {
         text-decoration: underline;
@@ -4437,7 +4385,7 @@ html.no-js .sc-feedback-form {
 .main-container .search-criteria button i:after {
     width: 12px;
     height: 2px;
-    background-color: #ffffff; /* To be same as button font colour */
+    background-color: #ffffff; / To be same as button font colour /
 }
 .main-container .search-criteria button i {
       position: relative;
@@ -4472,9 +4420,9 @@ input[type="submit"].login-button.back-button {
 .forgot-password-link {
     display: block;
 }
-/** Consultation Styling - End **/
+/ Consultation Styling - End /
 
-/** Page sharing - Start **/
+/ Page sharing - Start /
 
 .share-page-container {
   padding: 15px 10px 5px;
@@ -4794,15 +4742,15 @@ input[type="submit"].login-button.back-button {
     background-position: -138px -138px;
 	}
 
-/** Page sharing - End **/
+/ Page sharing - End /
 
 .rsbtn_tools {
     z-index: 100000;
 }
 
-/*
- * Size 3 Styles
- */
+/
+  Size 3 Styles
+ /
 
 @media (min-width: 480px) {
     .sc-search-text {
@@ -4925,9 +4873,9 @@ input[type="submit"].login-button.back-button {
 }
 }
 
-/*
- * Size 2 Styles
- */
+/
+  Size 2 Styles
+ /
 
 @media (min-width: 768px) {
     html.js .seamless-pagination-pages {
@@ -5120,15 +5068,15 @@ input[type="submit"].login-button.back-button {
 }
 
 
-/* ==========================================================================
+/ ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+   ========================================================================== /
 
-/* @media print {
-    * {
+/ @media print {
+     {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s
+        color: #000 !important; / Black prints faster: h5bp.com/s
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -5161,7 +5109,7 @@ input[type="submit"].login-button.back-button {
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group; / h5bp.com/t /
     }
 
     tr,
@@ -5188,16 +5136,16 @@ input[type="submit"].login-button.back-button {
     h3 {
         page-break-after: avoid;
     }
-} */
+} /
 
 
 
 
-/*
+/
 
 THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
 
-*/
+/
 
 
 .button-my-location {
@@ -5208,8 +5156,8 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
     display: none;
 }
 
-    /* Google map must be "visible" to load*/
-    /* On mobile view, it is typically hidden when the list view is visible */
+    / Google map must be "visible" to load/
+    / On mobile view, it is typically hidden when the list view is visible /
     .map-container.hidden-tab.gm-loading {
         display: block;
         z-index: -10;
@@ -5549,7 +5497,7 @@ html.geolocation .button-my-location {
 .inputBox.text-address-js {
 }
 
-/* End Emergency Announcement Default Styling */
+/ End Emergency Announcement Default Styling /
 #PublicEmergencyAnnouncementList {
     margin-bottom: 40px;
 }
@@ -5583,9 +5531,9 @@ html.geolocation .button-my-location {
         padding: 0 25px 25px;
     }
 
-/* End Emergency Announcement Default Styling */
+/ End Emergency Announcement Default Styling /
 
-/* Accordion element default styling */
+/ Accordion element default styling /
 .oc-accordion-head {
     background-color: #464646;
     padding: 10px 25px;
@@ -5600,14 +5548,14 @@ html.geolocation .button-my-location {
     background-color: #f8f8f8;
     padding: 20px;
 }
-/* Accordion element default styling */
+/ Accordion element default styling /
 
 
 
 
 
 
-/* BEGIN SLIDESHOW STYLING */
+/ BEGIN SLIDESHOW STYLING /
 
 
 @font-face {
@@ -5619,7 +5567,7 @@ html.geolocation .button-my-location {
 }
 
 
-/* SLIDESHOW - COLOURS AND MARGINS */
+/ SLIDESHOW - COLOURS AND MARGINS /
 .col-xs-12 .slideshow-widget {
     margin-bottom: 40px;
 }
@@ -5679,7 +5627,7 @@ html.geolocation .button-my-location {
 }
 
 
-/* SLIDESHOW - LAYOUT */
+/ SLIDESHOW - LAYOUT /
 
 
 
@@ -5940,10 +5888,10 @@ li.ocflex-nav-next {
 }
 
 
-/* END SLIDESHOW STYLING */
+/ END SLIDESHOW STYLING /
 
 
-/* Forums */
+/ Forums /
 
 section.comment-forum
 {
@@ -6008,7 +5956,7 @@ section.comment-forum .comment-report-container .sc-form {
     border: 1px dashed #505050;
 }
 
-/* Reply post form */
+/ Reply post form /
 section.comment-forum .comment-thread .comment-action .sc-form {
     width: 100%;
 }
@@ -6266,7 +6214,7 @@ section.comment-forum span.down-vote {
     }
 
     section.comment-forum header {
-        /*To make room for absolutely positioned action bar (width of section.comment-forum a.toggle-thread + 2px) */
+        /To make room for absolutely positioned action bar (width of section.comment-forum a.toggle-thread + 2px) /
         padding-right:18px;
     }
 
@@ -6322,12 +6270,12 @@ section.comment-forum span.badge {
     font-size: 0.9em;
 }
 
-/* Regular Comment */
+/ Regular Comment /
 section.comment-forum .comment-responses .comment-thread > article > .comment-container {
     background: #f3f3f3;
 }
 
-/* Moderator */
+/ Moderator /
 section.comment-forum span.badge.moderator {
     background: #990000;
     border-color: #990000;
@@ -6338,7 +6286,7 @@ section.comment-forum .comment-responses .comment-thread.is-moderator > article 
     background: #fffafa;
 }
 
-/* Pinned */
+/ Pinned /
 section.comment-forum span.badge.pinned {
     background: #149213;
     border-color: #149213;
@@ -6349,7 +6297,7 @@ section.comment-forum .comment-responses .comment-thread.is-pinned > article > .
     background: #f5fff5;
 }
 
-/* Redacted */
+/ Redacted /
 section.comment-forum span.badge.redacted {
     background: #999;
     border-color: #999;
@@ -6365,7 +6313,7 @@ section.comment-forum .comment-responses .comment-thread.is-redacted > article >
         color: #999;
     }
 
-/* Archived */
+/ Archived /
 section.comment-forum span.badge.archived {
     background: #926a13;
     border-color: #926a13;
@@ -6376,7 +6324,7 @@ section.comment-forum .comment-responses .comment-thread.is-archived > article >
     background: #fffdf3;
 }
 
-/* Reported */
+/ Reported /
 section.comment-forum span.badge.reported {
     background: #9900aa;
     border-color: #9900aa;
@@ -6387,20 +6335,20 @@ section.comment-forum .comment-responses .comment-thread.is-reported > article >
     background: #fffcff;
 }
 
-/* Locked */
+/ Locked /
 section.comment-forum span.badge.locked {
     background: #505050;
     border-color: #505050;
     color: #ffffff;
 }
 
-/* Highlighted Comment */
+/ Highlighted Comment /
 section.comment-forum .comment-responses .comment-thread.highlighted > article > .comment-container,
 section.comment-forum .comment-responses .comment-report-item.highlighted {
     background: #f3ffff;
 }
 
-/* Dismissed (Report) */
+/ Dismissed (Report) /
 section.comment-forum .comment-responses .comment-report-item.is-dismissed {
     background: #fff;
 }
@@ -6414,7 +6362,7 @@ section.comment-forum .comment-responses .comment-report-item.is-dismissed {
         color: #999;
     }
 
-/* Hide the "New" badge by default (can be overridden by client style)*/
+/ Hide the "New" badge by default (can be overridden by client style)/
 section.comment-forum .comment-responses .comment-report-item span.badge.new {
     display: none;
 }
@@ -6452,7 +6400,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
     }
 }
 
-/* Setup layout for comment avatars */
+/ Setup layout for comment avatars /
 
 .user-avatar.profile-image-clip
 {
@@ -6493,7 +6441,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
 
     section.comment-forum.has-avatars .comment-content,
     section.comment-forum.has-avatars .report-content {
-        /* Padding not required when there are avatars as the avatar provides some natural padding */
+        / Padding not required when there are avatars as the avatar provides some natural padding /
         padding-left: 0px;
     }
 
@@ -6503,7 +6451,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
         padding-left: 7px;
     }
 
-    /* Avatar Size on Root Comments */
+    / Avatar Size on Root Comments /
         section.comment-forum .user-avatar.profile-image-clip {
             width: 64px;
             height: 64px;
@@ -6515,12 +6463,12 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
 
         section.comment-forum .thread-closed > article > .comment-container > .user-avatar.profile-image-clip
         {
-            /* Root comment when minimised */
+            / Root comment when minimised /
             width: 16px;
             height: 16px;
         }
 
-    /* Avatar Size on Replies */
+    / Avatar Size on Replies /
         section.comment-forum .comment-replies .user-avatar.profile-image-clip {
             width: 32px;
             height: 32px;
@@ -6533,10 +6481,10 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
 
 
 }
-/* End layout for comment avatars*/
+/ End layout for comment avatars/
 
 
-/* End Forums */
+/ End Forums /
 
 @media (min-width: 480px) {
     .map-container {
@@ -6576,7 +6524,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
     clear: left;
 }
 
-/* Side navigation */
+/ Side navigation /
 
 .js .side-menu #sc-main-menu {
     left: 0;
@@ -6586,23 +6534,23 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
     position: relative;
     left: 0;
     right: 0;
-    /*transition: all .5s ease;*/
+    /transition: all .5s ease;/
     transition: left .3s ease, right .3s ease;
 }
 
 .js .side-menu .navigation-outer-container {
     overflow-x: hidden;
     display: none;
-    /*transition: all .5s ease;*/
+    /transition: all .5s ease;/
     transition: left .3s ease, right .3s ease;
     position: absolute;
     top: 0;
-    /* To be added by Riz */
+    / To be added by Riz /
     width: 75%;
     min-height: 100%;
     background-color: #333;
     padding: 0;
-    /* To be added by Riz END */
+    / To be added by Riz END /
 }
 
 .js .side-menu.side-menu-open .navigation-outer-container {
@@ -6614,7 +6562,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
 }
 
 .js .side-menu .navigation-outer-container ul {
-    /*transition: all .5s ease;*/
+    /transition: all .5s ease;/
     -webkit-transition: left .5s ease, right .5s ease;
     -moz-transition: left .5s ease, right .5s ease;
     -ms-transition: left .5s ease, right .5s ease;
@@ -6623,13 +6571,13 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
     position: absolute;
     top: 0;
     list-style: none;
-    /* To be added by Riz */
+    / To be added by Riz /
     margin: 0px;
     padding: 0px;
-    /* To be added by Riz END */
+    / To be added by Riz END /
 }
 
-    /* To be added by Riz */
+    / To be added by Riz /
     .js .side-menu .navigation-outer-container ul a,
     .js .side-menu .navigation-outer-container ul li {
         -webkit-transition: background 0.3s;
@@ -6732,7 +6680,7 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
                     transition: none;
                 }
 
-    /* To be added by Riz END */
+    / To be added by Riz END /
 
     .js .side-menu .navigation-outer-container .nav-offscreen-menu ul {
         display: none;
@@ -6743,8 +6691,8 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
         }
 
 .nav-offscreen-menu a {
-    /*width: calc(100% - 60px);*/ /* To be removed by Riz */
-    width: 100%; /* To be added by Riz */
+    /width: calc(100% - 60px);/ / To be removed by Riz /
+    width: 100%; / To be added by Riz /
     display: inline-block;
 }
 
@@ -6759,30 +6707,30 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
 
 .nav-offscreen-menu .mobnav-subarrow,
 .nav-offscreen-menu .mobnav-subarrow-child {
-    /*position: relative;*/ /* To be removed by Riz */
+    /position: relative;/ / To be removed by Riz /
     display: inline-block;
-    /* To be added by Riz */
+    / To be added by Riz /
     background-color: transparent;
     top: 4px;
     right: 0px;
-    /* To be added by Riz END */
+    / To be added by Riz END /
 }
 
-/* To be added by Riz */
+/ To be added by Riz /
 .offscreen-active-menu li {
     position: relative;
 }
-/* To be added by Riz END */
+/ To be added by Riz END /
 
 .side-menu-btn {
-    /*position:absolute;*/
+    /position:absolute;/
     z-index: 1;
-    /*top: 10px;*/ /* To be removed by Riz */
-    top: 0; /* To be added by Riz */
-    margin-top: 10px; /* To be added by Riz */
+    /top: 10px;/ / To be removed by Riz /
+    top: 0; / To be added by Riz /
+    margin-top: 10px; / To be added by Riz /
 }
 
-    /* To be added by Riz */
+    / To be added by Riz /
     .side-menu-btn button,
     .header-website-settings button {
         background: none;
@@ -6872,42 +6820,42 @@ section.comment-forum .actions a, section.comment-forum .actions a:visited {
     right: 0;
 }
 
-/* To be removed by Riz */
-/*@media (min-width: 1330px) {*/
-/*  .header-container {*/
-/*    position:static;*/
-/*  }*/
-/*  .side-menu-right .side-menu-btn {*/
-/*    right: 10px;*/
-/*  }*/
-/*  .side-menu-left .side-menu-btn {*/
-/*    left: 10px;*/
-/*  }*/
-/*  .side-menu-left .header-inner-container {*/
-/*    margin-left: 0;*/
-/*  }*/
-/*  .side-menu-right .header-inner-container {*/
-/*    margin-right: 0;*/
-/*  }*/
-/*}*/
-/* To be removed by Riz END */
+/ To be removed by Riz /
+/@media (min-width: 1330px) {/
+/  .header-container {/
+/    position:static;/
+/  }/
+/  .side-menu-right .side-menu-btn {/
+/    right: 10px;/
+/  }/
+/  .side-menu-left .side-menu-btn {/
+/    left: 10px;/
+/  }/
+/  .side-menu-left .header-inner-container {/
+/    margin-left: 0;/
+/  }/
+/  .side-menu-right .header-inner-container {/
+/    margin-right: 0;/
+/  }/
+/}/
+/ To be removed by Riz END /
 
-/* To be added by Riz */
+/ To be added by Riz /
 .header-outer-container {
     background-repeat: no-repeat;
     background-position: left top;
 }
-/* To be added by Riz END */
+/ To be added by Riz END /
 
 .header-container {
     min-height: 50px;
-    /* To be added by Riz */
+    / To be added by Riz /
     background-repeat: no-repeat;
     background-position: left top;
-    /* To be added by Riz END */
+    / To be added by Riz END /
 }
 
-/* Side navigation END */
+/ Side navigation END /
 
 .do-it-online .profile-list {
     position: relative;
@@ -7212,7 +7160,7 @@ html.no-js .toolbar-drop-down {
     html.no-js .toolbar-drop-down a {
         float: left;
     }
-/*
+/
 .toolbar-language .toolbar-button .current-language.google-translate-language {
     padding-left: 25px;
 }
@@ -7228,7 +7176,7 @@ html.no-js .toolbar-drop-down {
     position: absolute;
     top: 6px;
     width: 20px;
-}*/
+}/
 .toolbar-language .toolbar-language-drop-down .current-language-li {
     display: none;
 }
@@ -7415,7 +7363,7 @@ h1.user-profile-name {
     padding: 2px 5px;
 }
 
-/* Social feed styling - start*/
+/ Social feed styling - start/
 
 .social-feed-item {
   display: block;
@@ -7444,7 +7392,7 @@ position: relative;
 }
 .social-feed-profile-name {
   vertical-align: middle;
-  /*! float: left; */
+  /! float: left; /
   margin-bottom: 15px;
   display: inline-block;
 }
@@ -7508,10 +7456,10 @@ background-position: -6px -48px;
     clear: left;
   }
 }
-/* Social feed styling - end*/
+/ Social feed styling - end/
 
 
-/* Multi select styling - start*/
+/ Multi select styling - start/
 .multi-select-wrapper {
   position: relative;
 }
@@ -7547,7 +7495,7 @@ background-position: -6px -48px;
   width: 12px;
   height: 2px;
   background-color: #000;
-  /* To be same as button font colour */
+  / To be same as button font colour /
 }
 .main-container .multi-select-options button i {
   position: relative;
@@ -7581,11 +7529,11 @@ background-position: -6px -48px;
 .main-container .multi-select-options button:hover i:after, .main-container .multi-select-options button:focus i,
 .main-container .multi-select-options button:focus i:after {
   background-color: #fff;
-  /* To be same as button hover font colour */
+  / To be same as button hover font colour /
 }
 
 
-/* Multi select styling - end*/
+/ Multi select styling - end/
 
 @media (min-width: 480px) {
 
@@ -7598,11 +7546,11 @@ background-position: -6px -48px;
     }
 }
 @media (min-width: 768px) {
-    /* To be added by Riz */
+    / To be added by Riz /
     .js .side-menu .navigation-outer-container {
         width: 55%;
     }
-    /* To be added by Riz END */
+    / To be added by Riz END /
 
     .slideshow-widget.slideshow-layout-2 article .slide-text {
         padding: 50px 15px 5px;
@@ -7801,7 +7749,7 @@ background-position: -6px -48px;
         -ms-opacity: 0;
         opacity: 0;
     }
-}/* STYLING TOP LEVEL FORM CONTAINERS */
+}/ STYLING TOP LEVEL FORM CONTAINERS /
 .sc-element-container,
 .sc-form-heading,
 .sc-form-submit-row {
@@ -7812,10 +7760,10 @@ background-position: -6px -48px;
     margin-top: 2em;
     font-weight: bold;
 }
-/* END: STYLING TOP LEVEL FORM CONTAINERS */
+/ END: STYLING TOP LEVEL FORM CONTAINERS /
 
 
-/* MEDIA QUERIES FOR ELEMENT WIDTH */
+/ MEDIA QUERIES FOR ELEMENT WIDTH /
 
 .sc-form input[type=text],
 .sc-form input[type=password],
@@ -7829,9 +7777,9 @@ background-position: -6px -48px;
     margin-bottom: 10px;
 }
 
-/*Rad Picker Override*/
+/Rad Picker Override/
 .sc-datetime > .sc-form-control > .RadPicker {
-    width: 100% !important; /*override inline style*/
+    width: 100% !important; /override inline style/
 }
 
 .sc-form-control > ul {
@@ -7853,18 +7801,18 @@ legend {
 }
 
 @media (min-width: 480px) {
-    /*.col-lg-8 .sc-form input[type=text],
+    /.col-lg-8 .sc-form input[type=text],
     .col-lg-8 .sc-form input[type=password],
     .col-lg-8 .sc-form textarea,
     .col-lg-8 .sc-form select {
         width: 80%;
-    }*/
+    }/
     .sc-form .sc-hyperlinks input[type=text] {
         width: auto;
         margin-bottom: 10px;
     }
 }
-/*
+/
 @media (min-width: 768px) {
     .col-lg-8 .sc-form input[type=text],
     .col-lg-8 .sc-form input[type=password],
@@ -7882,10 +7830,10 @@ legend {
         width: 50%;
     }
 }
-        */
-/* END: MEDIA QUERIES FOR ELEMENT WIDTH */
+        /
+/ END: MEDIA QUERIES FOR ELEMENT WIDTH /
 
-/* CAPTCHA STYLING */
+/ CAPTCHA STYLING /
 .sc-form .sc-captcha input {
     width: 180px;
 }
@@ -7895,7 +7843,7 @@ legend {
 }
 
 .sc-form .sc-captcha .sc-captcha-input.sc-experimental input[type=text] {
-    /* EXPERIMENTAL: Make CAPTCHA input more visually consistent with image */
+    / EXPERIMENTAL: Make CAPTCHA input more visually consistent with image /
     width: 180px;
     font-family: monospace;
     font-size: 40px;
@@ -7905,31 +7853,31 @@ legend {
 }
 
 .sc-form .sc-captcha .sc-captcha-image {
-    /* Make sure height accomodates CAPTCHA image */
+    / Make sure height accomodates CAPTCHA image /
     min-height: 50px;
-    /* Clear any uncleared floats */
+    / Clear any uncleared floats /
     width: 100%;
     overflow: hidden;
 }
 
     .sc-form .sc-captcha .sc-captcha-image .CaptchaImageDiv img {
-        /* Remove image from layout */
+        / Remove image from layout /
         position: absolute;
     }
 
     .sc-form .sc-captcha .sc-captcha-image .CaptchaImageDiv a {
-        /* Make links appear to the right of absolutely positioned image */
+        / Make links appear to the right of absolutely positioned image /
         margin-left: 185px;
-        /* Force links to contract to actual width (so focus box doesn't take up 100% width) */
+        / Force links to contract to actual width (so focus box doesn't take up 100% width) /
         float: left;
         clear: left;
         font-size: 0.9em;
-        /* Hack to keep the links roughly in the vertical centre of the image */
+        / Hack to keep the links roughly in the vertical centre of the image /
         line-height: 0.8em;
         margin-top: 0.6em;
     }
 
-/* END CAPTCHA STYLING */
+/ END CAPTCHA STYLING /
 
 .sc-form .sc-rank .sc-form-control input {
     width: 2.3em;
@@ -7947,7 +7895,7 @@ html body #mainForm .RadInputMgr_Default {
     padding: 0.25em;
 }
 
-/* DATE PICKER STYLE OVERRIDES */
+/ DATE PICKER STYLE OVERRIDES /
 html body #mainForm .RadInput_Default .riTextBox,
 html body #mainForm .RadInputMgr_Default {
     font-size: 1.3em;
@@ -7962,9 +7910,9 @@ html body #mainForm .RadInput_Error_Default {
 }
 
 .sc-datetime > .sc-form-control > .RadPicker > table {
-    width: 100% !important; /*override inline style*/
+    width: 100% !important; /override inline style/
 }
-/* END: DATE PICKER STYLE OVERRIDES */
+/ END: DATE PICKER STYLE OVERRIDES /
 
 
 .sc-textarea > .sc-form-control > textarea {
@@ -7975,7 +7923,7 @@ html body #mainForm .RadInput_Error_Default {
 .sc-checkbox > .sc-form-control label,
 .sc-form-matrix > .sc-form-control label,
 .sc-rank > .sc-form-control label {
-    /* Padding rather than margin, so whole block is clickable */
+    / Padding rather than margin, so whole block is clickable /
     padding-left: 0.5em;
 }
 
@@ -7994,8 +7942,8 @@ html body #mainForm .RadInput_Error_Default {
     }
 
 
-/* Fix WYSIWYG Paste-from-word display issues*/
-/*OPENCITIES-454*/
+/ Fix WYSIWYG Paste-from-word display issues/
+/OPENCITIES-454/
 .sc-form .RadEditor {
     height: auto !important;
     padding: 1px 2px 1px 0;
@@ -8008,7 +7956,7 @@ html body #mainForm .RadInput_Error_Default {
         .sc-form .RadEditor > table tr td iframe {
             height: 100% !important;
         }
-    /*END OPENCITIES-454*/
+    /END OPENCITIES-454/
     .sc-form .RadEditor.MetroTouch {
         padding: 0px;
     }
@@ -8034,7 +7982,7 @@ html body #mainForm .RadInput_Error_Default {
     height: 38px;
 }
 
-/*Overwrites for date picker for UGC*/
+/Overwrites for date picker for UGC/
 
 .sc-cal-dialog {
      max-width: 800px !important;
@@ -8180,7 +8128,7 @@ html body #mainForm .RadInput_Error_Default {
   .sc-cal-precurring .sc-cal-yearly .sc-cal-row:first-child { border-bottom: medium none; }
   .sc-cal-precurring .sc-cal-section-range span { display: inline;}
   .sc-cal-precurring .sc-cal-section-range .sc-cal-row:first-child { border-bottom: medium none; }
-}/* Default Mixins */
+}/ Default Mixins /
 .header-outer-container { background-color: transparent; background-image: url(""); background-repeat: repeat; }
 
 .toolbar-outer-container { background-color: transparent; }
@@ -8255,14 +8203,14 @@ body.content-template-oc-site-login { background: no-repeat scroll center 0 #FFF
 
 input.sc-search-text { text-overflow: ellipsis; }
 
-/* Show search placeholder on larger browsers */
+/ Show search placeholder on larger browsers /
 input.sc-search-text::-webkit-input-placeholder { color: #616772; text-overflow: ellipsis; }
 
 input.sc-search-text::-moz-placeholder { color: #616772; text-overflow: ellipsis; }
 
 input.sc-search-text:-moz-placeholder { color: #616772; text-overflow: ellipsis; }
 
-/* Older versions of Firefox */
+/ Older versions of Firefox /
 input.sc-search-text:-ms-input-placeholder { color: #616772; text-overflow: ellipsis; }
 
 input.sc-search-button[type="submit"] { background-color: #303335; border: 0px solid #000000; color: #FFFFFF; font-size: 1em; width: 35%; vertical-align: top; height: 80px; }
@@ -8313,19 +8261,19 @@ input.sc-search-button[type="submit"]:hover, input.sc-search-button[type="submit
 
 #breadcrumbs-container .nav-separator { margin: 0px 7px 0px 7px; }
 
-/*
+/
 Non-WYSIWYG default text sizing
 - Note; if adding to this try to use direct-child notation to avoid cascading font-size changes
 		BE AS SPECIFIC AS POSSIBLE
-*/
+/
 .list-item-container > article > a > p, .predictive-search-link-item p, .search-filter-body input, .search-filter-body label, .search-filter-body select, .meeting-document-info a { font-size: 0.95em; }
 
-/*
+/
 END Non-WYSIWYG default text sizing
-*/
+/
 .autocomplete-suggestion { padding: 15px 7px; cursor: pointer; white-space: normal; }
 
-.quick-links-section { /* border: 1px solid; */ position: relative; margin-bottom: 20px; }
+.quick-links-section { / border: 1px solid; / position: relative; margin-bottom: 20px; }
 
 .quick-links-header { position: relative; }
 
@@ -8445,9 +8393,9 @@ a.az-letter:hover, a.az-letter:focus { background-color: #035B59; color: #FFFFFF
 
 .az-list-container article { width: 100%; margin-left: 0%; }
 
-/*
-* List Filter Styles
-*/
+/
+ List Filter Styles
+/
 .add-to-calendar-body { padding: 1px 25px 25px; }
 
 .search-filter-body { padding: 0px 20px 25px 20px; margin: 0px 0px 0px 0px; background-color: #FFFFFF; }
@@ -8534,7 +8482,7 @@ a.ext-pdf:before { background-position: -16px 0px; }
 
 a.document span.file-info { font-size: 0.6em; position: relative; top: -0.6em; white-space: nowrap; display: inline-block; text-decoration: none; text-indent: 0; margin-left: 5px; }
 
-/* When a document is displayed inside a content-details-list */
+/ When a document is displayed inside a content-details-list /
 .field-value a.document { background-position: 0 4px; padding-left: 0px; text-indent: 20px; display: block; }
 
 .related-information-section { margin-top: 30px; }
@@ -8887,7 +8835,7 @@ a.item-navigation:hover .item-navigation-title, a.item-navigation:focus .item-na
 
 .no-js .profile-featured-links .no-js-element h1.item-text { background: #ffffff; border-bottom: none; font-weight: normal; float: left; padding: 15px 21px 10px 21px; border-radius: 3px 3px 0 0; }
 
-.tab-header-title, a.tab-header-title:visited { height: auto; min-height: 50px; position: relative; top: 5px; margin-right: 3px; margin-bottom: -0.2px; /* .2 is alignement hack for IE (remove hairline) */ text-align: left; -webkit-transition: background-color 0 ease-out 0s; -moz-transition: background-color 0 ease-out 0s; -o-transition: background-color 0 ease-out 0s; transition: background-color 0 ease-out 0s; font-family: "Work Sans", sans-serif; font-size: 1em; padding: 16px 19px 16px 19px; color: #FFFFFF; background-color: #303335; }
+.tab-header-title, a.tab-header-title:visited { height: auto; min-height: 50px; position: relative; top: 5px; margin-right: 3px; margin-bottom: -0.2px; / .2 is alignement hack for IE (remove hairline) / text-align: left; -webkit-transition: background-color 0 ease-out 0s; -moz-transition: background-color 0 ease-out 0s; -o-transition: background-color 0 ease-out 0s; transition: background-color 0 ease-out 0s; font-family: "Work Sans", sans-serif; font-size: 1em; padding: 16px 19px 16px 19px; color: #FFFFFF; background-color: #303335; }
 
 .tab-header-title:last-child { -webkit-border-radius: 0 3px 0 0; border-radius: 0 3px 0 0; }
 
@@ -9019,7 +8967,7 @@ a.tab-header-title.selected:hover, a.tab-header-title.selected:focus { text-deco
 
 .no-svg .list-container .list-item-container .published-on:before, .no-svg .list-container .list-item-container .applications-closing:before { background-image: url("general-sprite.svg"); }
 
-/*.profile-events-listing .profile-list .list-item-block-date {
+/.profile-events-listing .profile-list .list-item-block-date {
   position: static;
   margin-right: 20px;
   background: #52798f;
@@ -9037,7 +8985,7 @@ a.tab-header-title.selected:hover, a.tab-header-title.selected:focus { text-deco
   font-size: 1.9em;
   line-height: 1.1em;
 }
-*/
+/
 .tabs-panel .wysiwyg-content { padding: 5px 5px; }
 
 .profile-listing-container { background-color: transparent; padding: 0px 0px 0px 0px; }
@@ -9222,13 +9170,13 @@ div.table-wrapper { border-right: 1px solid #ccc; }
 
 #sub-navigation-outter-container { display: none; }
 
-/* Remove the top margin of first children on landing pages (e.g. remove top margin of paragraph that gave too much spacing)
+/ Remove the top margin of first children on landing pages (e.g. remove top margin of paragraph that gave too much spacing)
  - All :first-child
  - Who are direct decendents of a div
  - Who are direct decendents of a .grid
  - Who are next siblings of an h1
  - Who is the first-child and direct decendent of the .main-container
-*/
+/
 .main-container > h1:first-child + .grid > div > :first-child { margin-top: 0; }
 
 .tab-header-title span { display: none; }
@@ -9279,7 +9227,7 @@ h2.photo-gallery-heading { margin-bottom: 25px; }
 
 .sc-standard-form.sc-form { background-color: transparent; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
 
-/* Start: In My Neighbourhood. Remove this section from implementations without this module */
+/ Start: In My Neighbourhood. Remove this section from implementations without this module /
 .module-interface-in-my-neighbourhood .button-my-location.styled-button { min-width: auto; padding-left: 45px; text-align: left; }
 
 .module-interface-in-my-neighbourhood .button-my-location i { left: 14px; top: 12px; background-image: url("general-sprite.svg"); background-size: 599px 600px; }
@@ -9330,10 +9278,10 @@ h2.photo-gallery-heading { margin-bottom: 25px; }
 
 .waste-services-result .service-details .next-service { margin-top: 9px; }
 
-/* END: In My Neighbourhood. Remove this section from implementations without this module */
+/ END: In My Neighbourhood. Remove this section from implementations without this module /
 .tooltip-icon { background: url("general-sprite.svg") repeat scroll -60px -170px/600px 600px transparent; background-size: 599px 600px; height: 26px; width: 26px; }
 
-/* Lost Animals */
+/ Lost Animals /
 .list-container .list-item { background-color: #FFFFFF; }
 
 .img-enlarge i.icon-enlarge { background-image: url("general-sprite.svg"); background-size: 599px 600px; background-color: transparent; height: 18px; margin: 5px 15px 0 0; width: 18px; }
@@ -9362,7 +9310,7 @@ h2.photo-gallery-heading { margin-bottom: 25px; }
 
 .mycouncil-item-container li.item-status { margin-left: 35px; position: relative; }
 
-/* Emergency Announcement Styling */
+/ Emergency Announcement Styling /
 #PublicEmergencyAnnouncementList { margin-bottom: 40px; }
 
 .emergency-container-position-2 > #PublicEmergencyAnnouncementList { max-width: 1140px; margin: 0 auto 40px; }
@@ -9405,14 +9353,14 @@ h2.photo-gallery-heading { margin-bottom: 25px; }
 
 .map-results-list a.show-more { color: #0369B5; font-size: 1.2em; font-weight: 600; }
 
-/* End Emergency Announcement Styling */
+/ End Emergency Announcement Styling /
 .table-of-content { margin: 0; padding-left: 30px; }
 
 .table-of-content > li { margin-bottom: 8px; }
 
 .table-of-content-container { border-bottom: 2px solid #f2f3f4; padding-bottom: 30px; margin-bottom: 20px; }
 
-/* DATE PICKER STYLE OVERRIDES */
+/ DATE PICKER STYLE OVERRIDES /
 html body #mainForm .RadInput_Default .riTextBox, html body #mainForm .RadInputMgr_Default { font-size: 1.25em; padding: 8px 7px 7px; }
 
 .se-form-required-asterisk, .sc-form .sc-label span.se-form-required-asterisk { display: none; }
@@ -9539,7 +9487,7 @@ section.row-index-4 .row-container .row-container-title h1 { color: #313337; }
   .layout-modern.content-type-oc-profile .content-outer-container { padding: 0px 0px 0px 0px; padding-left: 0; padding-right: 0; } }
 
 
-.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
+.sf-menu, .sf-menu  { margin: 0; padding: 0; list-style: none; }
 
 .sf-menu { width: 100%; display: none; }
 
@@ -9803,7 +9751,7 @@ section.row-index-4 .row-container .row-container-title h1 { color: #313337; }
   .map-canvas {
     display: block;
     margin-bottom: 2em;
-    position: relative;        /* width: 610px; Needs to take 100% width of container by default... let this fall back to normal stylesheet */
+    position: relative;        / width: 610px; Needs to take 100% width of container by default... let this fall back to normal stylesheet /
     height: 300px;
   }
 
@@ -9900,22 +9848,22 @@ section.row-index-4 .row-container .row-container-title h1 { color: #313337; }
   }
 }
 
-/*
+/
 
 THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
 
-*/
+/
 @media (min-width:992px) {
   .map-container.hidden-tab,
   .map-results-list.hidden-tab {
     display: block;
   }
 
-  /* Google map must be "visible" to load*/
+  / Google map must be "visible" to load/
 
-  /* On mobile view, it is typically hidden when the list view is visible */
+  / On mobile view, it is typically hidden when the list view is visible /
 
-  /* Here we are resetting the hack that allows a hidden map to load in mobile view */
+  / Here we are resetting the hack that allows a hidden map to load in mobile view /
   .map-container.hidden-tab.gm-loading {
     z-index: 0;
     margin-top: 0;
@@ -9964,7 +9912,7 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
     position: relative;
   }
 
-}/* Default Mixins */
+}/ Default Mixins /
 @media (min-width: 992px) { .header-site-logo { padding: 0px 0px 0px 0px; margin: 25px 0px 25px 0px; }
   .header-outer-container, .navigation-outer-container { padding: 0; }
   .header-site-logo > a { width: 291px; height: 140px; background-position: 0px 0px; }
@@ -9999,7 +9947,7 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   .tab-header-title.tab-type-homepage-do-it-online .item-icon, .tab-header-title.tab-type-homepage-do-it-online.selected .item-icon { background-position: 0px -135px; }
   .tab-header-title.tab-type-homepage-news-listing .item-icon, .tab-header-title.tab-type-homepage-news-listing.selected .item-icon { background-position: -45px -135px; }
   .tab-header-title.tab-type-homepage-events-listing .item-icon, .tab-header-title.tab-type-homepage-events-listing.selected .item-icon { background-position: -90px -135px; }
-  /*.do-it-online { padding: 20px 35px 35px; }*/
+  /.do-it-online { padding: 20px 35px 35px; }/
   .do-it-online > .grid > div:nth-child(2n+1) { clear: none; }
   .do-it-online > .grid > div:nth-child(3n+1) { clear: left; }
   .do-it-online { padding: 20px 20px 20px 20px; }
@@ -10015,23 +9963,23 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   a.item-navigation.prev-item { margin-right: 8px; }
   a.item-navigation.next-item { margin-left: 8px; }
   .profile-listing-container .panel-button, .profile-listing-container .panel-button:visited { width: 40%; }
-  /* Start: In My Neighbourhood. Remove this section from implementations without this module */
+  / Start: In My Neighbourhood. Remove this section from implementations without this module /
   html.geolocation .module-interface-in-my-neighbourhood .span-or { display: block; }
-  /* END: In My Neighbourhood. Remove this section from implementations without this module */
+  / END: In My Neighbourhood. Remove this section from implementations without this module /
   .header-first-row { border: none; }
   .header-website-settings a { margin: 5px 4px; }
-  /* Logo and search positioning */
+  / Logo and search positioning /
   .header-first-row { float: left; }
   .header-website-settings { margin: 55px 40px 0px 20px; padding: 0px 0px 0px 0px; }
   #skip-to-content-container { position: absolute; }
-  /* Search styling */
+  / Search styling /
   .search-inner-container { max-width: 600px; margin: 0; }
   .header-layout-1 .search-inner-container { margin: 0 auto; }
   .accordion-trigger.quick-links { display: none; }
-  .list-item-container.landing-3-col a { /* height: 175px; */ }
+  .list-item-container.landing-3-col a { / height: 175px; / }
   .light-theme a, .light-theme span { min-width: 14px; }
   #sub-navigation-container { padding: 0 0 0 15px; background-color: transparent; }
-  /* In this section */
+  / In this section /
   #sub-navigation-container.sticky { width: 30%; max-width: 355px; }
   p.sub-nav-header { font-size: 1em; font-weight: 600; background-color: #FFFFFF; font-family: "Work Sans", sans-serif; color: #313337; padding: 20px 20px 0px 20px; margin: 0px 0px 0px 0px; }
   #sub-navigation-outter-container { position: relative; top: -0.75em; }
@@ -10065,7 +10013,7 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   .sf-menu > li { float: left; width: 25%; border-top: none; }
   .sf-menu > li.nav-section-quarters-4 > ul, .sf-menu > li.nav-section-quarters-3 > ul { right: 0; left: auto; }
   .sf-menu > li.nav-section-quarters-4 > ul ul, .sf-menu > li.nav-section-quarters-3 > ul ul { right: 100%; left: auto; }
-  .sf-menu > li > a { height: 72px; text-align: center; overflow: hidden; /* IE hack*/ }
+  .sf-menu > li > a { height: 72px; text-align: center; overflow: hidden; / IE hack/ }
   .sf-menu > li > ul a { padding: 15px 38px 15px 25px; }
   .sf-menu > li > ul > li > ul a { padding: 15px 38px 15px 25px; }
   .sf-menu > li.first-item > a span.item-text { border: 0 none; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -10088,4 +10036,4 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   .side-menu-btn { margin: 55px 40px 0px 20px; padding: 0px 0px 0px 0px; }
   .side-menu-right .header-layout-2 #header-search { margin-right: 97px; } }
 
-@media (min-width: 1287px) { .side-menu-right .header-layout-2 #header-search { margin-right: 0; } } */
+@media (min-width: 1287px) { .side-menu-right .header-layout-2 #header-search { margin-right: 0; } } / */
