@@ -1,0 +1,74 @@
+ERROR:  syntax error at or near "PRAGMA"
+LINE 1: PRAGMA foreign_keys=OFF;
+        ^
+BEGIN
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ERROR:  type "datetime" does not exist
+LINE 1: ...T NULL PRIMARY KEY, "value" varchar, "created_at" datetime N...
+                                                             ^
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  syntax error at or near "AUTOINCREMENT"
+LINE 1: ... IF NOT EXISTS "admins" ("id" integer PRIMARY KEY AUTOINCREM...
+                                                             ^
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  syntax error at or near ")"
+LINE 1: ... within the city''s limits.\r\n\r\n','\r',char(13)),'\n',cha...
+                                                             ^
+ERROR:  syntax error at or near ")"
+LINE 1: ...riers to digital inclusion.\r\n\r\n','\r',char(13)),'\n',cha...
+                                                             ^
+ERROR:  syntax error at or near ")"
+LINE 1: ... even free tax preparation.\r\n\r\n','\r',char(13)),'\n',cha...
+                                                             ^
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  syntax error at or near ")"
+LINE 1: ...amily in the City of Miami.\r\n\r\n','\r',char(13)),'\n',cha...
+                                                             ^
+ERROR:  syntax error at or near "AUTOINCREMENT"
+LINE 1: ...F NOT EXISTS "contacts" ("id" integer PRIMARY KEY AUTOINCREM...
+                                                             ^
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ROLLBACK
