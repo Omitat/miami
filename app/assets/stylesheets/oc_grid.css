@@ -1,4 +1,4 @@
-.grid
+/* .grid
 {
     margin: 0 -1%;
     -webkit-box-sizing: border-box;
@@ -5128,7 +5128,7 @@ input[type="submit"].login-button.back-button {
 /* @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s 
+        color: #000 !important; /* Black prints faster: h5bp.com/s
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -10088,4 +10088,4 @@ THE FOLLOWING IS TO BE EXPORTED TO MY NEIGHBOURHOOD MODULE
   .side-menu-btn { margin: 55px 40px 0px 20px; padding: 0px 0px 0px 0px; }
   .side-menu-right .header-layout-2 #header-search { margin-right: 97px; } }
 
-@media (min-width: 1287px) { .side-menu-right .header-layout-2 #header-search { margin-right: 0; } }
+@media (min-width: 1287px) { .side-menu-right .header-layout-2 #header-search { margin-right: 0; } } */
