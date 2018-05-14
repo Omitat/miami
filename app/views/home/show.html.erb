@@ -64,7 +64,10 @@
               <th>Last Updated</th>
             </tr>
             <tr>
-              <td><%= @contacts.last.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+              <td><%= @contacts.last
+              # .updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p")
+              %>
+            </td>
             </tr>
           </table>
         </div>

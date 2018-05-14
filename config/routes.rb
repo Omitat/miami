@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get 'home/show' => 'home#show'
   get 'logout' => 'sessions#destroy'
+  get 'admin/new' => 'admin#new'
 
   get 'sessions/create'
 
