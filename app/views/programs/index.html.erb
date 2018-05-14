@@ -1,0 +1,14 @@
+
+<div class="container">
+<% @programs.each do |program|  %>
+  <div class="carousel-item active ">
+
+    <%= image_tag program.image.url, class: "d-block w-100"%>
+    <div class="carousel-caption d-none d-md-block">
+      <h5><%= program.title %></h5>
+      <p><%= program.description %></p>
+
+    </div>
+  </div>
+  <% end %>
+</div>

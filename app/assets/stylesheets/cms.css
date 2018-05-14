@@ -30,7 +30,7 @@
   padding: 10px;
 }
 .cms-img {
-  width: 200px !important;
+  width: 200px;
 }
 .title-news{
   /* background-color: #d3d3d3; */
@@ -72,34 +72,34 @@
 }
 
 #nav-programs-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 }
 #nav-home-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 
 }
 #nav-news-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 
 }
 #nav-about-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 }
 #nav-contacts-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 }
 #dash {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   justify-content: center;
 }
 #dash-about {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   justify-content: center;
   padding-top: 70px;
@@ -131,7 +131,8 @@
 }
 
 .contacts-index {
-  margin: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .col {
@@ -147,7 +148,4 @@
 
 #mayor-news-text {
   text-decoration: none;
-}
-.card-title {
-  line-height: 2em;
 }
