@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/**************************************************/
+/******************HOME PAGE***********************/
+/*************************************************/
 
 
 /**************************************************/
@@ -9,45 +12,51 @@
 /*************************************************/
 
 .header_image{
-  width: 100%
+  width: 100%;
+  height: 400px;
 }
 
 .header {
-  position: relative;
-  display: inline;
+  background: url("header.jpg");
+  height: 300px;
+  background-size: cover;
+  padding: 15px;
+  background-position: center;
 }
+
+
 .com_logo {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    height: 300px;
+    height: 270px;
+    text-align: center;
 }
 
 .head {
-    position: absolute;
-    top:240%;
-    left: 86%;
-    transform: translate(-50%, -50%);
     font-family: Gill Sans;
     color: white;
-    font-size: 70px;
+    font-size: 55px;
     text-transform: uppercase;
     width: 100%;
-    margin-top: -70px;
+    font-weight: lighter;
 }
 
 .title {
-  position: absolute;
-  top: 260%;
-  left: 86%;
-  transform: translate(-50%, -50%);
-  font-family: Georgia;
+  font-family: Gill Sans;
   color: white;
   font-size: 70px;
   width: 100%;
+  font-weight: lighter;
+}
+
+.top-page{
+  margin: 0 auto;
+  display: flex;
+  width: 65%;
+  align-items: center;
+}
+
+.mainpagetitle{
+  margin-left: 20px;
+  margin-top: 35px;
 }
 
 
@@ -77,7 +86,8 @@ nav ul li a {
   color: white;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 0px;
+  border: none !important;
 }
 nav ul li a,
 nav ul li a:after,
@@ -91,11 +101,10 @@ nav ul li a:hover {
 
 
 /* stroke */
-nav.stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
-nav.stroke ul li a:after,
+
 nav.fill ul li a:after {
   position: absolute;
   bottom: 0;
@@ -108,9 +117,7 @@ nav.fill ul li a:after {
   background: #aaa;
   height: 1px;
 }
-nav.stroke ul li a:hover:after {
-  width: 100%;
-}
+
 
 nav.fill ul li a {
   transition: all 2s;
@@ -133,63 +140,6 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
-
-/* Circle */
-nav.circle ul li a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-nav.circle ul li a:after {
-  display: block;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: '.';
-  color: transparent;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  background: transparent;
-}
-nav.circle ul li a:hover:after {
-  -webkit-animation: circle 1.5s ease-in forwards;
-}
-
-/* SHIFT */
-nav.shift ul li a {
-  position:relative;
-  z-index: 1;
-}
-nav.shift ul li a:hover {
-  color: #91640F;
-}
-nav.shift ul li a:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #F1C40F;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-}
-nav.shift ul li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-
 
 
 /* Keyframes */
@@ -222,6 +172,7 @@ nav.shift ul li a:hover:after {
     z-index: -1;
     background: #eee;
     border-radius: 100%;
+
   }
   100% {
     background: #aaa;
@@ -234,6 +185,7 @@ nav.shift ul li a:hover:after {
     right: 0;
     margin: auto;
     border-radius: 0;
+
   }
 }
 
@@ -242,16 +194,145 @@ nav.shift ul li a:hover:after {
 /******************MAYOR BODY**********************/
 /*****************(ouuuuuuuu)*********************/
 
-.home_body{
-  margin: 20px 40px 0 40px;
-}
+// .home_body{
+//   margin: 20px 40px 0 40px;
+// }
 
 .mayor_img{
   width: 350px;
   float: left;
+  margin-left: 200px;
+  border: solid 2px #5694b5;
+  padding: 15px;
 }
 
 
 .super_summary{
   font-size: 18px;
+  text-align: center;
+  border: solid none 20px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin-left: 670px;
+  margin-top: 30px;
+
 }
+
+.mayor-name-home{
+  font-family: Gill Sans;
+  text-transform: uppercase;
+  margin-left: 670px;
+
+}
+
+
+.home_body{
+  margin-top: 80px;
+}
+
+
+
+
+
+/**************************************************/
+/******************FEEDS***************************/
+/**************************************************/
+
+.twitter-timeline{
+  margin-left: 10px;
+  display: flex;
+}
+
+.youtubeborder{
+  border: solid none 13px;
+  width: 386px;
+  margin-left: 420px;
+  margin-top: -455px;
+}
+
+.youtube{
+  display: flex;
+}
+
+.feeds{
+  border: solid 2px #b30059;
+  height: 600px;
+  padding: 80px;
+  margin: 150px 50px 160px 50px;
+}
+
+.news-title{
+margin-left: 420px;
+margin-bottom: -231px;
+}
+
+
+
+/**************************************************/
+/******************FOOTER**************************/
+/**************************************************/
+
+#miamisites{
+ font-family: Gill Sans;
+ text-decoration: none;
+}
+
+#miamisites a{
+  font-family: Gill Sans;
+  font-size: 20px;
+}
+
+#miamisites a:hover{
+ color: black;
+ text-decoration: none;
+}
+
+#social{
+  font-family: Gill Sans;
+  font-size: 20px;
+}
+
+#social a:hover{
+  color: #b30059;
+}
+
+footer{
+  background: url("walllab.jpg");
+  height: 240px;
+}
+
+.insta-btn{
+  width: 40px;
+  margin-left: 50px;
+}
+
+.contactinfo{
+  font-weight: bold;
+  color: #b30059;
+}
+
+.container.text-center.text-md-left{
+  padding-top: 25px;
+}
+
+#cu{
+  font-family: Gill Sans;
+}
+/**************************************************/
+/******************END OF PAGE********************/
+/*************************************************/
+
+
+
+
+
+
+/**************************************************/
+/******************ABOUT PAGE**********************/
+/*************************************************/
+
+
+/**************************************************/
+/**********************FEED************************/
+/**************************************************/
