@@ -1,5 +1,5 @@
 
 $(".modal-footer .btn-primary").hide();
 $('.modal-title').html("News Preview");
-$('.modal-body').html("<%= j render @news %>");
+$('.modal-body').html("<%= j render 'news/show', news: @news %>");
 $('.modal').modal();

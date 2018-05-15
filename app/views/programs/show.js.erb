@@ -1,5 +1,5 @@
 
 $(".modal-footer .btn-primary").hide();
 $('.modal-title').html("Preview Program");
-$('.modal-body').html("<%= j render @program %>");
+$('.modal-body').html("<%= j render 'programs/show', program: @programs %>");
 $('.modal').modal();

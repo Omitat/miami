@@ -1,0 +1,4 @@
+$(".modal-footer .btn-primary").show();
+$('.modal-title').html("New Contact");
+$('.modal-body').html("<%= j render 'contacts/create', contact: @contact %>");
+$('.modal').modal();

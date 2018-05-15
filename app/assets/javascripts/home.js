@@ -5,4 +5,5 @@ $(document).on('turbolinks:load', function() {
     console.log($('.modal-body').children());
     $('.modal-body').children()[0].submit()
   });
+
 });

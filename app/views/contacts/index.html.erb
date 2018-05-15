@@ -1,0 +1,15 @@
+<div class= "contacts-index">
+<div class="container">
+  <ul class='row' id="contacts-ul">
+    <% @contacts.each do |contact| %>
+    <div class='col'>
+      <li><b><%= contact.name %></li></b>
+      <li ><%= contact.title %></li>
+      <li ><%= contact.email %></li>
+      <br>
+      <br>
+    </div>
+    <% end %>
+  </ul>
+</div>
+</div>

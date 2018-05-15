@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Verifies that versions and hashed value of the package contents in the project's package.json
-  config.webpacker.check_yarn_integrity = true
+  #config.webpacker.check_yarn_integrity = true
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -36,6 +36,16 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  :authentication => :plain,
+  :address => "smtp.mailgun.org",
+  :port => 587,
+  :domain => "sandboxb8a17ebd0d7b455a860d48057ae62466.mailgun.org",
+  :user_name => "postmaster@sandboxb8a17ebd0d7b455a860d48057ae62466.mailgun.org",
+  :password => "22542ea6e7dcc702d3ae3c8f5f62224a-97923b2d-c7e98082"
+}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

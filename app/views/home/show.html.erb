@@ -1,4 +1,11 @@
 <div class="cms">
+  <span class="logged">
+    <% if current_admin %>
+    <span>You are logged in!</span> | <%= link_to 'Sign Out', logout_path %>
+    <% end %>
+    <%= link_to 'Go Home', new_home_path, class: "home-link-cms" %>
+  </span>
+
   <div class="top-cms">
     <%= image_tag 'logo-copy.png', class: "blue-miami-logo rounded mx-auto d-block", alt: "city of miami logo" %>
   </div>
@@ -7,7 +14,8 @@
       <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Dashboard</a>
       <a class="nav-item nav-link" id="nav-programs-tab" data-toggle="tab" href="#nav-programs" role="tab" aria-controls="nav-programs" aria-selected="false">Programs</a>
       <a class="nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false">News</a>
-      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+      <a class="nav-item nav-link" id="nav-contacts-tab" data-toggle="tab" href="#nav-contacts" role="tab" aria-controls="nav-contacts" aria-selected="false">Contacts</a>
+        <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
 
     </div>
   </nav>
@@ -16,19 +24,19 @@
 
       <div class="row-cms">
         <div class="column-cms">
-
           <table style="width:80%" class="table">
             <p id="dash">Programs</p>
             <tr>
               <th>Title</th>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
-              <% @programs.each do |program| %>
+              <% @programs.last(3).each do |program| %>
               <td><%= program.title %></td>
-              <td><%= program.updated_at %></td>
+              <td><%= program.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+              </tr>
               <% end %>
-            </tr>
+
           </table>
         </div>
 
@@ -38,31 +46,46 @@
             <p id="dash">News</p>
             <tr>
               <th>Title</th>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
               <% @news_all.last(3).each do |item| %>
               <td><%= item.title %></td>
-              <td><%= item.updated_at %></td>
+              <td><%= item.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+              </tr>
               <%end%>
+          </table>
+        </div>
+
+        <div class="column-cms">
+          <table style="width: 80%" class= "table">
+            <p id="dash">Contacts</p>
+            <tr>
+              <th>Last Updated</th>
+            </tr>
+            <tr>
+              <td><%= @contacts.last.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p")%>
+            </td>
             </tr>
           </table>
         </div>
+
         <div class="column-cms">
 
-          <table style="width:80%" class="table">
-            <p id="dash">About</p>
+          <table style="width: 80%" class="table">
+            <p id="dash-about">About</p>
             <tr>
-              <th>Last Update</th>
+              <th>Last Updated</th>
             </tr>
             <tr>
               <% @abouts.each do |about| %>
-              <td><%= about.updated_at.localtime %></td>
+              <td><%= about.updated_at.localtime.strftime("%A, %d %b %Y %l:%M %p") %></td>
+                </tr>
               <% end %>
-            </tr>
           </table>
 
         </div>
+
       </div>
 
 
@@ -90,6 +113,15 @@
 
 
       <%= render partial: 'abouts/index' %>
+
+
+    </div>
+    <div class="tab-pane fade" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">
+
+      <%= render partial: 'contacts/index' %>
+
+
+
 
 
     </div>

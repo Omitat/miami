@@ -1,0 +1,6 @@
+<div class="about-mayor-index">
+<% @abouts.each do |about| %>
+<%= image_tag about.image.url, class: "sworn-in" %>
+<%= simple_format(about.text) %>
+<% end %>
+</div>

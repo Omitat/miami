@@ -10,6 +10,7 @@ class AboutsController < ApplicationController
   # GET /abouts/1
   # GET /abouts/1.json
   def show
+
   end
 
   # GET /abouts/new
@@ -28,7 +29,7 @@ class AboutsController < ApplicationController
 
     respond_to do |format|
       if @about.save
-        format.html { redirect_to @about, notice: 'About was successfully created.' }
+        format.html { redirect_to home_show_path, notice: 'About was successfully created.' }
         format.json { render :show, status: :created, location: @about }
       else
         format.html { render :new }

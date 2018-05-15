@@ -1,8 +1,23 @@
+<span class="logged">
+  <% if current_admin %>
+  <span>You are logged in!</span>
+  <% end %>
+  <% if current_admin %>
+  <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms" %>
+  <% end %>
+</span>
+
+
 <div class="header">
+<<<<<<< HEAD
   <div class="top-page">
   <!-- <%= image_tag "header.jpg", class: "header_image img-responsive", alt: "miami skyline" %> -->
   <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
   <div class="mainpagetitle">
+=======
+  <%= image_tag "MiamiSkyline.jpg", class: "header_image",  alt: "miami skyline" %>
+  <%= image_tag "logo-copy.png", class: "com_logo rounded float-left", alt: "city of Miami logo" %>
+>>>>>>> d8c0ccea3f3fd8b4e67949899409711069fb7579
   <h1 class="head">City of Miami</h1>
   <h2 class="title">Mayor Francis Suarez</h2>
 </div>
@@ -11,6 +26,7 @@
 
 
 <nav class="fill">
+<<<<<<< HEAD
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
@@ -27,6 +43,15 @@
     <li class="nav-item">
       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
     </li>
+=======
+  <ul>
+
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Programs</a></li>
+    <li><a href="#">News</a></li>
+>>>>>>> d8c0ccea3f3fd8b4e67949899409711069fb7579
   </ul>
 </nav>
 
@@ -156,9 +181,20 @@
         </div>
         <!--/.Third column-->
 
+<<<<<<< HEAD
       </div>
     </div>
     <!--/.Footer Links-->
 
   </footer>
   <!--/.Footer-->
+=======
+</footer>
+<!--/.Footer-->
+</div>
+</body>
+
+
+<!-- starting rails- password login  -->
+<!-- bcrypt or device gem  -->
+>>>>>>> d8c0ccea3f3fd8b4e67949899409711069fb7579

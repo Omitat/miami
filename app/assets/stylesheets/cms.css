@@ -1,8 +1,6 @@
 
+/* ***********************DASHBOARD************************ */
 
-.cms-img {
-  width: 200px;
-}
 .column-cms {
     float: left;
     width: 33.33%;
@@ -16,25 +14,44 @@
     display: table;
     clear: both;
 }
+
+
 @media screen and (max-width: 600px) {
     .column-row {
         width: 100%;
     }
 }
+/* ************************************************************** */
+/* ****************************CMS************************************* */
 .top-cms {
   background-image: url('miami-night.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
 }
+.cms-img {
+  width: 200px;
+}
+.title-news{
+  /* background-color: #d3d3d3; */
+  /* width: 100%; */
+  /* height: 200px; */
 
+}
+
+/* #news-show-link{
+  text-decoration: none;
+  color: black !important;
+} */
 .logged {
   margin: auto;
+  margin-left: 1%;
 }
 
 .home-link-cms {
   float: right;
   text-decoration: none;
+  margin-right: 1%;
 }
 
 #nav-tab{
@@ -55,25 +72,80 @@
 }
 
 #nav-programs-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 }
 #nav-home-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 
 }
 #nav-news-tab {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 
 }
 #nav-about-tab {
-  font-size: 18px;
+  font-size: 24px;
+  text-decoration: none;
+}
+#nav-contacts-tab {
+  font-size: 24px;
   text-decoration: none;
 }
 #dash {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   justify-content: center;
+}
+#dash-about {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+/* ***************ABOUT**************** */
+.sworn-in {
+  width:30%;
+  height: auto;
+  margin: 1%;
+  display: flex;
+  float: left;
+}
+
+.mayor-about {
+  word-wrap: break-word;
+}
+/* ******************CONTACTS*************** */
+#contacts-li {
+
+}
+
+#contacts-ul {
+  list-style: none;
+}
+
+.grid-container {
+  display: inline-grid;
+}
+
+.contacts-index {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.col {
+  width: 200px;
+  word-wrap: break-word;
+}
+.mayor-news-newspage {
+  margin: 1%;
+}
+
+
+/* ***********NEWS************* */
+
+#mayor-news-text {
+  text-decoration: none;
 }

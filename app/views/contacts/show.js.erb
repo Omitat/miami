@@ -1,0 +1,5 @@
+
+$(".modal-footer .btn-primary").hide();
+$('.modal-title').html("Preview Contact");
+$('.modal-body').html("<%= j render 'contacts/show', contact: @contacts %>");
+$('.modal').modal();

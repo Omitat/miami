@@ -17,7 +17,7 @@
   <tbody>
     <% @abouts.each do |about| %>
       <tr>
-        <td class="cms-img"><%= image_tag about.image.url %></td>
+        <td><%= image_tag about.image.url, class:"cms-img" %></td>
         <td><%= about.text %></td>
         <td><%= link_to 'Show', about, class: 'about-show', remote: true %></td>
         <td><%= link_to 'Edit', edit_about_path(about), class: 'about-edit', remote: true %></td>

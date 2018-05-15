@@ -1,11 +1,6 @@
 {
   "name": "suarez",
   "private": true,
-  "dependencies": {
-    "@rails/webpacker": "3.5",
-    "jquery-ujs": "^1.2.2"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "2.11.2"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

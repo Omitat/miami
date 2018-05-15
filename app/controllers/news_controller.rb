@@ -15,12 +15,7 @@ class NewsController < ApplicationController
   # GET /news/new
   def new
     @news = News.new
-    # @news.image = params[:file]
-    #
-    # @news.save!
-    # @news.image.url
-    # @news.image.current_path
-    # @news.image_identifier
+
   end
 
   # GET /news/1/edit
@@ -30,11 +25,13 @@ class NewsController < ApplicationController
   # POST /news
   # POST /news.json
   def create
-    @news = News.new(news_params)
+    response = MetaInspector.new(params[:url])
+
+    @news = News.new(img: response.images.best, title: response.best_title, url: response.url, description: response.description)
 
     respond_to do |format|
       if @news.save
-        format.html { redirect_to @news, notice: 'News was successfully created.' }
+        format.html { redirect_to home_show_path, notice: 'News was successfully created.' }
         format.json { render :show, status: :created, location: @news }
       else
         format.html { render :new }
@@ -75,6 +72,6 @@ class NewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def news_params
-      params.require(:news).permit(:image, :title, :url)
+      params.require(:news).permit(:img, :title, :url, :description)
     end
 end
