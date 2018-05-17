@@ -1,15 +1,22 @@
 <span class="logged">
   <% if current_admin %>
-  <span>You are logged in!</span>
+  <span>You are logged in!</span> | <%= link_to 'Sign Out', logout_path %>
   <% end %>
   <% if current_admin %>
-  <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms" %>
+  <%= link_to 'Content Management System', home_show_path, class: "home-link-cms" %>
   <% end %>
 </span>
 
-
 <div class="header">
+  <div class="g-translate">
+    <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht'}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
   <div class="top-page">
+
     <!-- <%= image_tag "header.jpg", class: "header_image img-responsive", alt: "miami skyline" %> -->
     <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
     <div class="mainpagetitle">
@@ -20,6 +27,7 @@
 </div>
 
 <nav class="fill">
+
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
