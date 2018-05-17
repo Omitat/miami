@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   resource :session
 
 
-
+  get 'messages/new' => 'messages#new', as: 'new_message'
+  post 'messages' => 'messages#create'
 
 
   get 'home/show' => 'home#show'

@@ -3,7 +3,7 @@
 $(document).on('turbolinks:load', function() {
   $('.save').on('click', function() {
     console.log($('.modal-body').children());
-    $('.modal-body').children()[0].submit()
+    $('.modal-body form').submit()
   });
 
 });

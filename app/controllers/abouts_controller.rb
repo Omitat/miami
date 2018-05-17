@@ -57,7 +57,7 @@ class AboutsController < ApplicationController
   def destroy
     @about.destroy
     respond_to do |format|
-      format.html { redirect_to abouts_url, notice: 'About was successfully destroyed.' }
+      format.html { redirect_to home_show_path, notice: 'About was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

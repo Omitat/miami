@@ -47,6 +47,7 @@ Rails.application.configure do
   :password => "22542ea6e7dcc702d3ae3c8f5f62224a-97923b2d-c7e98082"
 }
 
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 

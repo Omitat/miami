@@ -18,7 +18,7 @@
   </thead>
 
   <tbody>
-    <% @news_all.each do |news| %>
+    <% @news_all.reverse.each do |news| %>
       <tr>
         <td class="cms-img"><%= image_tag news.img, class: "cms-img"%></td>
         <td><%= news.title %></td>

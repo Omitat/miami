@@ -2,7 +2,7 @@
 
 
 <div class="card-columns">
-  <% @news_all.each do |news|  %>
+  <% @news_all.reverse.each do |news|  %>
 
   <div class="card p-1 card-news-height" style="width: 18rem;">
     <%= image_tag news.img, class: "card-img-top", alt: "Card image cap" %>
