@@ -13,3 +13,62 @@
 *= require_tree .
 *= require_self
 */
+@media screen and (max-width: 600px) {
+  .card-columns {
+    column-count: 1 ;
+    width: 100%;
+  }
+  .mainpagetitle {
+    display: none;
+  }
+  .com_logo {
+    width: 90%;
+    height: auto;
+
+  }
+  .home_body{
+    margin: 0;
+  }
+  .mayor-name-home {
+    margin-left: 0;
+    text-align: center;
+  }
+  .mayor_img {
+    width: 75%;
+    margin-left: 14%;
+
+  }
+  .super_summary{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 7%;
+  }
+
+  .news-title{
+    width: 100;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 7%;
+  }
+  .feeds {
+    height: auto;
+    margin: 0;
+  }
+  .youtubeborder{
+    display: none;
+  }
+  /* footer {
+    height: auto;
+  } */
+  .sworn-in {
+    width: 100%;
+    height: auto;
+  }
+  .mayor-about-text{
+    padding-top: 97%;
+  }
+  .image-front-program{
+    height: 15em;
+  }
+}

@@ -2,24 +2,24 @@
 /* ***********************DASHBOARD************************ */
 
 .column-cms {
-    float: left;
-    width: 33.33%;
+  float: left;
+  width: 33.33%;
 }
 .tab-content {
   margin: 1%;
 }
 /* Clear floats after the columns */
 .row-cms:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 @media screen and (max-width: 600px) {
-    .column-row {
-        width: 100%;
-    }
+  .column-row {
+    width: 100%;
+  }
 }
 /* ************************************************************** */
 /* ****************************CMS************************************* */
@@ -32,20 +32,9 @@
 .cms-img {
   width: 200px;
 }
-.title-news{
-  /* background-color: #d3d3d3; */
-  /* width: 100%; */
-  /* height: 200px; */
 
-}
-
-/* #news-show-link{
-  text-decoration: none;
-  color: black !important;
-} */
 .logged {
   margin: auto;
-  // margin-left: 1%;
 }
 
 .home-link-cms {
@@ -117,6 +106,20 @@
 .mayor-about {
   word-wrap: break-word;
 }
+
+.mayor-about-text {
+  padding-top: 1%;
+}
+
+.about-mayor-index {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about-mayor-image {
+  border: solid 2px #5694b5;
+  padding: 1%;
+}
 /* ******************CONTACTS*************** */
 #contacts-li {
 
@@ -158,4 +161,40 @@
 
 .g-translate {
   float: right;
+}
+// .card-columns {
+//   margin-left: 12%;
+//   margin-right: 12%;
+// }
+
+.image-front-program {
+  height: 40em;
+}
+.front-news-index
+{
+  padding: 30px;
+  text-align: center;
+}
+.card-columns
+{
+  display: inline-block;
+  width: 85%;
+  column-gap: 2.25rem !important;
+}
+
+.program-slider {
+    margin: auto;
+    width: 80%;
+    border: solid 2px #5694b5;
+    padding: 1%;
+  }
+
+.programs-front-end {
+  padding-bottom: 3%;
+}
+
+@media screen and (min-width: 764px) {
+  .card-columns {
+    column-count: 3;
+  }
 }

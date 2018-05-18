@@ -1,20 +1,22 @@
-<p id="notice"><%= notice %></p>
 
 
-<div class="card-columns">
-  <% @news_all.reverse.each do |news|  %>
+<div class= "front-news-index">
+  <div class="card-columns">
 
-  <div class="card p-1 card-news-height" style="width: 18rem;">
-    <%= image_tag news.img, class: "card-img-top", alt: "Card image cap" %>
-    <div class="card-body">
-      <h4 class="card-title"><%= news.title %></h4>
-      <p class="card-text"><%= news.description %></p>
-      <%= link_to 'See Article', news.url, class: "btn btn-primary", id: "mayor-news-text" %>
+    <% @news_all.reverse.each do |news|  %>
 
+    <div class="card p-1 card-news-height" >
+
+      <%= image_tag news.img, class: "card-img-top", alt: "News Image" %>
+
+      <div class="card-body">
+
+        <h4 class="card-title"><%= news.title %></h4>
+        <p class="card-text"><%= news.description %></p>
+
+        <%= link_to 'See Article', news.url, class: "btn btn-primary", id: "mayor-news-text" %>
+      </div>
     </div>
-
+    <% end %>
   </div>
-  <br>
-  <br>
-  <% end %>
 </div>
