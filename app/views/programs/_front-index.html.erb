@@ -1,14 +1,44 @@
+<div class="programs-index-front-end" id="carouselControls">
+  <div class="programs-front-end">
+    <div class="program-slider">
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-item active">
+              <% @first_program = @programs[0] %>
+              <% @programs_new = @programs.drop(1) %>
+              <%= image_tag @first_program.image.url, class: "d-block w-100 image-front-program", alt: "city of miami program"%>
+              <div class="carousel-caption">
+                <h5><%= @first_program.title %></h5>
+                <p class="d-none d-sm-block"><%= @first_program.description %></p>
+              </div>
+            </div>
+            <% @programs_new.each do |program|  %>
+            <div class="carousel-item">
+              <%= image_tag program.image.url, class: "d-block w-100 image-front-program", alt: "city of miami program"%>
+              <div class="carousel-caption">
+                <h5><%= program.title %></h5>
+                <p class="d-none d-sm-block"><%= program.description %></p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <% end %>
 
-<div class="container">
-<% @programs.each do |program|  %>
-  <div class="carousel-item active ">
-
-    <%= image_tag program.image.url, class: "d-block w-100"%>
-    <div class="carousel-caption d-none d-md-block">
-      <h5><%= program.title %></h5>
-      <p><%= program.description %></p>
-
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <% end %>
 </div>

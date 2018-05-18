@@ -1,0 +1,29 @@
+/*  // Place all the styles related to the admin controller here. */
+/* // They will automatically be included in application.css. */
+/* // You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+.admin-access {
+  background-image: image-url('miami-sunset.jpg');
+  background-repeat: no-repeat;
+}
+
+#login {
+  width: 23%;
+  background-color: #407fff !important;
+  border-color: #407fff !important;
+  color: white !important;
+  filter: drop-shadow(0 0 30px #bbcbec);
+}
+
+.login-button {
+  padding-top: 8%;
+}
+
+.login-logo {
+  padding-top: 5%;
+}
+.admin-miami-logo {
+  width: 23%;
+  height: auto;
+  padding-top: 7%;
+}

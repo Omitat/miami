@@ -1,6 +1,6 @@
 class AdminsController < ApplicationController
   before_action :authenticate_admin, except: [:new, :create, :show, :set_about]
-  layout "cms"
+  layout "admin"
 
 
   def new

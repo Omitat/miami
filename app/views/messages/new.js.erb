@@ -1,0 +1,4 @@
+$(".modal-footer .btn-primary").show();
+$('.modal-title').html("Email Contact");
+$('.modal-body').html("<%= j render 'messages/new', message: @message %>");
+$('.modal').modal();

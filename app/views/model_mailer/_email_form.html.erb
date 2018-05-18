@@ -1,6 +1,6 @@
-
-form_for obj url
 <!--
+form_for obj url
+
 email form remote true
 
 pulling contact email into modal
@@ -9,23 +9,10 @@ reason for contact dropdown = subject
 
 form hits method - method last line ".deliver" -->
 
-
-<%= form_with( remote: true) do |form| %>
-  <div class="form-group">
-    <%= form.label :ReturnEmailAddress, class: "exampleFormControlInput1" %>
-    <%= form.text_field :ReturnEmailAddress, class:"form-control" id: "exampleFormControlInput1" placeholder: "name@example.com" %>
-  </div>
-
-  <div class="form-group">
-    <%= form.label :ReasonforContact %>
-    <%= form.options_for_select([['Report']]) :ReasonforContact, class:"form-control" id: "exampleFormControlSelect2"%>
-  </div>
-  <div class="form-group">
-    <%= form.label :Message, class:"exampleFormControlTextarea1" %>
-    <<%= form.text_area :Message, class: "form-control" id: "exampleFormControlTextarea1" rows: 3 %>
-  </div>
-  <div class="form-group">
-     <%= form.label :Image %>
-     <%= form.file_field class:"form-control-file" id:"exampleFormControlFile1" %>
-   </div>
-</form>
+<%= form_for @message do |f| %>
+  <%= notice %>
+  <%= f.text_field :name, placeholder: 'name' %>
+  <%= f.email_field :email, placeholder: 'email' %>
+  <%= f.text_area :body, placeholder: 'body' %>
+  <%= f.submit 'Send' %>
+<% end %>

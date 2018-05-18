@@ -1,0 +1,17 @@
+<div>
+<%= form_for message do |f| %>
+<%= notice %>
+<div class= "email-form">
+  <%= f.text_field :name, placeholder: 'Name', class: "form-control" %>
+</div>
+<div class= "email-form">
+  <%= f.text_field :contact, placeholder: 'Reason for Contact', class: "form-control" %>
+</div>
+<div class= "email-form">
+  <%= f.email_field :email, placeholder: 'Email', class: "form-control" %>
+</div>
+<div class= "email-form">
+  <%= f.text_area :message, placeholder: 'Message', class: "form-control" %>
+</div>
+<% end %>
+</div>
