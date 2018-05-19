@@ -21,29 +21,52 @@
   </div>
 </div>
 
-<nav class="fill">
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
+<nav class="fill mobile-only-nav">
+  <ul class="nav nav-pills" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"><i class="fa fa-home" aria-hidden="true"></i></a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
-    </li>
+
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item" data-toggle="tab" id="about-tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+          <a class="dropdown-item" data-toggle="tab"  id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          <a class="dropdown-item" data-toggle="tab" id="news-tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+          <a class="dropdown-item" data-toggle="tab" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+          <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
+
+        </li>
+      </div>
+    </ul>
+  </nav>
+
+  <nav class="fill desktop-nav">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
+      </li>
     </li>
   </ul>
 </nav>
+
 
 
 <div class="tab-content" id="myTabContent">
@@ -51,16 +74,16 @@
     <div class="home_body">
       <div class="top-of-home">
 
-          <div class="pull-left">
-            <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
+        <div class="pull-left">
+          <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
+        </div>
+        <div class="name-and-summary">
+          <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
+          <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
+            As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
+            Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
+            As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
           </div>
-          <div class="name-and-summary">
-            <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
-            <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
-              As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
-              Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
-              As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
-            </div>
 
         </div>
         <div class="feeds row">
@@ -163,7 +186,7 @@
           </div>
 
           <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="nav-news-tab">
-          <p> PERMIT INFO </p>
+            <p> PERMIT INFO </p>
 
 
 

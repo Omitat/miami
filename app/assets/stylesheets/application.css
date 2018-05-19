@@ -13,12 +13,20 @@
 *= require_tree .
 *= require_self
 */
+
+
 @media screen and (max-width: 600px) {
   .card-columns {
     column-count: 1 ;
     width: 100%;
   }
   .mainpagetitle {
+    display: none;
+  }
+  .mobile-only-nav {
+    display: flex;
+  }
+  .desktop-nav{
     display: none;
   }
   .com_logo {
