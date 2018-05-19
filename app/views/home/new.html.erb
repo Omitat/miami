@@ -38,6 +38,10 @@
     <li class="nav-item">
       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
+    </li>
+    </li>
   </ul>
 </nav>
 
@@ -45,14 +49,20 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
     <div class="home_body">
-      <div class="pull-left">
-        <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
-      </div>
-      <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
-      <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
-        As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
-        Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
-        As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
+      <div class="top-of-home">
+
+          <div class="pull-left">
+            <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
+          </div>
+          <div class="name-and-summary">
+            <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
+            <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
+              As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
+              Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
+              As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
+            </div>
+
+        </div>
         <div class="feeds row">
           <%= image_tag "croppedcity.png", class: "news-title img-responsive" %>
           <div class="column col-md ">
@@ -124,83 +134,88 @@
                   </a>
                 </div>
               </div>
-</div>
-
-
             </div>
 
 
-            <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="nav-news-tab">
-                <p>news</p>
-              <%= render partial: 'news/front-index' %>
+          </div>
 
 
-
-            </div>
-
-
-
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-about-tab">
-
-              <%= render partial: 'contacts/front-index' %>
-
-            </div>
-
-            <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="nav-about-tab">
-
-              <%= render partial: 'programs/front-index' %>
-
-            </div>
-
+          <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="nav-news-tab">
+            <p>news</p>
+            <%= render partial: 'news/front-index' %>
 
 
 
           </div>
 
-          <!--Footer-->
-          <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
-          <footer>
-            <!--Footer Links-->
-            <div class="container text-center text-md-left">
-              <div class="row my-4">
-
-                <!--First column-->
-                <div class="col-md-4 col-lg-3" id="social">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">Contact Us</h5>
-                  <p class="contactinfo">Dial 311 or 305-468-5900</p>
-                  <a href="#">webmaster@miamigov.com</a>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-4 ml-auto">
-                  <h5 class="text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
-                  <ul class="list-unstyled">
-                    <p>
-                      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                    </p>
-                    <p>
-                      <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </p>
-                  </ul>
-                </div>
-                <!--/.Second column-->
 
 
-                <!--Third column-->
-                <div class="col-md-4 col-lg-3" id="miamisites">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
-                  <!--Info-->
-                  <a href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
-                  <a href="https://www.miamidade.gov/home/">Miami Dade County</a>
-                </div>
-                <!--/.Third column-->
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-about-tab">
 
+            <%= render partial: 'contacts/front-index' %>
+
+          </div>
+
+          <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="nav-about-tab">
+
+            <%= render partial: 'programs/front-index' %>
+
+          </div>
+
+          <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="nav-news-tab">
+          <p> PERMIT INFO </p>
+
+
+
+          </div>
+
+
+        </div>
+
+        <!--Footer-->
+        <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
+        <footer>
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+            <div class="row my-4">
+
+              <!--First column-->
+              <div class="col-md-4 col-lg-3" id="social">
+                <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+                <p class="bottom-text contactinfo">Dial 311 or 305-468-5900</p>
+                <a class="bottom-text" href="#">webmaster@miamigov.com</a>
               </div>
-            </div>
-            <!--/.Footer Links-->
-            <!--/.Footer Links-->
+              <!--/.First column-->
 
-          </footer>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <!--/.Footer-->
+              <!--Second column-->
+              <div class="col-md-2 col-lg-4 ml-auto">
+                <h5 class="bottom-title text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
+                <ul class="list-unstyled">
+                  <p>
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                  </p>
+                  <p>
+                    <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </p>
+                </ul>
+              </div>
+              <!--/.Second column-->
+
+
+              <!--Third column-->
+              <div class="col-md-4 col-lg-3" id="miamisites">
+                <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
+                <!--Info-->
+                <a class="bottom-text" href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
+                <a class="bottom-text" href="https://www.miamidade.gov/home/">Miami Dade County</a>
+              </div>
+              <!--/.Third column-->
+
+            </div>
+          </div>
+          <!--/.Footer Links-->
+          <!--/.Footer Links-->
+
+        </footer>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!--/.Footer-->
