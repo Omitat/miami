@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function() {
     $('.modal-body form').submit()
   });
 
-});
+
 
 
 
@@ -31,3 +31,4 @@ if (window.scrollY >= sticky) {
 
 
 window.addEventListener('scroll', stickyNav);
+});
