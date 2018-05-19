@@ -1,5 +1,11 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
+
+
+
+
+
+
 $(document).on('turbolinks:load', function() {
   $('.save').on('click', function() {
     console.log($('.modal-body').children());
@@ -13,8 +19,8 @@ $(document).on('turbolinks:load', function() {
 
 //navbar
 
-const navBar = document.querySelector("#mobile-nav-container");
-const sticky = navBar.offsetTop;
+var navBar = document.querySelector("#mobile-nav-container");
+var sticky = navBar.offsetTop;
 
 
 function stickyNav() {
