@@ -133,6 +133,12 @@
 
 }
 
+.fixed-nav nav {
+  position: fixed;
+  top:0;
+  z-index: 1;
+}
+
 #contacts-ul {
   list-style: none;
 }

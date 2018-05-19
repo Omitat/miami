@@ -7,3 +7,27 @@ $(document).on('turbolinks:load', function() {
   });
 
 });
+
+
+
+
+//navbar
+
+const navBar = document.querySelector("#mobile-nav-container");
+const sticky = navBar.offsetTop;
+
+
+function stickyNav() {
+console.log('sticky = ' + sticky);
+console.log('scrollY = ' + window.scrollY);
+if (window.scrollY >= sticky) {
+    document.body.style.paddingTop = navBar.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+  }
+};
+
+
+window.addEventListener('scroll', stickyNav);
