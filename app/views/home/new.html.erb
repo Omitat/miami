@@ -191,6 +191,7 @@
           </div>
 
           <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="nav-news-tab">
+            <div class="permits-info-page">
             <div class="container city-info">
               <h1 class="history-city"><strong><center>Miami History</center></strong></h1>
               <div class="city-history">
@@ -206,22 +207,22 @@
               <div class="container permits-map">
                 <h2 class="history-city"><strong><center>Permits Map and Information</center></strong></h2>
                 <div class="permits-map">
-      <p></p>
-      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-
-     <div id="map"></div>
-      <div id="map"></div>
-     <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-         </script>
-         <script async defer
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&callback=initMap">
-         </script> -->
-     <!-- <script src="maps.js"></script> -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&callback=initMap"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&libraries=places&callback=initAutocomplete"
-            async defer></script>
-    <%= javascript_include_tag "maps", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "markerclusterer", "data-turbolinks-track" => true %>
+                  <div class="map-search"><p></p>
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                  </div>
+                  <div id="map">
+                    <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+                  </script>
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&callback=initMap">
+                </script> -->
+                <!-- <script src="maps.js"></script> -->
+                <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&callback=initMap"></script> -->
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKBu98mG2MrJiet12a4og22eQFpTGs4q4&libraries=places&callback=initAutocomplete"
+                async defer></script>
+                <%= javascript_include_tag "maps", "data-turbolinks-track" => true %>
+                <%= javascript_include_tag "markerclusterer", "data-turbolinks-track" => true %>
+              </div>
 
               <div class="container">
                 <center class="links-info"><strong>Links</strong></center>
@@ -244,60 +245,57 @@
                   </div>
                 </div>
               </div>
-
-
-
-
-
             </div>
 
 
           </div>
         </div>
-        <!--Footer-->
-        <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
-        <footer>
-          <!--Footer Links-->
-          <div class="container text-center text-md-left">
-            <div class="row my-4">
+      </div>
+      </div>
+      <!--Footer-->
+      <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
+      <footer>
+        <!--Footer Links-->
+        <div class="container text-center text-md-left">
+          <div class="row my-4">
 
-              <!--First column-->
-              <div class="col-md-4 col-lg-3" id="social">
-                <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Contact Us</h5>
-                <p class="bottom-text contactinfo">Dial 311 or 305-468-5900</p>
-                <a class="bottom-text" href="#">webmaster@miamigov.com</a>
-              </div>
-              <!--/.First column-->
-
-              <!--Second column-->
-              <div class="col-md-2 col-lg-4 ml-auto">
-                <h5 class="bottom-title text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
-                <ul class="list-unstyled">
-                  <p>
-                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                  </p>
-                  <p>
-                    <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </p>
-                </ul>
-              </div>
-              <!--/.Second column-->
-
-
-              <!--Third column-->
-              <div class="col-md-4 col-lg-3" id="miamisites">
-                <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
-                <!--Info-->
-                <a class="bottom-text" href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
-                <a class="bottom-text" href="https://www.miamidade.gov/home/">Miami Dade County</a>
-              </div>
-              <!--/.Third column-->
-
+            <!--First column-->
+            <div class="col-md-4 col-lg-3" id="social">
+              <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+              <p class="bottom-text contactinfo">Dial 311 or 305-468-5900</p>
+              <a class="bottom-text" href="#">webmaster@miamigov.com</a>
             </div>
-          </div>
-          <!--/.Footer Links-->
-          <!--/.Footer Links-->
+            <!--/.First column-->
 
-        </footer>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <!--/.Footer-->
+            <!--Second column-->
+            <div class="col-md-2 col-lg-4 ml-auto">
+              <h5 class="bottom-title text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
+              <ul class="list-unstyled">
+                <p>
+                  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </p>
+                <p>
+                  <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+              </ul>
+            </div>
+            <!--/.Second column-->
+
+
+            <!--Third column-->
+            <div class="col-md-4 col-lg-3" id="miamisites">
+              <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
+              <!--Info-->
+              <a class="bottom-text" href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
+              <a class="bottom-text" href="https://www.miamidade.gov/home/">Miami Dade County</a>
+            </div>
+            <!--/.Third column-->
+
+          </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--/.Footer Links-->
+
+      </footer>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!--/.Footer-->
