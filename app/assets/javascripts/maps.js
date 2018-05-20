@@ -1,5 +1,7 @@
 
+
 function initMap() {
+
 
 
 
@@ -49,9 +51,8 @@ function initMap() {
 function initAutocomplete() {
 
 
-   initMap();
 
-   
+
      var map = new google.maps.Map(document.getElementById('map'), {
        center: {lat: 25.7617, lng: -80.1918 },
        zoom: 13,
@@ -117,6 +118,7 @@ searchBox.addListener('places_changed', function() {
               map.fitBounds(bounds);
             });
 
+  initMap()
 
 
           }

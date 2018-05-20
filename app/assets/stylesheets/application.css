@@ -112,6 +112,7 @@ body {
 #map {
 	height: 750px;
   width: 750px;
+  margin-left: 19%;
 }
 
 ////////
@@ -179,6 +180,8 @@ body {
 		 padding: 0 11px 0 13px;
 		 text-overflow: ellipsis;
 		 width: 400px;
+     margin-left: 35%;
+
 	 }
 
 	 #pac-input:focus {
