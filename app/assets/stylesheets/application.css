@@ -39,6 +39,7 @@
   }
   .mayor-name-home {
     margin-left: 0;
+    margin-right: 0;
     text-align: center;
     padding-top: 8%;
   }
@@ -51,6 +52,7 @@
     width: 100%;
     height: auto;
     margin-left: 0;
+    margin-right: 0;
     margin-top: 7%;
     padding-bottom: 28%;
   }
