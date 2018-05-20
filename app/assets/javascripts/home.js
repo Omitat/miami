@@ -33,8 +33,9 @@ if (window.scrollY >= sticky) {
     document.body.style.paddingTop = 0;
     document.body.classList.remove('fixed-nav');
   }
+
 };
 
-
 window.addEventListener('scroll', stickyNav);
+
 });

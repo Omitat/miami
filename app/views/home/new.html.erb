@@ -12,19 +12,19 @@
 
 <div class="header">
   <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <div class="top-page">
-    <!-- <%= image_tag "header.jpg", class: "header_image img-responsive", alt: "miami skyline" %> -->
-    <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
-    <div class="mainpagetitle">
-      <h1 class="head">City of Miami</h1>
-      <h2 class="title">Mayor Francis Suarez</h2>
-    </div>
+<div class="top-page">
+  <!-- <%= image_tag "header.jpg", class: "header_image img-responsive", alt: "miami skyline" %> -->
+  <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
+  <div class="mainpagetitle">
+    <h1 class="head">City of Miami</h1>
+    <h2 class="title">Mayor Francis Suarez</h2>
   </div>
+</div>
 </div>
 
 <nav class="fill navbar mobile-only-nav" id="mobile-nav-container" >
@@ -32,50 +32,43 @@ function googleTranslateElementInit() {
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-home" aria-hidden="true"></i></a>
     </li>
-
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <div class="dropdown-menu">
-
-          <a class="dropdown-item" data-toggle="tab" id="about-tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-          <a class="dropdown-item" data-toggle="tab"  id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-          <a class="dropdown-item" data-toggle="tab" id="news-tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-          <a class="dropdown-item" data-toggle="tab" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
-          <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
-
-
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="tab" id="about-tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+        <a class="dropdown-item" data-toggle="tab"  id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        <a class="dropdown-item" data-toggle="tab" id="news-tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+        <a class="dropdown-item" data-toggle="tab" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+        <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
       </div>
-      </li>
-    
-    </ul>
-
-  </nav>
-
-
-  <nav class="fill desktop-nav">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
-      </li>
     </li>
   </ul>
 </nav>
+
+<nav class="fill desktop-nav">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
+    </li>
+  </li>
+</ul>
+</nav>
+
 
 
 
@@ -204,47 +197,47 @@ function googleTranslateElementInit() {
                   the area was known as the Biscayne Bay Country and was recognized as "one of the finest building sites in Florida". The latter still rings true today.</p>
                   <p>On July 28, 1896, Miami was officially incorportated as a city - it's population was around 300.</p>
                   <p>Today, Miami boasts claim to the third tallest skyline in the United States of America (arguably the most beautiful, but that just might be Miami pride) and is a major destination for international visitors (we rank second in the country!).</p>
-                  <p><center><strong>Fun Fact:</strong> The city's nickname, <em>The Magic City</em>, come from its rapid growth.</center></p>
-              </div>
-            </div>
-
-            <div class="container permits-map">
-              <h2 class="history-city"><strong><center>Permits Map and Information</center></strong></h2>
-              <div class="permits-map">
-              </div>
-            </div>
-
-            <div class="container">
-              <center class="links-info"><strong>Links</strong></center>
-              <div class="row permits-info-col">
-                <div class="col">
-                  <p><%= link_to 'Employment', 'http://www.miamigov.com/employment/', class:"permits-link", alt:"Employment"%></p>
-                  <p>Look for employment in the the City of Miami.</p>
-                  <p><%= link_to 'Business', 'http://www.miamigov.com/home/business.html', class:"permits-link", alt:"Business" %></p>
-                  <p>Get information on business opportunities and agencies in the magic city. </p>
-                  <p><%= link_to 'Public Meetings', 'http://www.miamigov.com/home/calendar.html', class:"permits-link", alt:"Public Meetings" %></p>
-                  <p>Check out the calendar for public and procurement meetings for the City of Miami.</p>
-                </div>
-                <div class="col">
-                  <p><%= link_to 'City Officials', 'http://www.miamigov.com/home/cityofficials.html', class:"permits-link", alt:"City Officials" %></p>
-                  <p>Meet Our City Officials.</p>
-                  <p><%= link_to 'Building Department', 'http://www.miamigov.com/Building/', class:"permits-link", alt:"Building Department" %></p>
-                  <p>Inspections and Permits.</p>
-                  <p><%= link_to 'Miami Parks & Recreation', 'http://www.miamigov.com/parks/', class:"permits-link", alt:"Miami Parks & Recreation" %></p>
-                  <p>Find out where you can splish and splash, where to play tennis, register for sports programs and more.</p>
+                  <p><center><strong>Fun Fact:</strong> Miami's nickname, <em>The Magic City</em>, came from its rapid growth.</center></p>
                 </div>
               </div>
+
+              <div class="container permits-map">
+                <h2 class="history-city"><strong><center>Permits Map and Information</center></strong></h2>
+                <div class="permits-map">
+                </div>
+              </div>
+
+              <div class="container">
+                <center class="links-info"><strong>Links</strong></center>
+                <div class="row permits-info-col">
+                  <div class="col">
+                    <p><%= link_to 'Employment', 'http://www.miamigov.com/employment/', class:"permits-link", alt:"Employment"%></p>
+                    <p>Look for employment in the the City of Miami.</p>
+                    <p><%= link_to 'Business', 'http://www.miamigov.com/home/business.html', class:"permits-link", alt:"Business" %></p>
+                    <p>Get information on business opportunities and agencies in the magic city. </p>
+                    <p><%= link_to 'Public Meetings', 'http://www.miamigov.com/home/calendar.html', class:"permits-link", alt:"Public Meetings" %></p>
+                    <p>Check out the calendar for public and procurement meetings for the City of Miami.</p>
+                  </div>
+                  <div class="col">
+                    <p><%= link_to 'City Officials', 'http://www.miamigov.com/home/cityofficials.html', class:"permits-link", alt:"City Officials" %></p>
+                    <p>Meet Our City Officials.</p>
+                    <p><%= link_to 'Building Department', 'http://www.miamigov.com/Building/', class:"permits-link", alt:"Building Department" %></p>
+                    <p>Inspections and Permits.</p>
+                    <p><%= link_to 'Miami Parks & Recreation', 'http://www.miamigov.com/parks/', class:"permits-link", alt:"Miami Parks & Recreation" %></p>
+                    <p>Find out where you can splish and splash, where to play tennis, register for sports programs and more.</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
             </div>
-
-
-
 
 
           </div>
-
-
         </div>
-</div>
         <!--Footer-->
         <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
         <footer>
