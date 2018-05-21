@@ -12,41 +12,44 @@
 
 ActiveRecord::Schema.define(version: 2018_05_11_224622) do
 
-  create_table "abouts", force: :cascade do |t|
-    t.string "image"
-    t.string "text"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "abouts", id: :integer, default: nil, force: :cascade do |t|
+    t.text "image"
+    t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "admins", force: :cascade do |t|
-    t.string "email"
-    t.string "password_digest"
+  create_table "admins", id: :integer, default: nil, force: :cascade do |t|
+    t.text "email"
+    t.text "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "contacts", force: :cascade do |t|
-    t.string "name"
-    t.string "title"
-    t.string "email"
+  create_table "contacts", id: :integer, default: nil, force: :cascade do |t|
+    t.text "name"
+    t.text "title"
+    t.text "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "news", force: :cascade do |t|
-    t.string "img"
-    t.string "title"
-    t.string "url"
+  create_table "news", id: :integer, default: nil, force: :cascade do |t|
+    t.text "img"
+    t.text "title"
+    t.text "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
   end
 
-  create_table "programs", force: :cascade do |t|
-    t.string "image"
-    t.string "title"
-    t.string "url"
+  create_table "programs", id: :integer, default: nil, force: :cascade do |t|
+    t.text "image"
+    t.text "title"
+    t.text "url"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
