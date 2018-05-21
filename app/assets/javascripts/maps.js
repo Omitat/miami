@@ -18,7 +18,7 @@ function initMap() {
       + "<li>" + "<b>"+ "Permit Number: " + "</b>" + permit.permit_number  + "</li>"
       + "<li>" + "<b>"+ "Adress: " + "</b>" +  permit.address + "</b>" + "</li>"
       + "<li>" + "<b>"+ "Scope of Work: " + "</b>" +  permit.scope_of_work + "</b>" + "</li>"
-      + "<li>" + "<b>"+ "Permit Number: " + "</b>" +  permit.total_cost + "</b>" + "</li>"
+      + "<li>" + "<b>"+ "Total Cost: " + "</b>" +  permit.total_cost + "</b>" + "</li>"
       + "</ul>"
   }
 
