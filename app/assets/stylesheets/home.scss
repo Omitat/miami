@@ -62,7 +62,21 @@
   margin-left: 5%;
 }
 
-
+.backarrow {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 2%;
+    display: flex;
+}
+ .comiami{
+   position: absolute;
+   top: 2%;
+   left: 4%;
+   font-size: 1em;
+   color: white;
+   font-family: Gill Sans;
+ }
 
 /********************** THIS WHOLE ****************************/
 /********************** ENTIRE SHIT ***************************/
@@ -242,7 +256,7 @@ nav.fill ul li a:hover:after {
   margin-right: 50px;
   min-width: 200px;
   max-width: 500px;
-
+  color: #b30059;
 }
 
 
@@ -294,18 +308,24 @@ nav.fill ul li a:hover:after {
 
 }
 
-.personal-feeds{
-  .carousel-control-prev, .carousel-control-next{
-    top: -30%;
-  }
-  .carousel-control-prev-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30059' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 
-  }
-  .carousel-control-next-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30059' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+.title-news{
+  font-family: Gill Sans;
+  text-align: center;
+  color:#b30059;
+  text-transform: uppercase;
+  font-size: .75em;
+  margin-bottom: 3%;
+  position: absolute;
+  margin-left: 60%;
+}
 
-  }
+.homenews{
+  font-family: Gill Sans;
+  text-transform: uppercase;
+  display: flex;
+  color: #b30059;
+  margin-left: 30%;
 }
 
 
@@ -327,7 +347,7 @@ nav.fill ul li a:hover:after {
 }
 
 #miamisites a:hover{
-  color: black;
+  color: #b30059;
   text-decoration: none;
 }
 
@@ -341,12 +361,13 @@ nav.fill ul li a:hover:after {
 }
 
 footer{
-  height: auto;
+    height: auto;
     background-position: center;
     background-size: 80em;
     width: 100%;
     background-color: #262626;
     overflow: hidden;
+    position: absolute;
 }
 
 .insta-btn{
@@ -361,7 +382,6 @@ a.bottom-text{
   color: #b30059 !important;
 }
 .contactinfo{
-  font-weight: bold;
   color: white;
 }
 
@@ -385,7 +405,144 @@ a.bottom-text{
 /******************ABOUT PAGE**********************/
 /*************************************************/
 
+.about-title,
+.about-title h1{
+  font-family: Gill Sans;
+  text-align: center;
+  color:#b30059;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  margin-bottom: 3%;
+}
+
 
 /*********************ABOUT************************/
 /**********************PAGE************************/
 /**********************FEED************************/
+
+.everything{
+  border: solid 3px #b30059;
+  height: 50em;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  overflow-y: scroll;
+ }
+
+ .joinus{
+   width: 70%;
+   margin-top: 5%;
+   margin-left: 20%;
+ }
+
+ .personal-feeds{
+   margin: 5% 5% 5% 5%;
+   display: flex;
+
+ }
+
+ .personal-feeds{
+   .carousel-control-prev, .carousel-control-next{
+     top: -30%;
+   }
+   .carousel-control-prev-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30059' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+
+   }
+   .carousel-control-next-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30059' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+
+   }
+ }
+
+ .carousel{
+   margin-left: -10%;
+ }
+
+
+ /*********************ABOUT************************/
+ /**********************PAGE************************/
+ /**********************ENDS************************/
+
+
+
+
+ /*********************CONTACT************************/
+ /**********************PAGE************************/
+ /**********************BEGINS************************/
+
+ .bottompc{
+   width: 40%;
+   margin-left: 30%;
+ }
+
+#contact h1{
+  font-family: Gill Sans;
+  text-align: center;
+  color:#b30059;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 3%;
+}
+
+/*********************CONTACT************************/
+/**********************PAGE**********s***************/
+/**********************ENDS*************************/
+
+
+/*********************NEWS************************/
+/**********************PAGE************************/
+/**********************BEGINS************************/
+
+
+.news-pic{
+  width: 20%;
+  margin-left: 15%;
+  display: inline;
+}
+
+.news-title{
+  width: 45%;
+  margin-left: 2%;
+}
+
+
+/*********************NEWS************************/
+/**********************PAGE************************/
+/**********************ENDS************************/
+
+
+
+
+
+
+/*********************CITY INFO************************/
+/**********************PAGE***************************/
+/**********************BEGINS**************************/
+
+
+.history-city{
+  font-family: Gill Sans;
+  text-align: center;
+  color:#b30059;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.links-info{
+  font-family: Gill Sans;
+  font-weight: lighter;
+  color: #5694b5;
+}
+
+.linkcontainer{
+  border: solid 3px #b30059;
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+}
+
+.thelinks{
+  margin-top: 2%;
+}

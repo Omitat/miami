@@ -13,6 +13,8 @@
 <div class="header">
   <div class="top-page">
     <!-- <%= image_tag "header.jpg", class: "header_image img-responsive", alt: "miami skyline" %> -->
+    <a href="https://beta.miamigov.com/Home"><%= image_tag "backarrow.png", class: "backarrow" %></a>
+    <a href="https://beta.miamigov.com/Home"><h1 class="comiami"> City of Miami </h1></a>
     <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
     <div class="mainpagetitle">
       <h1 class="head">City of Miami</h1>
@@ -68,7 +70,7 @@
 </nav>
 
 
-
+<!-- HERE STARTS THE MAYOR HOMEPAGE -->
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
     <div class="home_body">
@@ -77,6 +79,7 @@
         <div class="pull-left">
           <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
         </div>
+        <!-- MAYORS BODY(ouuuuuuu) -->
         <div class="name-and-summary">
           <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
           <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
@@ -86,6 +89,7 @@
           </div>
 
         </div>
+        <!-- THE FEEDS START HERE -->
         <div class="feeds row">
           <%= image_tag "croppedcity.png", class: "news-title img-responsive" %>
           <div class="column col-md ">
@@ -100,6 +104,9 @@
             </div>
           </div>
           <div class="home-page-news column col-md">
+            <div class="homenews">
+              <h1>-NEWS-</h1>
+            </div>
             <% @news_all.last(3).each do |item| %>
             <div class="card">
               <div class="card-body">
@@ -112,6 +119,7 @@
         </div>
       </div>
     </div>
+<!-- MAYOR HOMEPAGE ENDS HERE -->
 
 
 
@@ -120,21 +128,26 @@
 
 
 
-
+<!-- THE ABOUT PAGE STARTS -->
     <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-about-tab">
+      <div class="about-title">
+        <h1> About the city of Miami mayor.</h1>
+      </div>
+
+<!-- THE ABOUT THE PAGE BODY -->
       <%= render partial: 'abouts/front-index' %>
 
-
-
-
-
+<!-- HERE STARTS THE FEEDS IN THE ABOUT PAGE -->
+      <div class="bubble">
+        <%= image_tag "join.png", class: "joinus img-responsive"%>
+      </div>
+      <div class="everything">
       <div class="personal-feeds row">
         <div class="col-lg-4">
-          <a class="twitter-timeline" data-lang="en" data-width="475.50" data-height="637" data-link-color="#b30059" href="https://twitter.com/FrancisSuarez?ref_src=twsrc%5Etfw">Tweets by FrancisSuarez</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+          <a class="twitter-timeline" id="mayortwitter" data-lang="en" data-width="475.50" data-height="637" data-link-color="#b30059" href="https://twitter.com/FrancisSuarez?ref_src=twsrc%5Etfw">Tweets by FrancisSuarez</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="col-lg-4">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFrancisXSuarez%2F&tabs=timeline&width=475&height=637&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="475" height="637" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="facebook-tl" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFrancisXSuarez%2F&tabs=timeline&width=312&height=643&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="312" height="643" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div class="col-lg-4">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -160,10 +173,13 @@
 
 
           </div>
+        </div>
+<!-- THE FEED ENDS HERE -->
 
 
           <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="nav-news-tab">
-            <p>news</p>
+            <%= image_tag "news.jpg", class:"news-pic"%>
+            <%= image_tag "newstitle1.jpg", class:"news-title"%>
             <%= render partial: 'news/front-index' %>
 
 
@@ -173,8 +189,9 @@
 
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-about-tab">
-
-            <%= render partial: 'contacts/front-index' %>
+              <h1>Contact Us.</h1>
+            <%= render partial: 'contacts/front-index'%>
+            <%= image_tag "send.jpg", class: "bottompc img-responsive"%>
 
           </div>
 
@@ -203,10 +220,10 @@
               </div>
             </div>
 
-            <div class="container">
+            <div class="linkcontainer">
               <center class="links-info"><strong>Links</strong></center>
-              <div class="row permits-info-col">
-                <div class="col">
+              <div class="row permits-info-col thelinks">
+                <div class="col ">
                   <p><%= link_to 'Employment', 'http://www.miamigov.com/employment/', class:"permits-link", alt:"Employment"%></p>
                   <p>Look for employment in the the City of Miami.</p>
                   <p><%= link_to 'Business', 'http://www.miamigov.com/home/business.html', class:"permits-link", alt:"Business" %></p>
@@ -259,6 +276,9 @@
                   <p>
                     <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                   </p>
+                  <p>
+                    <div class="g-ytsubscribe" data-channel="CityofMiamiGov" data-layout="default" data-count="default"></div>
+                  </p>
                 </ul>
               </div>
               <!--/.Second column-->
@@ -279,5 +299,6 @@
           <!--/.Footer Links-->
 
         </footer>
+        <script src="https://apis.google.com/js/platform.js"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <!--/.Footer-->
