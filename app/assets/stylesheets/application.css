@@ -112,7 +112,7 @@ body {
 #map {
 	height: 750px;
   width: 750px;
-  margin-left: 19%;
+  margin: 0 auto !important;
 }
 
 ////////
