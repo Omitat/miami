@@ -24,7 +24,7 @@
 /* ************************************************************** */
 /* ****************************CMS************************************* */
 .top-cms {
-  background-image: image-url("miami-night.jpg");
+  background-image: image-url("miami-night-cms.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
@@ -131,6 +131,11 @@
 /* ******************CONTACTS*************** */
 #contacts-li {
 
+}
+nav {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #contacts-ul {

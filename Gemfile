@@ -29,6 +29,8 @@ gem 'carrierwave'
 gem 'pg'
 gem 'mailgun-ruby'
 gem 'metainspector'
+gem 'httparty'
+gem 'gon'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

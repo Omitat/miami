@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
       flash[:notice] = "We have received your message and will be in touch soon!"
     else
       flash[:notice] = "There was an error sending your message. Please try again."
-      render :new
+      # render :new
     end
   end
 
