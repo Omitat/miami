@@ -6,7 +6,7 @@
       <span>You are logged in!</span>
       <% end %>
       <% if current_admin %>
-      <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms" %>
+      <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms", alt: "Content Management" %>
       <% end %>
     </span>
   </div>
@@ -21,7 +21,7 @@
   </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
   <div class="top-page">
-  
+
     <a href="https://beta.miamigov.com/Home"><%= image_tag "backarrow.png", class: "backarrow" %></a>
     <a href="https://beta.miamigov.com/Home"><h1 class="comiami"> City of Miami </h1></a>
     <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
@@ -84,7 +84,7 @@
         <div class="top-of-home">
 
           <div class="pull-left">
-            <%= image_tag "mayor.png", class: "mayor_img img-responsive" %>
+            <%= image_tag "mayor.png", class: "mayor_img img-responsive", alt: "Mayor Suarez" %>
           </div>
           <!-- MAYORS BODY(ouuuuuuu) -->
           <div class="name-and-summary">
@@ -98,7 +98,7 @@
           </div>
           <!-- THE FEEDS START HERE -->
           <div class="feeds row">
-            <%= image_tag "croppedcity.png", class: "news-title-page img-responsive" %>
+            <%= image_tag "croppedcity.png", class: "news-title-page img-responsive", alt:"city of miami skyline vector" %>
             <div class="column col-md ">
               <a class="twitter-timeline " data-lang="en" data-width="350" data-height="450" data-link-color="#b30059" href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw">Tweets by MiamiMayor</a>
             </div>
@@ -146,7 +146,7 @@
 
   <!-- HERE STARTS THE FEEDS IN THE ABOUT PAGE -->
         <div class="bubble">
-          <%= image_tag "join.png", class: "joinus img-responsive"%>
+          <%= image_tag "join.png", class: "joinus img-responsive", alt: "social feed image"%>
         </div>
         <div class="everything">
         <div class="personal-feeds row">
@@ -198,7 +198,7 @@
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-about-tab">
                 <h1>Contact Us.</h1>
               <%= render partial: 'contacts/front-index'%>
-              <%= image_tag "send.jpg", class: "bottompc img-responsive"%>
+              <%= image_tag "send.jpg", class: "bottompc img-responsive", alt:"messages"%>
 
             </div>
 
@@ -226,7 +226,7 @@
                   <h2 class="history-city"><strong><center>Permits Map and Information</center></strong></h2>
                   <div class="permits-map">
                     <div class="map-search"><p></p>
-                      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                      <input id="pac-input" class="controls search-controls" type="text" placeholder="Search Box">
                     </div>
                     <div id="map">
                       <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
