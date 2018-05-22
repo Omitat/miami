@@ -22,8 +22,8 @@
 </div>
   <div class="top-page">
 
-    <a href="https://beta.miamigov.com/Home"><%= image_tag "backarrow.png", class: "backarrow" %></a>
-    <a href="https://beta.miamigov.com/Home"><h1 class="comiami"> City of Miami </h1></a>
+    <a href="https://beta.miamigov.com/Home"><%= image_tag "backarrow.png", class: "backarrow", alt: "back to gov site" %></a>
+    <a href="https://beta.miamigov.com/Home", alt: "back to gov site"><h1 class="comiami"> City of Miami </h1></a>
     <%= image_tag "logo-copy.png", class: "com_logo img-responsive", alt: "city of Miami logo" %>
     <div class="mainpagetitle">
       <h1 class="head">City of Miami</h1>
@@ -79,7 +79,7 @@
 
   <!-- HERE STARTS THE MAYOR HOMEPAGE -->
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
       <div class="home_body">
         <div class="top-of-home">
 
@@ -136,7 +136,7 @@
 
 
   <!-- THE ABOUT PAGE STARTS -->
-      <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-about-tab">
+      <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about">
         <div class="about-title">
           <h1> About the city of Miami mayor.</h1>
         </div>
@@ -184,7 +184,7 @@
   <!-- THE FEED ENDS HERE -->
 
 
-            <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="nav-news-tab">
+            <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news">
               <%= image_tag "news.jpg", class:"news-pic"%>
               <%= image_tag "newstitle1.jpg", class:"news-title"%>
               <%= render partial: 'news/front-index' %>
@@ -195,20 +195,20 @@
 
 
 
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-about-tab">
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="about">
                 <h1>Contact Us.</h1>
               <%= render partial: 'contacts/front-index'%>
               <%= image_tag "send.jpg", class: "bottompc img-responsive", alt:"messages"%>
 
             </div>
 
-            <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="nav-about-tab">
+            <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="programs">
 
               <%= render partial: 'programs/front-index' %>
 
             </div>
 
-            <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="nav-news-tab">
+            <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="permit">
               <div class="permits-info-page">
               <div class="container city-info">
                 <h1 class="history-city"><strong><center>Miami History</center></strong></h1>
