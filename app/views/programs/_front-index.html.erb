@@ -14,16 +14,16 @@
               <% @programs_new = @programs.drop(1) %>
               <%= image_tag @first_program.image.url, class: "d-block w-100 image-front-program", alt: "city of miami program"%>
               <div class="carousel-caption">
-                <h5><%= @first_program.title %></h5>
-                <p class="d-none d-sm-block"><%= @first_program.description %></p>
+                <h2><%= @first_program.title %></h2>
+                <p class="d-none d-sm-block description"><%= @first_program.description %></p>
               </div>
             </div>
             <% @programs_new.each do |program|  %>
             <div class="carousel-item">
               <%= image_tag program.image.url, class: "d-block w-100 image-front-program", alt: "city of miami program"%>
               <div class="carousel-caption">
-                <h5><%= program.title %></h5>
-                <p class="d-none d-sm-block"><%= program.description %></p>
+                <h2><%= program.title %></h2>
+                <p class="d-none d-sm-block description"><%= program.description %></p>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
