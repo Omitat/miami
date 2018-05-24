@@ -8,7 +8,7 @@
 
 $(document).on('turbolinks:load', function() {
   $('.save').on('click', function() {
-    console.log($('.modal-body').children());
+    // console.log($('.modal-body').children());
     $('.modal-body form').submit()
   });
 
@@ -24,8 +24,8 @@ var sticky = navBar.offsetTop;
 
 
 function stickyNav() {
-console.log('sticky = ' + sticky);
-console.log('scrollY = ' + window.scrollY);
+// console.log('sticky = ' + sticky);
+// console.log('scrollY = ' + window.scrollY);
 if (window.scrollY >= sticky) {
     document.body.style.paddingTop = navBar.offsetHeight + 'px';
     document.body.classList.add('fixed-nav');
