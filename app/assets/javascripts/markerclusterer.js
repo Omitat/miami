@@ -1313,5 +1313,5 @@ Object.keys = Object.keys || function(o) {
           result.push(name);
     }
     return result;
-};
+}
 }
