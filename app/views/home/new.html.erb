@@ -1,25 +1,25 @@
-  <%= include_gon %>
+<%= include_gon %>
 
-  <div class="adminlogin">
-    <span class="logged">
-      <% if current_admin %>
-      <span>You are logged in!</span>
-      <% end %>
-      <% if current_admin %>
-      <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms", alt: "Content Management" %>
-      <% end %>
-    </span>
-  </div>
+<div class="adminlogin">
+  <span class="logged">
+    <% if current_admin %>
+    <span>You are logged in!</span>
+    <% end %>
+    <% if current_admin %>
+    <%= link_to 'Content Management System', admin_new_path, class: "home-link-cms", alt: "Content Management" %>
+    <% end %>
+  </span>
+</div>
 
 
-  <div class="header">
-<div class="g-translate">
+<div class="header">
+  <div class="g-translate">
     <div id="google_translate_element"></div><script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
     }
-  </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</div>
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
   <div class="top-page">
 
     <a href="https://beta.miamigov.com/Home"><%= image_tag "backarrow.png", class: "backarrow", alt: "back to gov site" %></a>
@@ -31,102 +31,106 @@
 
     </div>
   </div>
-  </div>
+</div>
 
-  <nav class="fill navbar mobile-only-nav" id="mobile-nav-container" >
-    <ul class="nav nav-pills" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-home" aria-hidden="true"></i></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" data-toggle="tab" id="about-tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-          <a class="dropdown-item" data-toggle="tab"  id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-          <a class="dropdown-item" data-toggle="tab" id="news-tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-          <a class="dropdown-item" data-toggle="tab" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
-          <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+<nav class="fill navbar mobile-only-nav" id="mobile-nav-container" >
+  <ul class="nav nav-pills" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-home" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="tab" id="about-tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+        <a class="dropdown-item" data-toggle="tab"  id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        <a class="dropdown-item" data-toggle="tab" id="news-tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+        <a class="dropdown-item" data-toggle="tab" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+        <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
+        <a class="dropdown-item" data-toggle="tab"id="permit-tab" href="#project-about" role="tab" aria-controls="project-about" aria-selected="false">Project Info</a>
 
-  <nav class="fill desktop-nav">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="programs" aria-selected="false">City Info</a>
-      </li>
+      </div>
     </li>
   </ul>
-  </nav>
+</nav>
+
+<nav class="fill desktop-nav">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mayor Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="false">Programs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#permit" role="tab" aria-controls="permit" aria-selected="false">City Info</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#project-about" role="tab" aria-controls="project-about" aria-selected="false">Project Info</a>
+    </li>
+  </ul>
+</nav>
 
 
 
-  <!-- HERE STARTS THE MAYOR HOMEPAGE -->
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
-      <div class="home_body">
-        <div class="top-of-home">
+<!-- HERE STARTS THE MAYOR HOMEPAGE -->
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
+    <div class="home_body">
+      <div class="top-of-home">
 
-          <div class="pull-left">
-            <%= image_tag "mayor.png", class: "mayor_img img-responsive", alt: "Mayor Suarez" %>
+        <div class="pull-left">
+          <%= image_tag "mayor.png", class: "mayor_img img-responsive", alt: "Mayor Suarez" %>
+        </div>
+        <!-- MAYORS BODY(ouuuuuuu) -->
+        <div class="name-and-summary">
+          <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
+          <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
+            As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
+            Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
+            As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
           </div>
-          <!-- MAYORS BODY(ouuuuuuu) -->
-          <div class="name-and-summary">
-            <h1 class="mayor-name-home"> Mayor Francis  Suarez</h1>
-            <p class="super_summary"> Born and raised in Miami, Mayor Francis X. Suarez is no stranger to the City of Miami.
-              As the 33rd Mayor of the City of Miami, Mayor Suarez is aiming to elevate the quality of life amongst residents of the City of Miami.
-              Mayor Suarez has spearheaded campaigns to expand the options for mass transit and sought out justice against  several major banks for discriminatory mortgage lending practices.
-              As the oldest of four siblings, Mayor Suarez understands the impact of being socially concious.</p>
-            </div>
 
+        </div>
+        <!-- THE FEEDS START HERE -->
+        <div class="feeds row">
+          <%= image_tag "croppedcity.png", class: "news-title-page img-responsive", alt:"city of miami skyline vector" %>
+          <div class="column col-md ">
+            <a class="twitter-timeline " data-lang="en" data-width="350" data-height="450" data-link-color="#b30059" href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw">Tweets by MiamiMayor</a>
           </div>
-          <!-- THE FEEDS START HERE -->
-          <div class="feeds row">
-            <%= image_tag "croppedcity.png", class: "news-title-page img-responsive", alt:"city of miami skyline vector" %>
-            <div class="column col-md ">
-              <a class="twitter-timeline " data-lang="en" data-width="350" data-height="450" data-link-color="#b30059" href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw">Tweets by MiamiMayor</a>
+          <div class="youtubeborder column col-md">
+            <div class="video1">
+              <iframe height="250" class="youtube" src="https://www.youtube.com/embed/xf4fpFgCN7w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="youtubeborder column col-md">
-              <div class="video1">
-                <iframe height="250" class="youtube" src="https://www.youtube.com/embed/xf4fpFgCN7w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="video2">
-                <iframe height="250" class="youtube" src="https://www.youtube.com/embed/soDTGh_DkZw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video2">
+              <iframe height="250" class="youtube" src="https://www.youtube.com/embed/soDTGh_DkZw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="home-page-news column col-md">
+            <div class="homenews">
+              <h1>-NEWS-</h1>
+            </div>
+            <% @news_all.last(3).each do |item| %>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><%= item.title %></h5>
+                <p class="card-text"><%= item.description %></p>
               </div>
             </div>
-            <div class="home-page-news column col-md">
-              <div class="homenews">
-                <h1>-NEWS-</h1>
-              </div>
-              <% @news_all.last(3).each do |item| %>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title"><%= item.title %></h5>
-                  <p class="card-text"><%= item.description %></p>
-                </div>
-              </div>
-              <% end %>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
-  <!-- MAYOR HOMEPAGE ENDS HERE -->
+    </div>
+    <!-- MAYOR HOMEPAGE ENDS HERE -->
 
 
 
@@ -135,20 +139,20 @@
 
 
 
-  <!-- THE ABOUT PAGE STARTS -->
-      <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about">
-        <div class="about-title">
-          <h1> About the city of Miami mayor.</h1>
-        </div>
+    <!-- THE ABOUT PAGE STARTS -->
+    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about">
+      <div class="about-title">
+        <h1> About the city of Miami mayor.</h1>
+      </div>
 
-  <!-- THE ABOUT THE PAGE BODY -->
-        <%= render partial: 'abouts/front-index' %>
+      <!-- THE ABOUT THE PAGE BODY -->
+      <%= render partial: 'abouts/front-index' %>
 
-  <!-- HERE STARTS THE FEEDS IN THE ABOUT PAGE -->
-        <div class="bubble">
-          <%= image_tag "join.png", class: "joinus img-responsive", alt: "social feed image"%>
-        </div>
-        <div class="everything">
+      <!-- HERE STARTS THE FEEDS IN THE ABOUT PAGE -->
+      <div class="bubble">
+        <%= image_tag "join.png", class: "joinus img-responsive", alt: "social feed image"%>
+      </div>
+      <div class="everything">
         <div class="personal-feeds row">
           <div class="col-lg-4">
             <a class="twitter-timeline" id="mayortwitter" data-lang="en" data-width="475.50" data-height="637" data-link-color="#b30059" href="https://twitter.com/FrancisSuarez?ref_src=twsrc%5Etfw">Tweets by FrancisSuarez</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -181,35 +185,35 @@
 
             </div>
           </div>
-  <!-- THE FEED ENDS HERE -->
+          <!-- THE FEED ENDS HERE -->
 
 
-            <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news">
-              <%= image_tag "news.jpg", class:"news-pic", alt: "logo for miami news"%>
-              <%= image_tag "newstitle1.jpg", class:"news-title", alt: "miami news"%>
-              <%= render partial: 'news/front-index' %>
-
-
-
-            </div>
+          <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news">
+            <%= image_tag "news.jpg", class:"news-pic", alt: "logo for miami news"%>
+            <%= image_tag "newstitle1.jpg", class:"news-title", alt: "miami news"%>
+            <%= render partial: 'news/front-index' %>
 
 
 
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="about">
-                <div class="contacts-page"><h1>Contact Us.</h1>
+          </div>
+
+
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="about">
+            <div class="contacts-page"><h1>Contact Us.</h1>
               <%= render partial: 'contacts/front-index'%>
               <div class="contact-mail", alt="contact image"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></div>
-</div>
             </div>
+          </div>
 
-            <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="programs">
+          <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="programs">
 
-              <%= render partial: 'programs/front-index' %>
+            <%= render partial: 'programs/front-index' %>
 
-            </div>
+          </div>
 
-            <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="permit">
-              <div class="permits-info-page">
+          <div class="tab-pane fade" id="permit" role="tabpanel" aria-labelledby="permit">
+            <div class="permits-info-page">
               <div class="container city-info">
                 <h1 class="history-city"><strong><center>Miami History</center></strong></h1>
                 <div class="city-history">
@@ -244,83 +248,196 @@
               </div>
             </div>
 
-              <div class="linkcontainer">
-                <center class="links-info"><strong>Links</strong></center>
-                <div class="row permits-info-col thelinks">
-                  <div class="col ">
-                    <p><%= link_to 'Employment', 'http://www.miamigov.com/employment/', class:"permits-link", alt:"Employment"%></p>
-                    <p>Look for employment in the the City of Miami.</p>
-                    <p><%= link_to 'Business', 'http://www.miamigov.com/home/business.html', class:"permits-link", alt:"Business" %></p>
-                    <p>Get information on business opportunities and agencies in the magic city. </p>
-                    <p><%= link_to 'Public Meetings', 'http://www.miamigov.com/home/calendar.html', class:"permits-link", alt:"Public Meetings" %></p>
-                    <p>Check out the calendar for public and procurement meetings for the City of Miami.</p>
+            <div class="linkcontainer">
+              <center class="links-info"><strong>Links</strong></center>
+              <div class="row permits-info-col thelinks">
+                <div class="col ">
+                  <p><%= link_to 'Employment', 'http://www.miamigov.com/employment/', class:"permits-link", alt:"Employment"%></p>
+                  <p>Look for employment in the the City of Miami.</p>
+                  <p><%= link_to 'Business', 'http://www.miamigov.com/home/business.html', class:"permits-link", alt:"Business" %></p>
+                  <p>Get information on business opportunities and agencies in the magic city. </p>
+                  <p><%= link_to 'Public Meetings', 'http://www.miamigov.com/home/calendar.html', class:"permits-link", alt:"Public Meetings" %></p>
+                  <p>Check out the calendar for public and procurement meetings for the City of Miami.</p>
+                </div>
+                <div class="col">
+                  <p><%= link_to 'City Officials', 'http://www.miamigov.com/home/cityofficials.html', class:"permits-link", alt:"City Officials" %></p>
+                  <p>Meet Our City Officials.</p>
+                  <p><%= link_to 'Building Department', 'http://www.miamigov.com/Building/', class:"permits-link", alt:"Building Department" %></p>
+                  <p>Inspections and Permits.</p>
+                  <p><%= link_to 'Miami Parks & Recreation', 'http://www.miamigov.com/parks/', class:"permits-link", alt:"Miami Parks & Recreation" %></p>
+                  <p>Find out where you can splish and splash, where to play tennis, register for sports programs and more.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="project-about" role="tabpanel" aria-labelledby="project-about">
+          <div class="project-about-page">
+
+            <div class="top-project">
+              <h1 class="project-head">Project Information</h1>
+              <div class="project-info-text">
+                <p>This website was created by Tatiana Morris, Karina Campos, and Scott Spiegel, as a project while attending Wyncode Academy. The site is a redesign of the City of Miami's official website for Mayor Suarez.</p>
+
+                <p>The goal of the redesign was to make the site feature a more user-friendly experience, as well as allow the Mayor's staff ability to support the site with new content across the About, Programs, News, and Contact tabs. </p>
+
+                <p>As a visitor, you cannot access the Content Management System - sorry! Only pre-approved individuals are able to access the page!.
+                </div>
+                <div class="tweet">
+                  <p>Thank you for visiting the site and if you like what you see, you can send a tweet to the Mayor and let him know!</p>
+
+                </div>
+                <center><strong><%= link_to 'Tweet the Mayor!', 'https://twitter.com/intent/tweet?url=https://mdcsuarez.herokuapp.com&text= This is what your website could look like, Mayor Suarez!&via=miamimayor' %></strong></center>
+
+                <div class="bottom-project">
+                  <h2 class="project-head">Team Info</h2>
+                  <%= image_tag 'k-s-t.png', class: "team-image", alt: "Karina, Scott, Tatiana. Site designers."%>
+
+                  <div class="container container-for-team-info">
+                    <div class="row">
+                      <div class="col-sm">
+                        <strong class="team-name">Karina Campos</strong>
+                        <br>
+                        <br>
+                        <strong>Responsibility:</strong>
+                        <br>
+                        <br>
+                        Karina worked on bringing a lively design to the entirety of the website and integrating a common theme throughout the site.</li>
+                        <br>
+                        <br>
+                        <strong>Background:</strong>
+                        <br>
+                        <br>
+                        something
+                        <br>
+                        <br>
+                        <%= link_to 'https://www.linkedin.com/in/KFCode/', {target: '_blank'} do  %>
+                        <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                        <%end%> ||
+                        <%= link_to 'https://github.com/KarinaCmps12', {target: '_blank'} do  %>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <%end%>
+
+
+
+                      </div>
+
+
+
+                      <div class="col-sm">
+                        <strong class="team-name">Scott Spiegel</strong>
+                        <br>
+                        <br>
+                        <strong>Responsibility:</strong>
+                        <br>
+                        <br>
+                        Scott brought passwordless signin to the site for administrators with Auth0 and Twilio (turned off for demo purposes) and created the permits map for the site through the use of the <%= link_to 'Open Data Portal', 'https://opendata.miamidade.gov/' %> and the Google Maps API (including adding the clusters and icons)
+                        <br>
+                        <br>
+                        <strong>Background:</strong><br>
+                        Scott has a degree in Finance in Economics. He is passionate about cryptocurrencies and is a Certified Bitcoin Professional. Scott is looking to pivot into the tech industry as a full-stack developer.
+                        <br>
+                        <br>
+                        <%= link_to 'https://www.linkedin.com/in/srs78/', {target: '_blank'} do  %>
+                        <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                        <%end%> ||
+                        <%= link_to 'https://github.com/scott4044', {target: '_blank'} do  %>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+
+                        <%end%>
+                        <br>
+
+                      </div>
+                      <div class="col-sm">
+                        <strong class="team-name">Tatiana Morris</strong>
+                        <br>
+                        <br>
+                        <strong>Responsibility:</strong>
+                        <br>
+                        <br>
+                        Tatiana worked on creating the content management system, as well as the partials that are rendered and styled with bootstrap on the front end.
+                        <br>
+                        <br>
+                        <strong>Background:</strong>
+                        <br>
+                        <br>
+                        Prior to attending Wyncode, Tatiana was a Senior News Editor and site manager for a video game news and technology website. She came to Wyncode looking to learn more about the technology she worked with on a daily basis and is looking forward to a new career in web development.
+                        <br>
+                        <br>
+                        <%= link_to 'https://www.linkedin.com/in/tatmorris/', {target: '_blank'} do  %>
+                        <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                        <%end%> ||
+                        <%= link_to 'https://github.com/omitat', {target: '_blank'} do  %>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <%end%>
+                      </div>
+                    </div>
+
+
                   </div>
-                  <div class="col">
-                    <p><%= link_to 'City Officials', 'http://www.miamigov.com/home/cityofficials.html', class:"permits-link", alt:"City Officials" %></p>
-                    <p>Meet Our City Officials.</p>
-                    <p><%= link_to 'Building Department', 'http://www.miamigov.com/Building/', class:"permits-link", alt:"Building Department" %></p>
-                    <p>Inspections and Permits.</p>
-                    <p><%= link_to 'Miami Parks & Recreation', 'http://www.miamigov.com/parks/', class:"permits-link", alt:"Miami Parks & Recreation" %></p>
-                    <p>Find out where you can splish and splash, where to play tennis, register for sports programs and more.</p>
-                  </div>
+
+
                 </div>
               </div>
 
 
             </div>
+
+
           </div>
-        </div>
         </div>
       </div>
-          <!--Footer-->
-          <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
-          <footer>
-            <!--Footer Links-->
-            <div class="container text-center text-md-left">
-              <div class="row my-4">
+      <!--Footer-->
+      <!-- <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4"> -->
+      <footer>
+        <!--Footer Links-->
+        <div class="container text-center text-md-left">
+          <div class="row my-4">
 
-                <!--First column-->
-                <div class="col-md-4 col-lg-3" id="social">
-                  <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Contact Us</h5>
-                  <p class="bottom-text contactinfo">Dial 311 or 305-468-5900</p>
-                  <a class="bottom-text" href="#">webmaster@miamigov.com</a>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-4 ml-auto">
-                  <h5 class="bottom-title text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
-                  <ul class="list-unstyled">
-                    <p>
-                      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                    </p>
-                    <p>
-                      <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </p>
-                    <p>
-                      <div class="g-ytsubscribe" data-channel="CityofMiamiGov" data-layout="default" data-count="default"></div>
-                    </p>
-                  </ul>
-                </div>
-                <!--/.Second column-->
-
-
-                <!--Third column-->
-                <div class="col-md-4 col-lg-3" id="miamisites">
-                  <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
-                  <!--Info-->
-                  <a class="bottom-text" href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
-                  <a class="bottom-text" href="https://www.miamidade.gov/home/">Miami Dade County</a>
-                </div>
-                <!--/.Third column-->
-
-
+            <!--First column-->
+            <div class="col-md-4 col-lg-3" id="social">
+              <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+              <p class="bottom-text contactinfo">Dial 311 or 305-468-5900</p>
+              <a class="bottom-text" href="#">webmaster@miamigov.com</a>
             </div>
-          </div>
-          <!--/.Footer Links-->
-          <!--/.Footer Links-->
+            <!--/.First column-->
 
-          </footer>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <!--/.Footer-->
+            <!--Second column-->
+            <div class="col-md-2 col-lg-4 ml-auto">
+              <h5 class="bottom-title text-uppercase mb-3 font-weight-bold" id="cu">Follow Us</h5>
+              <ul class="list-unstyled">
+                <p>
+                  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCityOfMiamiGov%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </p>
+                <p>
+                  <a href="https://twitter.com/MiamiMayor?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MiamiMayor</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+                <p>
+                  <div class="g-ytsubscribe" data-channel="CityofMiamiGov" data-layout="default" data-count="default"></div>
+                </p>
+              </ul>
+            </div>
+            <!--/.Second column-->
+
+
+            <!--Third column-->
+            <div class="col-md-4 col-lg-3" id="miamisites">
+              <h5 class="bottom-title text-uppercase mb-4 font-weight-bold">Visit Other Miami Sites</h5>
+              <!--Info-->
+              <a class="bottom-text" href="http://www.miamiandbeaches.com/">Greater Miami Convention & Visitors Bureau</a></br>
+              <a class="bottom-text" href="https://www.miamidade.gov/home/">Miami Dade County</a>
+            </div>
+            <!--/.Third column-->
+
+
+          </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--/.Footer Links-->
+
+      </footer>
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!--/.Footer-->

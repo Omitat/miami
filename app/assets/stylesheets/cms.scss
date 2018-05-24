@@ -6,7 +6,7 @@
 
 .contact-mail{
   width: 5%;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .column-cms {
   float: left;
@@ -35,6 +35,32 @@
   .column-row {
     width: 100%;
   }
+}
+
+.team-image{
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.project-head{
+  color: #b30059;
+  text-align: center;
+  margin: 3%
+}
+
+.team-name{
+  color: #b30059;
+  text-align: center;
+  font-size: 22px;
+}
+.top-project{
+  width: 80%;
+margin: 0 auto;
+}
+.container-for-team-info{
+      padding-bottom: 5%;
+      width: 100%;
+      height: auto;
 }
 /* ************************************************************** */
 /* ****************************CMS************************************* */
@@ -214,11 +240,11 @@ nav {
 }
 
 .program-slider {
-    margin: auto;
-    width: 80%;
-    border: solid 2px #5694b5;
-    padding: 1%;
-  }
+  margin: auto;
+  width: 80%;
+  border: solid 2px #5694b5;
+  padding: 1%;
+}
 
 .programs-front-end {
   padding-bottom: 3%;
