@@ -1,5 +1,5 @@
 
-
+$(document).on('turbolinks:load', function() {
 function initMap() {
 
 
@@ -122,3 +122,4 @@ searchBox.addListener('places_changed', function() {
 
 
           }
+}

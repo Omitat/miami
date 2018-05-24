@@ -62,6 +62,7 @@
  * @constructor
  * @extends google.maps.OverlayView
  */
+ $(document).on('turbolinks:load', function() {
 function MarkerClusterer(map, opt_markers, opt_options) {
   // MarkerClusterer implements google.maps.OverlayView interface. We use the
   // extend function to extend MarkerClusterer with google.maps.OverlayView
@@ -1313,3 +1314,4 @@ Object.keys = Object.keys || function(o) {
     }
     return result;
 };
+}
