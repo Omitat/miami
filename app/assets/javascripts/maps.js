@@ -1,6 +1,5 @@
 
 
-$(document).on('turbolinks:load', function() {
 function initMap() {
 
 
@@ -43,7 +42,7 @@ function initMap() {
   }
 
   var markerCluster = new MarkerClusterer(map, markers,
-    {imagePath: '/assets/clusters/clusters'});
+    {imagePath: '/clusters/clusters'});
 
 
 
@@ -123,4 +122,3 @@ searchBox.addListener('places_changed', function() {
 
 
           }
-}
