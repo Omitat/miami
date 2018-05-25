@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
     @message = Message.new message_params
     if @message.valid?
       ApplicationMailer.contact(@message).deliver_later
-      redirect_to messages_create_path
+      redirect_to new_home_path
       flash[:notice] = "We have received your message and will be in touch soon!"
     else
       flash[:notice] = "There was an error sending your message. Please try again."

@@ -9,7 +9,7 @@
 $(document).on('turbolinks:load', function() {
   $('.save').on('click', function() {
     // console.log($('.modal-body').children());
-    $('.modal-body form').submit()
+    $('.modal-body form').submit().preventDefault();
   });
 
 
